@@ -1,2 +1,2 @@
 # prooktatas-februar
-# sajat gepemen irtam hozza
+#bongeszoben irtam
