@@ -1,1 +1,28 @@
-body {background-color: aqua;}
+body {
+    background-image: url(./img/back.jpg);
+}
+
+
+header{
+background-image: url(./img/panorama.jpg);
+background-repeat: no-repeat;
+
+min-width: 600px;
+max-width: 1000px;
+contain-intrinsic-height: ;
+margin: auto;
+
+
+}
+
+section {
+    text-align: center;
+    margin: auto;
+    height: 1000px;
+}
+
+article {
+    display: inline;
+    float: left;
+    margin: auto;
+}
