@@ -1,1 +1,2 @@
 # prooktatas-februar
+#bongeszoben irtam
