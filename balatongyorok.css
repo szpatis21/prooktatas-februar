@@ -1,28 +1,64 @@
 body {
     background-image: url(./img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header
+{
+
+    max-width: 1000px;
+    min-width: 650px; 
+    background-image: url(./img/panorama.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:grid ;
 }
 
 
-header{
-background-image: url(./img/panorama.jpg);
-background-repeat: no-repeat;
-
-min-width: 600px;
-max-width: 1000px;
-contain-intrinsic-height: ;
-margin: auto;
-
-
+.fejlec2 {
+width: 1000px; 
+background-image: url(./img/cimer.jpg);   
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: right;
+ height: 250px;
+ float: right;
 }
 
-section {
-    text-align: center;
-    margin: auto;
-    height: 1000px;
+#p {
+    font-weight: bold;
+    padding: 1%;
+}
+
+section article{
+
 }
 
 article {
+    width: 440px;
+    background-color: #5B9CEA;
+    display: gird;
+    margin: 5px;
+
+}
+article table, th, td {
+    width: 428px;
+    background-color: #B041F1;
+    border: solid 1px black;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0px 5px 0px 5px;
+}
+
+#right {
+    float: right;
     display: inline;
-    float: left;
-    margin: auto;
 }
