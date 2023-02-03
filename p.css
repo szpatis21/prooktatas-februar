@@ -1,0 +1,14 @@
+table, tr, td, th{
+    width: 428px;
+    background-color: #B041F1;
+    border: solid 1px black;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0px 5px 0px 5px;
+}
+article {
+    width: 440px;
+    background-color: #5B9CEA;
+    margin: 5px;
+    float: left;
+}

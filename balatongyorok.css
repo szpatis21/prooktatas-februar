@@ -2,63 +2,61 @@ body {
     background-image: url(./img/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
-    display: block;  
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
 header
 {
-
     max-width: 1000px;
     min-width: 650px; 
     background-image: url(./img/panorama.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    display:grid ;
 }
 
 
 .fejlec2 {
 width: 1000px; 
+height: 200px;
 background-image: url(./img/cimer.jpg);   
  background-size: contain;
  background-repeat: no-repeat;
  background-position: right;
- height: 250px;
- float: right;
 }
 
-#p {
-    font-weight: bold;
-    padding: 1%;
-}
-
-section article{
-
-}
-
-article {
-    width: 440px;
-    background-color: #5B9CEA;
-    display: gird;
-    margin: 5px;
-
-}
-article table, th, td {
+table, tr, td, th{
     width: 428px;
     background-color: #B041F1;
     border: solid 1px black;
     text-align: center;
     border-collapse: collapse;
-    margin: 0px 5px 0px 5px;
+    margin: auto;      
+}
+    .TBII {float: right;}
+
+article {
+    width: 450px;
+    background-color: #5B9CEA;
+    display: inline-block;
 }
 
-#right {
-    float: right;
-    display: inline;
+#p {
+    font-weight: bold;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+#FR {
+    height: 150px;
+}
+#href {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
