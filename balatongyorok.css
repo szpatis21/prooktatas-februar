@@ -26,7 +26,6 @@ background-image: url(./img/cimer.jpg) ;
  background-size: 15%;
  background-repeat: no-repeat;
  background-position: 750px 20px;
- 
 }
 
 table, tr, td, th{
@@ -42,36 +41,26 @@ table, tr, td, th{
 article {
     width: 450px; /* 450 */
     background-color: #5B9CEA;
-    display: inline-block;
-    
+    display: inline-block;    
 }
 
-#p {
-    font-weight: bold;
-}
+#p {font-weight: bold;}
 
-h1 {
-    padding: 20px;    
-}
+h1 {padding: 20px;}
 
 h2 {
     margin-left: 20px;
     margin-right: auto;
 }
 
-#FR {
-    height: 150px;
-}
+#FR {height: 150px;}
+
 #href {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-a:hover {
-    color: crimson;
-}
+a:hover {color: crimson;}
 
-a:visited {
-    color: red;
-}
+a:visited {color: red;}
