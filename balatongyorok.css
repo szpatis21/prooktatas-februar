@@ -11,6 +11,7 @@ header
 {
     max-width: 1000px;
     min-width: 650px; 
+    height: 200px;
     background-image: url(./img/panorama.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -21,15 +22,16 @@ header
 .fejlec2 {
 width: 1000px; 
 height: 200px;
-background-image: url(./img/cimer.jpg);   
- background-size: contain;
+background-image: url(./img/cimer.jpg) ;   
+ background-size: 15%;
  background-repeat: no-repeat;
- background-position: right;
+ background-position: 750px 20px;
+ 
 }
 
 table, tr, td, th{
     width: 428px;
-    background-color: #B041F1;
+    background-color: #B0D1F1;
     border: solid 1px black;
     text-align: center;
     border-collapse: collapse;
@@ -38,7 +40,7 @@ table, tr, td, th{
     .TBII {float: right;}
 
 article {
-    width: 450px;
+    width: 450px; /* 450 */
     background-color: #5B9CEA;
     display: inline-block;
 }
@@ -47,8 +49,12 @@ article {
     font-weight: bold;
 }
 
+h1 {
+    padding: 20px;    
+}
+
 h2 {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: auto;
 }
 
