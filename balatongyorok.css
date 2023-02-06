@@ -66,3 +66,11 @@ h2 {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+a:hover {
+    color: crimson;
+}
+
+a:visited {
+    color: red;
+}
