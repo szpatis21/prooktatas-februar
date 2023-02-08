@@ -1,0 +1,34 @@
+.container {
+width: 300px;
+margin: auto;
+background-color: chartreuse;
+padding: 20px;
+border-radius: 10%;
+}
+
+label, input {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    width: 90%;
+    color: blue;
+    background-color: brown;
+}
+
+input[type=email] {
+    width: 90%;
+    color: blue;
+    background-color: brown;
+}
+
+textarea{
+background-color: aqua;
+}
+
+p {
+    text-align: center;
+}
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nagybevásárlás</title>
+        <meta charset="UTF-8">
+        <style>
+            table, th, td, tr 
+        {
+            border: 4px solid rgb(78, 214, 15);
+            border-collapse: separate;
+            border-spacing: 6px;
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0) 75%, rgba(65, 209, 65, 0.301));
+            float: top;
+
+        }
+        
+
+
+        body {
+background-image:url(./Media/alap2.png) ;
+background-repeat: no-repeat;
+background-size: cover ;
+background-attachment: fixed;
+
+        }
+li { 
+    background-image:radial-gradient(closest-side, #2b282800, #62fa33, #ffffff13)
+}
+
+
+        td, th {
+            width: 100px;
+           }
+        </style>
+        <link rel="stylesheet" href="./Bevásárlás.css">
+    </head>
+    <body>
+         <div id="cim"><h1>NAGYBEVÁSÁRLÁS</h1>
+         <hr>
+        
+         <p class="szoveg">
+                            <!-- Formázás -->
+           <strong> El kell intézni a hétvégi nagybevásárlást</strong> <br>
+           <ins>A kis boltokban kevesebb minden van, de olcsóbbak. A nagyobbakban viszont a választék is nagy.</ins> <br>
+           <i> Ezek közül a boltok közül lehet választani:</i> 
+           
+           <br><hr>
+           </p>
+    <p>
+
+    </div>
+        <h3>Nagyboltok </h3> <!-- Kép és videó beszúrás -->
+                <video src="./Media/vid01.mp4" width="150px" controls></video>
+                Spar <sup>TM</sup> <img src="./Media/spar.png" alt="spar logo" width="50px">
+                Tesco <sup>TM</sup><img src="./Media/tesco.jpg" alt="Tesco logo" width="50px">
+                Lidl <sup>TM</sup><img src="./Media/Lidli.png" alt="Lidli logo" width="50px">
+                Aldi <sup>TM</sup><img src="./Media/Aldi.png" alt="Aldi logo" width="50px">
+    </p>        
+            <dl>
+            <dt><h3>Kisboltok</h3> </dt> <!-- Deifiníciós lista -->
+                <dd>Tom Market</dd>
+                <dd>Sarki közért</dd>
+                <dd>Zöldséges</dd>
+            </dl>
+            <hr>        <!-- Szómagyarázat -->
+            Ha kiválasztottam a <abbr title="Helyrealzilag közelebbit"> megfelelőt</abbr>, 
+                meg kéne nézni, hol és mikor mennyien vannak:
+            <hr>
+            <br>
+            <table>
+                <caption><h2>Zsúfoltság táblázat</h2></caption> <!-- Táblázat -->
+
+                <tr>
+                    <th>Nyitva tartás</th>
+                    <th>Bolt neve</th>
+                    <th>Délelött</th>
+                    <th>Délután</th>
+                    <th>Este</th>
+                    <th>Zárás</th>
+                </tr>
+                    <th rowspan="5">08:00</th>
+                    <th>Tesco</th>
+                    <td>Sokan vannak</td>
+                    <td>Átlagos tömeg</td>
+                    <td>Nincsenek sokan</td>
+                    <th rowspan="5">21:00</th>
+                </tr>
+                          
+                <tr>
+                    <th>Aldi</td>
+                    <td>Nincsenek Sokan</td>
+                    <td>Sokan vannak</td>
+                    <td>Átlagos tömeg</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Az utolsó kettő boltba csak akkor érdemes menni, ha az első kettőben végképp nem találhatóak a listás elemek</th>
+                </tr
+                >     
+                <tr>
+                    <th>Spar</th>
+                    <td>Átlagos tömeg</td>
+                    <td>Sokan vannak</td>
+                    <td>Nincsenek sokan</td>
+                </tr>
+                <tr>
+                    <th>Lidl</th>
+                    <td>Nincsenek soka</td>
+                    <td>Átlagos tömeg</td>
+                    <td>Sokan vannak</td>
+                </tr>
+                    
+            </table>
+         </p>
+               <!-- Számozott és számozatlan listák és kombinációjuk-->
+         <ol> 
+            <li>Tejtermékek</li>
+            <ol> 
+                <li>Vaj</li>
+                <li>Tej</li>
+                <li>sajt</li>
+                <li>puding</li>
+            </ol>
+                <li>Pékárú</li>
+                <ol>
+                <li>kenyér</li>
+                <li>kifli</li>
+                <li>zsömle</li> 
+                </ol>
+            <li>Alkohol</li>
+            <ol>
+                <li>Sör</li>
+                <li>bor</li>
+                <li>pálinka</li>
+            </ol>
+         </ol> 
+         <p> Továbbá kell még:</p>
+         <ul id="list"> 
+            <li > Szárazárú</li>
+                    <ul > ><li>Liszt</li>
+                    <li>cukor</li>
+                    <li>só</li>
+                    </ul>
+                <li>Állatholmi</li>        
+                <ul><li>Macskaalom</li>     
+                <li>Macskakaja</li>         
+                <li>Macskalézer</li>        
+            </ul>     
+
+            <li>Ami kimaradt:</li>          
+            <ol><li>felmosófej</li>         
+                <li>mosogatószer</li>       
+                <li>pelenka</li>            
+            </ol>
+        </ul>                               
+
+        <h2>Jó vásárlást!</h2>                        
+        <ol reversed=5>    <!-- Visszaszámlálás -->                  
+            <li>.....</li>
+            <li>....</li>
+            <li>...</li>
+            <li>..</li>
+            <li>.</li>
+        </ol>
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    margin:auto;
+    min-width: 10px;
+}
+
+h1 {
+    color: chartreuse;
+    width: 350px;
+    background-color: rgba(172, 231, 34, 0.192);
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+
+    padding-top: 30px;
+    padding-left:20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    
+}
+
+
+h2 { 
+    background-color: chartreuse;
+    color: blueviolet;
+    font-family: monospace;
+    padding: 10px 20px 30px 40px;
+    margin:auto;
+
+
+}
+h1,h2 {
+text-decoration: underline;
+text-decoration-color: black;
+text-decoration-style:wavy;
+}
+
+
+/* Külön-külön (elem kijelölés) és egyszerre (csoportos kijelölés) 
+is meg lehet adni elemek formzását. Ilyenkor a teljes html tag-ben
+ lévő összes ugyanazon típusú elem formázva lesz */
+
+a:link {
+    color: rgb(240, 47, 89);    /* Linkcímek formázása */
+}
+a:visited {
+ background-color: black; /* Már meglátogatt oldalak formázása */
+}
+a:hover { /* Aktív formázás(rajta van az egér) */
+    color: chartreuse;
+}
+
+/* Három legfontosabb link formázási lehetőség */
+
+.o1 p {
+    background-color: rgba(0, 0, 0, 0.534);
+}   /* Hivatkozás CLASSra. Ha a csak a hivatkozási név van megadva, minden benne lévő elem formázásra kerül. 
+Ha van megadva mögötte egy elem, csak annak az elemben lévő elemek formázódnak (származtatott kijelölés) */
+
+#o2 {
+    
+    background-color: aqua;
+    color: crimson;
+    font-family: fantasy;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+
+}

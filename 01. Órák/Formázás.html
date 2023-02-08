@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. óra - Beszúrások, formázás</title>
+<link rel="stylesheet" href="./formazas.css">
+</head>
+<body>
+    <a href="#lapalja">Ugrás az aljára</a>
+    
+<h2><a href="./01. óra - Listák és táblázatok.html">Első óra</a></h2>
+
+<h1 id="lapteteje">Beszúrások</h1> <hr> <hr>
+<h2>Képek beszúrása</h2>
+<div id="logo">
+<p>
+    Az intézményi logo: <a href="https://www.oktatas.hu/hivatali_ugyek/kir_intezmenykereso/!KIR_Intezmenykereso/Intezmeny/Index/101204" target="_blank"> <img src="./Media/pic sample.jpg" alt="Logo" width="50px" height="50px" title="Logo felirat"> </a>ez a kép.
+
+        <!-- A <img src=" "> tagben az idézőjel közé .(pontot) majd / (perjelet írva) tehát : ./ -parancsal a html fájllal egy szinten lévő fájlokat tudjuk beszúrni (realtív elérési útvonal) -->
+
+        <!-- Kép beszúrás után van lehetőség a kép szélességét <width> vagy magasságát <heigt> növelni(px - pixel mértékegységgel). 
+        Ha csak az egy tulajdonságot adunk meg, méretarányosan változik a kép. Ha mindkettő érvényben van a krtériumok alapján méretez.  -->
+
+        <!-- <img src=" ELÉRÉSI ÚTVOLAN (./)> alt="HIBA ESETÉN MEGJELENŐ FELIRAT" width="SZÉLESÉGpx" height="MAGASSÁGpx" title="JELMAGYARÁZAT>" (TITLE: NEM AZONOS A FELIRATTAL EBBEN A KONTEKSZTUSBAN) -->     
+</p> <hr>
+</div>
+<h2>Videó beszúrása</h2>
+
+    <video src="./Media/video sample.mp4" width="150px" controls poster="./Media/pic sample.jpg"></video> <br><hr>
+
+        <!-- <video src="ELÉRÉSI ÚTVONAL (./)" width="SZÉLESÉGpx" height="MAGASSÁGpx" control poster="VIDEÓKÉP"></video>" -->
+
+<h2>Youtube link beszúrása</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d1psfqOrCuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!-- Youtubon jobb klikk a "megosztásra" majd a beágyazásra. A felbukkano ablakból ki kell másolni a szövegtörzset majd beilleszteni ide -->
+
+<hr>
+
+<h2>Weblap beágyazása</h2>
+
+
+    <iframe src="https://www.prooktatas.hu/front-end-webfejleszto" width=1300px height="200px" frameborder="500"></iframe>
+
+        <!-- <iframe src="MEGJELENÍTENDŐ HONLAP ELÉRÉSI ÚTVONALA" width="SZÉLESÉGpx" height="MAGASSÁGpx" freamborder="KERET MÉRET"></iframe> -->
+
+<hr>
+
+<h1>Tartalmi és formázási HTML tagek</h1>
+
+    <!-- <abbr title=""></abbr> <dfn title=""></dfn> - szómagyarázó sablonok -->
+
+<br><hr><hr>
+
+ <h2>Formázási tagek</h2>
+
+<p>
+    Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni" <br>
+<br><hr>
+
+    <b>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</b> <br><!-- Félkövér -->
+    <strong>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</strong> <br> 
+<br>
+    <i>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</i> <br> <!-- Dölt betű -->
+    <em>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</em> <br>
+<br>
+    <ins>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</ins> <br> <!-- ALáhúzás --> 
+<br>
+    <mark>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</mark> <br> <!-- Szöveg kiemelés -->
+<br>
+    <small>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</small> <br> <!-- Apró betű -->
+<br>   
+    <s>Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni"</s> <br>
+    <del> Az egyik legismerterebb idézet a Hamletből a : "Lenni vagy nem lenni" </del> <br> <!-- Áthúzás -->
+<br>
+    <q>Az egyik legismerterebb idézet a <cite>Hamletből</cite>  a : "Lenni vagy nem lenni"</q> <br> <!-- Idézet(A "cite" tag a dölt betűárt felel, a "q" pedig az idézőjelekért.)-->
+<br>
+    Az egyik legismerterebb idézet a <abbr title="A Hamlet, dán királyfi William Shakespeare egyik legismertebb tragédiája."> Hamletből </abbr> a : "Lenni vagy nem lenni" <br> 
+    <!-- Szómagyarázat, az "aabr"-ben lévő "title" a felugró magyarázat a két tag közt lévő szó pedig a kiindulási pont, a magyarázandó részt pontozott vonal jelni -->
+    Az egyik legismerterebb idézet a <dfn title="A Hamlet, dán királyfi William Shakespeare egyik legismertebb tragédiája."> Hamletből </dfn> a : "Lenni vagy nem lenni" <br> 
+    <!-- Szómagyarázat, a "dfn"-ben lévő "title" a felugró magyarázat a két tag közt lévő szó pedig a kiindulási pont, a magyarázandó részt dölt betű jelzi -->
+
+</p>
+<hr><br>
+<p>
+
+    <h2>Folyamat jelző vonal</h2><br>
+
+         A távolugró első ugrása: <meter min="0" max="15" value="10" title="10"> </meter>
+</p >
+<hr><br>
+<p >
+
+    <h2>Alsó és felső index</h2>
+
+        5<sup>2</sup><br>
+        H<sub>2</sub>SO<sub>4</sub>
+
+</p>
+<hr><br>
+<p>
+
+    <h3>Automatikusan létrejövő töltelékszöveg</h3>
+
+    <blockquote id="lapalja">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+        <span id=behuzas> Delectus veniam ipsa esse magni consectetur officiis suscipit odio asperiores minus maiores.</span> <br>
+        Laudantium nemo dolores quo culpa mollitia obcaecati praesentium quasi eius?<br>
+    </blockquote> <!-- A "LOREM" begépelése után a fenti tördelések nélküli sablon szöveget kapjuk. Tesztelésre alkalmas -->
+    <hr>
+    <figure>
+        <figcaption>Élelmiszer lista</figcaption>
+            <ul id="lista">
+                <li>Kenyér</li>
+                <li>tej</li>
+                <li>vaj</li>
+
+            </ul>
+    </figure>
+        <hr>
+    <a href="#lapteteje">Ugrás a lap tetejére</a>
+    
+</p>
+
+<p class="bekezdes">
+    <h2>
+   <a href="mailto:szpatis21@gmail.com">E-mail cím</a> 
+   <a href="tel:+360101010101">Telefonszám</a> 
+   </h2>
+    A részletekért kattintson a <a href="https://www.prooktatas.hu/teljes-webfejleszto-kepzes" target="_blank">Prooktatás kezdőoldalára</a>
+</p>
+<p id="arnyek1">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia sunt officia rem autem, reiciendis aspernatur. Totam sed praesentium ullam explicabo dolorum ratione nemo adipisci numquam laborum, rem cupiditate repellendus?
+</p>
+<div id="rendez">
+    <p>
+<a href="mailto:sdfsdf">mail</a>
+ <a href="tel:+sdfads">tel</a>   
+
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, exercitationem sint corrupti error quo delectus dignissimos dolorum quod repellat dicta nihil architecto expedita inventore distinctio et enim alias neque! Veritatis?
+</p></div>
+
+
+<h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam officia rem dolor quos quidem cupiditate officiis iusto suscipit voluptates, deserunt, odit optio? Voluptatibus enim ab facilis aspernatur ea repellat?</h1>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title> Első óra - Listák és táblázatok </title>
+
+<style>
+ table {
+caption-side: top;    
+table-layout: fixed;
+width: 450px;}
+ 
+
+ table, th, td, tr 
+{
+    border: 4px solid rgb(177, 11, 11);
+    border-collapse: separate;
+    column-gap: 10px;
+}
+ol {
+background-image: linear-gradient(45deg, white, black) ;
+
+}
+
+ul {
+background-image: radial-gradient(  green , yellow , green );
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <h2><a href="./02. óra - Beszúrások és formázás.html">Második óra</a></h2>
+        <h1>Főcím</h1>
+        <h2>Alcím</h2>
+        <!--<h3>Alt+shift+A</h3>-->
+        <ol start="10" reversed> 
+            <li value="100">Első elem</li>
+            <li>Második elem</li>
+            <li>Harmadik elem</li>
+        </ol> <!-- Számozott lista -->
+
+        <ul>
+        <li>számozatlan első</li>
+        <li>számozatlan második</li>
+        <li>számozatlan harmadik</li>
+        <li>számozatlan negyedik</li>
+        </ul> <!-- Számozatlan lista -->
+
+        <ul>
+            <li>számozatlan első</li>
+            <li>számozatlan második</li>
+            <li>számozatlan harmadik</li>
+            <li>számozatlan negyedik</li>
+            <ol> 
+                <li> Számozott 1</ol>
+        <!-- kombinált lista -->
+
+        </ul>
+        <!-- definíciós lista -->
+        <dl>
+            <dt>hét törpe</dt>
+            <dd>1</dd>
+            <dd>2</dd>
+            <dd>3</dd>
+            <dd>4</dd>
+            <dt>CSS</dt>
+            <dd>stíluslapnyelv</dd>
+        </dl>
+
+        <!-- bekezdés -->
+        <p>
+            Megírtam az első Bekezdésem! <hr> <br> Szeretnék még egy bekezdést írni
+
+        </p>
+
+        <!-- táblázatok -->
+
+        <h1>TÁBLÁZAT</h1>
+        <table>
+            <caption> Első táblázatom</caption>
+            <tr>
+                <th>
+                    első sor eslő oszlop </th>
+                    <td>1 sor 2 oszlop</td>
+                    <td>1 sor 3 oszlop</td>
+            </tr>
+            <tr>
+                <th> 2 sor 1 oszlop</th>
+                <td colspan="2">2 sor 2 oszlop és 2 sor 3 oszlop</td>
+                <!-- <td>2 sor 3 oszlop</td> -->
+            </tr>
+        </table>
+
+        <h1>TÁBLÁZAT</h1>
+        <table>
+            <tr>
+                <th> Product</th>
+                <th>Flavors</th>
+            </tr>
+            <tr> 
+                <td rowspan="3"> Milk</td>
+                <td>Almond</td>
+            </tr>
+            <tr>
+                <td>Mango</td>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+            </tr>
+            <tr>    
+                <td colspan="2">These are exlusive flavors </td>
+            </tr>
+        </table>
+    
+    <br>
+    
+    <table>
+    
+        <caption>Time table</caption>
+    
+    <tr>
+        <th rowspan="6">Hours</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        </tr>
+    <tr>
+        <td>Sience</td>
+        <td>Maths</td>
+        <td>Sience</td>
+        <td>Maths</td>
+        <td>Arts</td>
+    </tr>
+    <tr>
+        <td>Social</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+        <td>Sports</td>
+    </tr>
+    
+    <tr>
+        <th colspan="5">Lunch</th>
+    </tr>
+    
+    <tr>
+        <td>Sience</td>
+        <td>Maths</td>
+        <td>Sience</td>
+        <td>Match</td>
+        <td rowspan="2">Project</td>
+    </tr>
+    
+    <tr>
+        <td>Social</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+    </tr>
+    </table>
+    
+    <br>
+    
+    <table>
+        <tr>
+            <td colspan="3">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td colspan="2">3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td colspan="2">7</td>
+            <td>8</td>
+        </tr>
+    </table>
+</body>
+
+</html>

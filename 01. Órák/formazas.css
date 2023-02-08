@@ -1,0 +1,69 @@
+h2{color: rgb(255, 0, 0);
+font-size: x-large;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; min-width: 300px;}
+
+
+
+
+#focim {
+    font-weight: 700;
+}
+
+#logo p {
+    background-color: blueviolet;
+}
+
+.bekezdes {font-style: italic;}
+
+a:link {
+    color: blue;
+/* rgba */
+}
+a:visited {
+    color: chartreuse;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+body {width: 800px; margin: auto;width: 80%;
+
+
+}
+
+#behuzas{
+    text-indent: 35px;
+    text-decoration: underline;
+    text-decoration-color:brown;
+    text-decoration-style:wavy ;
+}
+
+#arnyek1 {text-shadow: -5px -5px 2px red, 7px 7px 3px yellow ;
+border-style: ridge;
+border-color: red;
+border-width: 10px;
+border-top-left-radius: 15px ;
+}
+
+#lista {list-style-image:url(./Media/pic\ sample\ mini.jpg)  ;}
+#rendez {
+    box-shadow: 5px 5px 10px 2px blue ;
+    display: block;
+}
+
+body {background-image:url(./Media/pic\ sample.jpg) ;
+background-repeat: no-repeat;
+background-size: contain;
+background-attachment: fixed;
+
+
+}
+
+h1 {
+    
+    border-color: rgb(255, 0, 0);
+    border:3px ;
+    border-style: dotted;
+    border-radius: 15px;
+}

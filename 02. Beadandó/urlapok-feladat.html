@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./urlapok-feladat.css">
+    <title>Űrlapok-feladat</title>
+</head>
+<body>
+    <form action="./urlapok-feladat.html">
+       
+    
+       
+        <h2>Regisztráció</h2>
+
+<div id="OOI">  
+   
+    <div>
+    <p>Megszólítás <sup>*</sup></p>       
+    <input type="radio" name="megszolitas" id="urholgy" value="urhogly">
+    <label for="igen">Úrhölgy</label>
+
+    <input type="radio" name="megszolitas" id="ur" value="ur"> <!-- fontos, hogy a név ugyanaz legyen  -->
+    <label for="ur">Úr</label>    
+    </div>
+
+</div>       
+
+<div>
+    <div id="I">
+        <label for="nev">Vezetéknév:</label>
+        <input type="text" name="nev" id="nev">
+    </div><div id="II">
+        <label for="nev">Keresztnév</label>
+        <input type="text" name="nev" id="nev">    
+    </div>
+</div>
+
+<div>
+    <div id="OI">
+        <p>Születési dátum <sup>*</sup></p>
+        <input type="date" name="" id="">
+    </div>
+</div>
+
+<div>
+    <div id="I">
+        <label for="mail">E-mail cím<sup>*</sup></label>
+        <input type="email" name="mail" id="mail">
+    </div><div id="II">
+        <label for="mail">E-Mail cím ismételt megadása<sup>*</sup></label>
+        <input type="email" name="mail" id="mail">    
+    </div>
+</div>
+
+<div>
+    <div id="I">
+        <label for="pass">Jelszó<sup>*</sup></label>
+        <input type="password" name="pass" id="pass">
+    </div><div id="II">
+        <label for="pass">Jelszó ismételt megadása<sup>*</sup></label>
+        <input type="password" name="pass" id="pass">    
+    </div>
+</div>
+
+<div id="OOI">
+    
+    <p><sup>*</sup>-kötelező mezők</p>
+    
+    <input type="checkbox" name="szerz" id="szerz">
+    <label for="szerz">Tudomásul vettem és elfogadom az <ins> Általános Szerződési Feltétleket</ins>-et, valamint az <ins> Adatkezelési tájékoztató</ins>-ban foglaltakat <sup>*</sup></label> <br>
+    <input type="checkbox" name="hirlevel" id="hirlevel">
+    <label for="hirlevel">Szeretnék feliratkozni <b> A dm Hírlevelem</b>-re. A hírlevéről bármikor leiratkozhatok. A <ins> Hozzájárulás a dm hírlevélhez</ins>-t elolvastam és elfogadom.</label>
+
+</div>
+<div class="gomb">
+
+    <input type="submit" value="Tovább">
+
+</div>
+
+
+    </form>
+</body>
+</html>

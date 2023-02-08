@@ -1,0 +1,56 @@
+body
+{
+text-align: center;
+font-family: Arial;
+}
+
+input {
+    width: 200px;
+}
+
+#OOI {
+    width: 490px;
+    display: inline-block;
+    text-align: left;
+    }
+        #OOI input {
+        width: 10px;
+         }
+
+#OI {
+width: 490px;
+display: inline-block;
+text-align: left;
+}
+
+#I { 
+width: 200px;
+display: inline-block;
+padding:10px;
+margin-right: 20px;
+text-align: left;
+}
+
+#II {
+width: 250px;
+display: inline-block;
+padding: 10px;
+text-align:left ;
+}
+
+.gomb input{
+    text-align: center;
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    padding: auto;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+h2{
+    color: rgb(11, 11, 114);
+    margin-bottom: -5px;
+}

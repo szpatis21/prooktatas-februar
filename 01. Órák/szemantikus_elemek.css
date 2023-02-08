@@ -1,0 +1,79 @@
+body {
+    width: 70%; /* A szélesség 70%-a */
+    margin: auto; /* Minden középre  */
+}
+
+header {
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center; /* Szöveg középre */
+}
+
+nav {
+background-color: rgba(127, 255, 212, 0.548);
+text-align: center;  
+width: 30%;
+float: left;
+height: 490px;
+border-radius: 10px;
+
+
+
+}
+
+ul {
+list-style-type: none;
+text-align: center;
+}
+
+li {
+ display: inline-block;  /* egy sorban lévő megjelenítés */   
+ padding: 5 px; /* elemek közti távolság */
+text-align: center;
+margin: auto;
+}
+
+article {
+    background-color: rgba(165, 42, 42, 0.479);
+    height:    350px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+section {
+    background-color: rgba(128, 255, 0, 0.5);
+    width: 30%;
+    float: left;
+    margin: 5%;
+    border-radius: 20px;
+    height: 470px;
+    text-align: center;    
+}
+
+aside {
+background-color: rgba(210, 105, 30, 0.479);
+width: 30%;
+float: left;
+height: 490px;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: aqua;
+    clear: left;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.bal {
+    float: left;
+    width: 50%;
+}
+

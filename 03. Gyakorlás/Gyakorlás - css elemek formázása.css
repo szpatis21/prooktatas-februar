@@ -1,0 +1,49 @@
+h1 {
+    text-shadow:3px 3px 1px rgb(0, 212, 81), -3px -3px 1px red ;
+    /* Dupla árnyák. Vízszíntesen jobbra, függőlegesen le és élesség (negatív érték esetén balra és fel */
+}
+.box {
+    box-shadow: 10px 10px 5px 1px red, 5px 5px 10px 10px rebeccapurple inset ;
+    /* Gyakorlatilag a margó árnyéka: Vízszintesen jobbra, függőlegesen le élesség és nagyság
+    itt is lehet dupla, de az insettel belső árnyék lesz belőle */
+}
+
+#rendez {display: block;}
+/* ??? */
+.kep {
+    list-style-image:url(./sign.png.crdownload);
+}
+.kep2 {list-style-type:upper-roman;}
+
+.tablet table,td,th,tr{
+    border-top-left-radius: 25%;
+    border: 4px;
+    border-color: blue;
+    border-style: double;
+    border-collapse: separate;
+    caption-side:bottom;  /* ???? */
+    border-spacing: 300px; /* ??? */
+}
+
+.vert {
+    column-count: 3;
+    column-gap: 30px; /* Hasábokra osztja a szöveget count szerinti mennyiségben és gap szerinti méretben */
+
+}
+
+.radiant {
+    background-image: radial-gradient(black,white,green);
+}
+
+.radial {
+    background-image: linear-gradient(45deg,black,white,green);
+}
+
+body { /* Háttérkép */
+    background-image: url(./sign.png.crdownload); /* Kép elérési útja */
+    background-repeat:no-repeat;    /* Hányszor rakja be a képet */
+    background-size: contain;   /* Kép mérete */
+    background-attachment: fixed; /* Kép és blokkok viszona */
+
+
+}
