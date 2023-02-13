@@ -74,6 +74,26 @@ border-radius: 1px 20px;
     
 }
 
+.bkVII {
+    margin-left: 400px;
+    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0) ;
+    text-align:left; 
+    font-size: medium;
+    background-color: azure; 
+    padding: 2px;
+}
+
+.bkVIII {
+    margin-left: 350px;
+    box-shadow: 5px 5px 10px 2px rgb(130, 255, 14) ;
+    text-align:center; 
+    font-size:larger;
+    background-color: azure; 
+    height: 55px;
+    border-radius: 15px;
+    padding-top: 25px;
+}
+
 a:link {
     color: rgb(0, 0, 0);    /* Linkcímek formázása */
 }
@@ -167,3 +187,28 @@ margin-left: 250px;
     color: rgb(238, 255, 0);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.377);
 }
+
+.gomb input{
+    text-align: center;
+    color: white;
+    background-color: rgb(81, 180, 0);
+    border-radius: 20px;
+    width: 170px;
+    height: 40px;
+    padding: auto;
+    margin-left: 1000px;
+    margin-top: 20px;
+}
+
+.small {
+    font: italic 13px sans-serif;
+  }
+  .heavy {
+    font: bold 30px sans-serif;
+  }
+
+  /* Note that the color of the text is set with the    *
+   * fill property, the color property is for HTML only */
+  .Rrrrr {
+    font: italic 40px serif;
+    fill: rgb(147, 255, 6);}

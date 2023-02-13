@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body> <!-- svg -formázható vektor grafika (kicsinyithető/nagyítható az emberi szemnek nem okoz változást, NEM egyenlő a pixelfrafikával akárhogy nagyítom nem torzul)-->
+    
+    <SVG width="150" height="150"> <!-- razjzábla mérete -->
+        <!-- bal felső sarokból indítunk -->
+        <circle cx="5" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow">
+
+    </SVG>
+<hr>  
+    <svg width="400" height="110">
+        <rect width="300" height="100" style="fill: rgb(0,0,255); stroke:rgb(229, 255, 0); stroke-width:3">
+    </svg>   
+    <hr>
+    <svg width="400" height="110"> 
+        <rect x="110" y="5" rx="50" ry="50"  width="10" height="100" style="fill: brown; stroke:red; stroke-width:3; fill-opacity: 0.6; stroke-opacity: 0.7 ";  />
+    </svg> 
+
+<hr>
+    <svg width="500" height="150"   >
+        <ellipse cx="200" cy="80" rx="100" ry="50" style="fill: aqua; stroke:blue; stroke-width:3 " />
+    </svg>
+<hr>
+    <svg width="500" height="350">
+
+        <ellipse cx="100" cy="175" rx="100" 
+        ry="20" style="fill: rgb(124, 4, 74);" />
+        
+        <ellipse cx="100" cy="160" rx="90" 
+        ry="15" style="fill: rgb(17, 190, 2);" />
+        
+        <ellipse cx="100" cy="145" rx="80" 
+        ry="10" style="fill: rgb(200, 255, 0);" />
+    
+    </svg>
+<hr>
+<svg width="500" height="210">
+<line x1="10" y1="10" x2="200" y2="200" style="stroke:aqua;stroke-width:3" />
+</svg>
+<hr>
+<svg width="500" height="210">
+    <polygon points="200,10 250,180 150,200 100,100 50,54"style="fill:yellow; stroke:aqua;stroke-width:3"  />
+
+</svg>
+<svg width="200" height="210">
+    <text x="20" y="35" class="small">My</text>
+    <text x="40" y="35" class="heavy">cat</text>
+    <text x="55" y="55" class="small">is</text>
+    <text x="65" y="55" class="Rrrrr">Grumpy!</text>
+</svg>
+
+<svg width="500" height="200">
+    <defs>
+        <linearGradient id="atmenet" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: aqua;"/>
+            <stop offset="50%" style="stop-color: rgb(208, 255, 0);"/>
+            <stop offset="100%" style="stop-color: rgb(55, 0, 255);"/>
+        </linearGradient>
+    </defs>
+    <ellipse cx="250" cy="80" rx="70" ry="30" fill="url(#atmenet)"/>
+</svg><hr>
+<svg width="500" height="200">
+    <defs>
+        <radialGradient id="atmenet1" x1="50%" y1="50%" x2="0%" y2="0%">
+            <stop offset="10%" style="stop-color: aqua;"/>
+            <stop offset="10%" style="stop-color: rgb(255, 10, 10);"/>
+            
+        </radialGradient>
+    </defs>
+    <ellipse cx="250" cy="80" rx="10" ry="10" fill="url(#atmenet1)"/>
+</svg><hr>
+
+<svg width="500" height="200">
+    <defs>
+        <linearGradient id="atmenet2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="10%" style="stop-color: rgb(255, 0, 0);"/>
+            <stop offset="30%" style="stop-color: rgb(0, 255, 21);"/>
+            <stop offset="40%" style="stop-color: rgb(38, 0, 255);"/>
+        </linearGradient>
+    </defs>
+    <ellipse cx="250" cy="80" rx="70" ry="30" fill="url(#atmenet2)"/>
+</svg>
+
+<SVG width="150" height="150"> <!-- razjzábla mérete -->
+    <!-- bal felső sarokból indítunk -->
+    <circle cx="50" cy="50" r="40" stroke="#62ff00", stroke-width="4" fill="yellow" fill-opacity="50%";>
+
+</SVG>
+
+</body>
+</html>
