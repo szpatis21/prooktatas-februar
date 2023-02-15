@@ -1,0 +1,202 @@
+body{
+    background-image: url(./back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.keret{
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+.header{
+    width: 92%;
+    
+    background-image: url(./panorama.jpg);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+    height: 200px;
+    padding: 1%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.cimerkep img{
+    width: 10%;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+
+
+.bal{
+    width: 30%;
+    margin: auto;
+    background-color: #5B9CEA;
+    
+    margin-bottom: 20px;
+
+}
+
+.jobb{
+    
+    width: 30%;
+    margin: auto;
+    background-color: #5B9CEA;
+    margin-bottom: 20px;
+
+    }
+
+.harmadik{
+    width: 30%;
+    margin: auto;
+    background-color: #5B9CEA;
+    
+    margin-bottom: 20px;
+
+}
+
+.felkover{
+        font-weight: bold;
+}
+.bekezdes{
+   font-weight: bold;
+   text-align: center;
+}
+.tablazat{
+    text-align: center;
+    background-color: #B0D1F1;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.tablazat td{
+    border: 1px solid black;
+    padding: 5px;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    background-color: red;
+}
+
+
+/* Reszponzív beállítások */
+
+@media screen and (min-width:891px){ /* így viselkedjen 891 pixel fölött */
+    
+    .bal {
+        width: 28%;
+        float: left;
+        margin-left: 4%;
+        margin-right:1%;
+        padding: 1%;
+        height: 470px;
+    }
+    
+    .jobb {
+        padding: 1%;
+        width: 28%;
+        float: left;
+        margin-right: 1%;
+        height: 470px;
+    }
+
+    .harmadik {
+        padding: 1%;
+        width: 28%;
+        float: left;
+        margin-right: 4%;
+        height: 470px;
+    }
+}
+ 
+@media screen and (min-width:400px) and (max-width:890px){ /* Így viselkedjen 400 és 890 pixel között */
+    
+    .bal {
+        width: 43%;
+        float: left;
+        margin-left: 4%;
+        margin-right:2%;
+        height: 450px;
+        padding: 1%;
+    }
+    
+    .jobb {
+        width: 43%;
+        float: left;
+        margin-right: 4%;
+        height: 450px;
+        padding: 1%;
+    }
+
+    .harmadik {
+        width: 80%;
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 450px;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width:697px){ /* Így viselkedjen 679 pixel alatt */
+    
+    .bal {
+        width: 90%;
+        float: left;
+        margin-left: 2%;
+        margin-right:2%;
+        height: 450px;
+        padding: 1%;
+    }
+    
+    .jobb {
+        width: 90%;
+        float: left;
+        margin-right: 2%;
+        margin-left: 2%;
+        padding: 1%;
+        height: 450px;
+    }
+
+    .harmadik {
+        width: 90%;
+        float: left;
+        margin-right: 2%;
+        margin-left: 2%;
+        height: 450px;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width:900px){
+     
+    .cimerkep img{
+        width: 5%;
+        float: right;
+    }
+
+}
+
+@media screen and (max-width:647px) { 
+    
+ 
+    .cimerkep {
+        display: none;
+    }
+    .header {
+        height: 150px;
+    }
+}
+@media screen and (min-width:450px) and (max-width:950px) {
+    
+ 
+    .jobb {
+        color: rgb(0, 132, 255);
+    }
+}
+
+    
