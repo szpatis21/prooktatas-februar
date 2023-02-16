@@ -24,6 +24,18 @@ body{
     float: right;
     margin-right: 100px;
     margin-top: 20px;
+
+    /* transzformációs elemek a címer képre a fejlécben */
+
+    transform: translate(15px,20px); /* Eredeti helyéhez képest elmozdul x tengelyen (balra) 15 pixelt és y tengelyen 20pixelt (lefele) */
+    transform: rotate(45deg); /* forgatás fokban */
+    transform: scale(0.5, 1); /* kép nagyítása x és y irányba */
+    transform: skew(20deg); /* döntés (skew után Y fordítva dönt */
+
+    transform:matrix(1, 0.3, 0.1 ,0, 0, 0); /* a fentiek sorba rendezve, javasolt hozzá(juk) css transform generátor használata 
+    ( https://angrytools.com/css-generator/transform/ )*/
+
+    transition: width 3s;
 }
 
 
@@ -32,9 +44,13 @@ body{
     width: 30%;
     margin: auto;
     background-color: #5B9CEA;
-    
+    transition: width 2s linear 2s;
     margin-bottom: 20px;
 
+}
+
+.bal:hover {
+    width: 85%;
 }
 
 .jobb{
@@ -42,6 +58,7 @@ body{
     width: 30%;
     margin: auto;
     background-color: #5B9CEA;
+
     margin-bottom: 20px;
 
     }
@@ -55,12 +72,22 @@ body{
 
 }
 
+.img:hover {
+    border: red;
+    width: 165px;
+}
+
 .felkover{
         font-weight: bold;
 }
 .bekezdes{
    font-weight: bold;
    text-align: center;
+    transition: font-size 3s;
+   
+}
+.bekezdes:hover {
+    font-size: large;
 }
 .tablazat{
     text-align: center;
@@ -76,6 +103,7 @@ body{
 a{
     color: red;
     text-decoration: none;
+    transition: backtound-color 2s;
 }
 a:hover{
     color: black;
