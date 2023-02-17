@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     transition: color 2s;
     text-shadow: 7px 7px 3px rgba(14, 14, 14, 0.39) ;
-    margin-left: -25%;
+    margin-left: -15%;
 }
 
     h1:hover    {color: rgb(145, 255, 0);}
