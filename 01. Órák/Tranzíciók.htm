@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,203 +8,166 @@
     <link rel="stylesheet" href="./tranziciok.css">
     <title>Tranzíciók</title>
 </head>
-<body>
 
-<h1>Tranzíciók</h1>
-<div class="keret" > 
-<h3>Kép tranzíciók</h3>
+<body class="keret">
+    <header>
+        <h1>Tranzíciók</h1>
+        <div> Egyszerű tranzíciók különböző elemeken. Vigye a kurzort a képek vagy a szöveg felé és nézze össze az alatta lévő css kóddal.</div>
+    </header><br>
+    <section>
+        <h3>Kép tranzíciók</h3>
 
-<div class="bal">
+        <div class="bal">
 
-    <h2>Eltolás</h2>
-        <div id="eltol">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div> <p>#eltol {
-            transition: transform 1s;
-            }
-                #eltol:hover {
-                transform: translate(50px,0px);
-                }</p>
+            <h2 id="p">Eltolás</h2>
+                <div id="eltol">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div> <p>#eltol {transition: transform 1s;} #eltol:hover {transform: translate(50px,0px);}</p>
 
 
-    <h2>Eltolás II.</h2>
-        <div id="eltolII">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#eltolII {
-            transition: transform 1s;
-            }
-                #eltolII:hover {
-                transform: translate(0px,50px);
-                }
-        </p>
+            <h2>Eltolás II.</h2>
 
-</div>
-<div class="bal">
+                <div id="eltolII">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#eltolII {transition: transform 1s;} #eltolII:hover {transform: translate(0px,50px);}</p>
+        </div>
+        <div class="bal">
 
-    <h2>Nyújtás I.</h2>
-        <div id="nyujt">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#nyujt img {
-            transition: transform 2s;
-            }
-                #nyujt img:hover {
-                    transform:scale(0.5,1);
-                }
-        </p>
+            <h2>Nyújtás I.</h2>
+                <div id="nyujt">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#nyujt img {transition: transform 2s;} #nyujt img:hover {transform:scale(0.5,1);}</p>
 
-    <h2>Nyújtás II.</h2>
-        <div id="nyujtII">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#nyujtII img {
-            transition: transform 2s;
-            }
-                #nyujtII img:hover {
-                    transform:scale(1,0.5);
-                }        
-        </p>
-</div>
-<div class="bal">
+            <h2>Nyújtás II.</h2>
+                <div id="nyujtII">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#nyujtII img {transition: transform 2s;} #nyujtII img:hover {transform:scale(1,0.5);}</p>
+        </div>
+        <div class="bal">
 
-    <h2>Nagyítás</h2>
-        <div id="bigger">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#bigger img {
-            transition: transform 2s;
-            }
-                #bigger img:hover {
-                    transform:scale(2.2);
-                }       
-        </p>
+            <h2>Nagyítás</h2>
+                <div id="bigger">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#bigger img {transition: transform 2s;} #bigger img:hover {transform:scale(2.2);}</p>
 
-    <h2>Kicsinyítés</h2>
-        <div id="smaller">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#smaller img {
-            transition: transform 2s;
-            }
-                #smaller img:hover {
-                    transform:scale(0.5,0.5);
-                }      
-        </p>
+            <h2>Kicsinyítés</h2>
+                <div id="smaller">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#smaller img {transition: transform 2s;} #smaller img:hover {transform:scale(0.5,0.5);}</p>
 
-</div>
-<div class="bal">
+        </div>
+        <div class="bal">
 
-    <h2>Döntés I.</h2>
-        <div id="dont">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#dont img {
-            transition: transform 2s;
-            }
-                #dont img:hover {
-                    transform:skew(0deg, 90deg);
-                }      
-        </p>
+            <h2>Döntés I.</h2>
+                <div id="dont">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#dont img {transition: transform 2s;}#dont img:hover {transform:skew(0deg, 90deg);}</p>
 
-    <h2>Döntés II.</h2>
-        <div id="dontII">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#dontII img {
-            transition: transform 2s;
-            }
-                #dontII img:hover {
-                    transform:skew(90deg, 0deg);
-                }     
-        </p>
+            <h2>Döntés II.</h2>
+                <div id="dontII">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#dontII img {transition: transform 2s;}#dontII img:hover {transform:skew(90deg, 0deg);}</p>
         
-</div>
+        </div>
+        <div class="bal">
 
-<div class="bal">
+            <h2>Forgatás I.</h2>
+                <div id="forgat">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+                </div><p>#forgat img {transition: transform 2s;}#forgat img:hover {transform:rotate(360deg);}</p>
 
-    <h2>Forgatás I.</h2>
-        <div id="forgat">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#forgat img {
-            transition: transform 2s;
-            }
-                #forgat img:hover {
-                    transform:rotate(360deg);
-                }    
-        </p>
+            <h2>Forgatás II.</h2>
+                <div id="forgatII">
+                    <img src="./pngegg (1).png" alt="" width="200px">
+            </div><p>#forgatII img {transition: transform 2s;} #forgatII img:hover {transform:rotate3d(1, 1, 1, 360deg);}</p>
+        </div>
 
-    <h2>Forgatás II.</h2>
-        <div id="forgatII">
-            <img src="./pngegg (1).png" alt="" width="200px">
-        </div><p>#forgatII img {
-            transition: transform 2s;
-            }
-                #forgatII img:hover {
-                    transform:rotate3d(1, 1, 1, 360deg);
-                }    
-        </p>
+        <h3>Szöveg tranzíciók</h3>
+
+        <div class="bal">
+
+            <h2>Háttér</h2>
+                <div id="backround">
+                    <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div><p>#backround {transition: backround-color 2s;}#backround p:hover {background-color: rgb(0, 0, 0);}</p>
+        </div>
         
-</div>
+        <div class="bal">
 
-<h3>Szöveg tranzíciók</h3>
+            <h2>Szín</h2>
+                <div id="co">
+                    <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div><p> #co p{transition: color 2s;}#co p:hover {color: black;} </p>
+        </div>
 
-
-<div class="bal">
-    <h2>Háttér</h2>
-
-    <div id="backround">
-        <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-    </div><p>#backround {
-        transition: backround-color 2s;
-        }
-            #backround p:hover {
-                background-color: rgb(0, 0, 0);
-            }  
-    </p>
-</div><div class="bal">
-
-    <h2>Szín</h2>
-
-    <div id="co">
-        <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-    </div><p> #co p{
-       transition: color 2s;
-       }
-           #co p:hover {
-               color: black;
-           } 
+        <div class="bal">
     
-   </p></div>
-<div class="bal">
-    <h2>Méret I.</h2>
+            <h2>Méret I.</h2>
+                <div id="size">
+                    <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div><p>#size {transition: font-size 3s;}#size:hover {font-size: large;</p>
+        </div>
+        
+        <div class="bal">
  
-    <div id="size">
-       <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-    </div><p>  #size {
-  transition: font-size 3s;
-  }
-      #size:hover {
-          font-size: large;
-  </p>
- </div><div class="bal">
+            <h2>Méret II.</h2>
+                <div id="sizeII">
+                    <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div><p>  #sizeII {transition: font-size 3s;}#sizeII:hover {font-size: small;</p>
+        </div>
+        
+        <div class="bal">
  
- <h2>Méret II.</h2>
- 
-      <div id="sizeII">
-         <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-      </div><p>  #sizeII {
-    transition: font-size 3s;
-    }
-        #sizeII:hover {
-            font-size: small;
-    </p>
-</div><div class="bal">
- 
-    <h2>Stílus</h2>
-    
-         <div id="style">
-            <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-         </div><p>  #sizeII {
-       transition: font-size 3s;
-       }
-           #sizeII:hover {
-               font-size: small;
-       </p>
+            <h2>Stílus</h2>
+                <div id="style">
+                    <p id="szoveg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div><p>  #sizeII {transition: font-size 3s;} #sizeII:hover {font-size: small;</p>
+        
+        </div>
+        
+
+    <h3>Vektor grafika tranzíciók</h3>
+        <div class="margin">
+
+     <div class="bal">
+         <h2>Színezés</h2>
+            <div id="svga">
+                <svg width="110" height="100" style="float: left;"> <circle cx=80 cy=70 r=30  /> </svg>
+            </div> <p style="float: left; margin-left: 30px;">#svga {transition: fill 2s;}#svga:hover {fill:  red;}</p>
+    </div>
+
+    <div class="bal">
+        <h2>Áttűnés I.</h2>
+           <div id="svgb">
+            <svg width="110" height="100" style="float: left;"> <circle cx=80 cy=70 r=30  /> </svg>
+           </div><p style="float: left; margin-left: 30px;">#svgb {transition: fill 2s;}#svga:hover {fill:  red;}</p>
    </div>
 
+    <div class="bal">
+        <h2>Áttűnés II.</h2>
+           <div id="svgc">
+            <svg width="110" height="100" style="float: left;"> <circle cx=80 cy=70 r=30  /> </svg>
+           </div><p style="float: left; margin-left: 30px;">#svgc {transition: transform 2s;}#svga:hover {fill:  red;}</p> 
+    </div>
+
+    <div class="bal">
+        <h2>Eltűnés</h2>
+           <div id="svgd">
+            <svg width="110" height="100" style="float: left;"> <circle cx=80 cy=70 r=30  /> </svg>
+           </div><p style="float: left; margin-left: 30px;">#svgd {transition: fill 2s;}#svga:hover {fill:rgba(255, 0, 0, 0);}</p>
+    </div>
+
+    </div>
+</section>
+<div style="clear: both;">
+<br></div>
+<footer>
+
+    <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">További példák a w3schools oldalán! </a> <a href="https://angrytools.com/css-generator/transform/">Illetve itt érhető el egy átfogó formázó generátor!</a>     
+     
+
+    </footer>
+
 </body>
+
 </html>
