@@ -1,5 +1,5 @@
 body{
-    background-image: url(./back.jpg);
+    background-image: url(./media/back.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -10,7 +10,7 @@ body{
 .header{
     width: 92%;
     
-    background-image: url(./panorama.jpg);
+    background-image: url(./media/panorama.jpg);
     background-repeat: no-repeat;
         background-position: center;
         background-size: cover; 
@@ -209,6 +209,9 @@ a:hover{
 
 }
 
+
+
+
 @media screen and (max-width:647px) { 
     
  
@@ -227,4 +230,70 @@ a:hover{
     }
 }
 
+
+ul{ 
+    list-style-type:none;
     
+    background-color: aqua;
+   
+    position: sticky;
+    top: 10px;
+}
+
+li{
+    float: left;
+    border: 1px solid red;  
+}
+
+li a{
+    
+    color:black;
+    transition: background-color 2s;
+    text-decoration: none;
+    padding: 5px 10px; /* alul felül 5 két oldalt 10 */
+}
+li a:hover{
+color: black;
+background-color: chartreuse;
+}
+
+
+/* ANimációk */
+/*  h1 {
+    position: relative;
+    animation-name: beuszas;
+    animation-duration: 3s;
+}
+
+    @keyframes beuszas {
+
+        0%  {left:0px; top:0px;}
+        33% {left:10px; top:50px;}
+        66% {left:20px; top:80px;}
+        80% {left:30px; top:100px;}
+        100% {left:35px; top:85px;}
+
+    }*/
+
+    .bird img{
+        width: 10%;
+        position: relative;
+        animation-name: move;
+        animation-duration: 7s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+    }
+
+    @keyframes move{
+        0%  {left:10px; top:0px;}
+        12% {width:30%;}
+        33% {left:150px; top:30px;}
+        50% {background-color: aqua;}
+        66% {left:300px; top:90px;}
+        70% {rotate: 360deg;}
+        75% {width: 1%;}
+        80% {left:340px; top:30px;}
+        100% {left:435px; top:0px;}
+
+    }
+
