@@ -34,8 +34,7 @@ nav {
             height: 50px;
             border: solid 3px rgba(0, 0, 255, 0.377);
             border-radius: 50px;
-            transition: transform 1s;
-            } nav ul:hover{transform: scale(1.01);}
+            transition: transform 1s;} nav ul:hover{transform: scale(1.01);}
         nav li{
             display: inline;
             text-align: center;
@@ -54,6 +53,10 @@ nav {
             
 a:visited {color: black;}
 a {color: black; text-shadow: 6px 3px 5px rgba(23,2,117,0.88); }
+
+a { color
+    transition: color 3s;}
+a:hover{color: red;}
 
 #tartalom img{
 float: left;
@@ -82,6 +85,9 @@ section {
                 100% {background-color: rgb(68, 33, 0);}
             }
 
+
+
+            
 #boat img{
     margin-top: -400px;        
     width: 15%;

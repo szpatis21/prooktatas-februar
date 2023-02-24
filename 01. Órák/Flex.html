@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+                    background-color: brown;
+                    height: 500px;
+
+                    display:flex;
+                /*  flex-direction:row;*/ /* elrendezés vízszintesen */
+                    flex-wrap: wrap; /* töréspont elrendezés vízszintesen*/
+                /*  justify-content: space-around;*/ /* törés nélküli arányos elhelyezés vízszintesen */
+                /*  align-items: flex-end; */ /* függőleges elrendezés */
+                    align-content: flex-end; /* töréspont elrendezés függőlegesen */
+                    align-content: space-around; /* törés nélküli arányos elrendezés függőlegesen */
+                
+                }
+
+        div div {   background-color: aqua;
+                    padding: 10px;
+                    margin: 5px;
+                }
+
+       .elso {order:3;} /* sorbarendezési utasítás */
+
+                .belso {
+                    background-color: azure;
+                    height: 200px;
+                    align-items: flex-end;
+                    display: flex;
+                }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div>Első</div>
+        <div>Második</div>
+        <div class="belso">
+                <div>Belső1</div>
+                <div>Belső2</div>
+                <div>Belső3</div>
+            </div>
+        <div>Negyedik</div>
+        <div>Ötödik</div>
+        <div>Hatodik</div>
+        <div>Hetedik</div>
+        <div>Nyolcadik</div>
+        <div>Negyedik</div>
+        <div>Ötödik</div>
+        <div>Hatodik</div>
+        <div>Hetedik</div>
+        <div>Nyolcadik</div>
+    </div>
+
+</body>
+</html>
