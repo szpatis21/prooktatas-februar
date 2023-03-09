@@ -1,0 +1,39 @@
+@for $i from 1 through 3 { /* class factory */
+    .I#{$i} {box-shadow: 2px*$i 2px*$i 5px*$i 5px*$i; width: 200px*$i; border: solid rgb(194, 194, 194) 2px*$i;
+    margin: 2%*$i;}
+} 
+
+$I: rgb(255, 0, 0);
+      article  H2 {color: $I;}
+
+
+
+
+
+
+
+$fonts: (/* map-get */
+fat: bold,
+stlye: sans-serif);
+
+        .II li { 
+            font-weight: map-get($fonts,fat); 
+            font-family: map-get($fonts,stlye);}
+            
+@function hover($txtii){  /* function */  
+    @if(opacity($txtii) > 0.5)
+        {@return(color($txtii)#000000);} 
+    @else 
+        {@return rgb(255, 255, 255);}}
+@function hoverii($bcgii){    
+    @if(opacity($bcgii) > 0.5)
+        {@return(color($bcgii)#b4b4b4);} 
+    @else 
+        {@return rgb(150, 150, 150);}}
+        
+        .III li { 
+            color: hover(rgba(255, 0, 0, 0));
+            background-color: hoverii(rgba(167, 40, 40, 0));}
+            .III li:hover{
+                background-color: $txt;
+            }

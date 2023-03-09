@@ -1,0 +1,96 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 16.7%); 
+    grid-template-areas:
+    "header header header header header header"
+    "inside inside inside inside inside inside"
+    "footer footer footer footer footer footer";
+    text-align: center;
+    padding: 2%;
+    justify-content: center; 
+    align-content:center ; 
+    row-gap: 15px;
+}
+            .container div {
+                align-content: center;
+                justify-content:space-between;
+                text-align: center;}
+   header {
+        grid-area: header;
+        background-color: red;
+        border-radius: 30px;
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+.inside {
+    margin-top: 5%;
+    background-color: cadetblue;
+    display: grid;
+    grid-area: inside;
+    grid-template-columns: repeat(6, 16.7%); 
+    grid-template-areas: 
+    "nav section section section section section"
+    "nav article article article article article";}
+ 
+    section{
+        grid-area: section;
+        background-color:crimson;
+        border-top-right-radius: 35px;
+        display:grid;
+        align-content: space-;
+        padding: 5%;
+        text-align: center; 
+        grid-template-columns: auto auto auto auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 20px;
+                    
+    }
+                section div {
+                            background-color: blanchedalmond;
+                            text-align: center;
+                            border-radius: 30px;
+                            margin: 1%;
+                            margin-right: 15%;
+                        
+                             }
+                                .item1{
+                                    padding: 5%;
+                                    grid-row: 1 / span 2;
+                                    background-color: rgba(240, 248, 255, 0);
+                                    text-align: center;
+                                }
+    nav {grid-area: nav;
+        background-color: blueviolet;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    article {grid-area: article;
+        background-color: chartreuse;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    footer {
+        grid-area: footer;
+        background-color: coral;
+        border-radius: 35px;
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }

@@ -1,0 +1,57 @@
+@import '_fejlec.scss';
+
+$szinek: (
+    alapszin: red,
+    masodlagos:yellow
+);
+
+/* $alapszin:red;
+$masodlagos:yellow; */
+
+h2 {
+    /* color: map-get($szinek,alapszin); */
+    color: szovegszin(red);
+}
+
+@function szovegszin($szin){    
+    @if(lightness($szin) < 60){
+        @return green;
+    } @else {
+        @return purple;
+    }
+}
+
+h2 {
+    /* color: map-get($szinek,alapszin); */
+    color: szovegszin(red);
+}
+
+
+ @for $i from 4 through 8 {
+    .oszlop#{$i} {padding: 5px*$i;}
+} 
+
+$lista: nap tenger palmafa pizza sor ocean;
+
+.kepek {
+    @each $tema in $lista{
+        .kep#{$tema}{background-image: image-url("kepek/#{tema}.jpg");}
+}
+}
+
+/*h2 {color: $masodlagos;}
+
+li{  beágyazás - nesting 
+    a{
+        color: $masodlagos;
+    }
+}
+
+table{
+
+    td{
+        background-color: $alapszin;
+    }
+} */
+
+/* függvény: van visszatérési értéke az eljárásnak nincs */

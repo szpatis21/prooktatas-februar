@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.header {
+  height: 15px;
+}
+
+/* $alapszin:red;
+$masodlagos:yellow; */
+h2 {
+  /* color: map-get($szinek,alapszin); */
+  color: szovegszin(red);
+}
+
+h2 {
+  /* color: map-get($szinek,alapszin); */
+  color: green;
+}
+
+.oszlop4 {
+  padding: 20px;
+}
+
+.oszlop5 {
+  padding: 25px;
+}
+
+.oszlop6 {
+  padding: 30px;
+}
+
+.oszlop7 {
+  padding: 35px;
+}
+
+.oszlop8 {
+  padding: 40px;
+}
+
+.kepek .kepnap {
+  background-image: image-url("kepek/tema.jpg");
+}
+.kepek .keptenger {
+  background-image: image-url("kepek/tema.jpg");
+}
+.kepek .keppalmafa {
+  background-image: image-url("kepek/tema.jpg");
+}
+.kepek .keppizza {
+  background-image: image-url("kepek/tema.jpg");
+}
+.kepek .kepsor {
+  background-image: image-url("kepek/tema.jpg");
+}
+.kepek .kepocean {
+  background-image: image-url("kepek/tema.jpg");
+}
+
+/*h2 {color: $masodlagos;}
+
+li{  beágyazás - nesting 
+    a{
+        color: $masodlagos;
+    }
+}
+
+table{
+
+    td{
+        background-color: $alapszin;
+    }
+} */
+/* függvény: van visszatérési értéke az eljárásnak nincs */

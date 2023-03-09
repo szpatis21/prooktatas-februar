@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* class factory */
+.I1 {
+  box-shadow: 2px 2px 5px 5px;
+  width: 200px;
+  border: solid #c2c2c2 2px;
+  margin: 2%;
+}
+
+/* class factory */
+.I2 {
+  box-shadow: 4px 4px 10px 10px;
+  width: 400px;
+  border: solid #c2c2c2 4px;
+  margin: 4%;
+}
+
+/* class factory */
+.I3 {
+  box-shadow: 6px 6px 15px 15px;
+  width: 600px;
+  border: solid #c2c2c2 6px;
+  margin: 6%;
+}
+
+/* hivatkozás */
+.I li {
+  color: white;
+  background-color: black;
+  width: 20px;
+}
+
+.II li {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.III li {
+  color: white;
+  background-color: #969696;
+}
+
+.III li:hover {
+  background-color: white;
+}

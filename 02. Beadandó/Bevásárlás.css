@@ -3,19 +3,22 @@ h1, h2 {
     ; color: blanchedalmond;
 }
 body {
-   max-width: 300px;
+   max-width: 100%;
 }
 
+ul ol {
+    max-width: 200px;
+}
 
 .szoveg {background-color: rgb(255, 255, 255);
-    text-shadow: -5px -5px 2px rgb(150, 150, 150), 1px 2px 1px rgb(3, 3, 3) ;
+  
     
-max-width: 200px;
+    max-width: 600px;
 
     border-style: double;
     border-color: rgb(98, 218, 18);
     border-width: 5px;
-    border-radius right:15px ;
+    border-radius:15px;
     border-right: 15px;
     box-shadow: 5px 5px 10px 2px rgb(104, 236, 43) ;
 }

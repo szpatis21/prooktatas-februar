@@ -1,0 +1,12 @@
+
+@function szovegszin($szin){    
+    @if(lightness($szin) < 60){
+        @return rgb(255, 255, 255);
+    } @else {
+        @return purple;
+    }
+}
+
+h1 {
+    color: szovegszin(red);
+}
