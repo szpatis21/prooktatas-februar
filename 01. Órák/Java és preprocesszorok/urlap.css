@@ -1,0 +1,80 @@
+body { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-weight: 550;
+    color: rgb(82, 82, 82);
+    display: grid;
+    grid-template-columns: repeat(1,100%); 
+    grid-template-areas:
+    "adatok"
+    "radio"
+    "confirm "
+    "gombok";
+  } 
+
+h2{color: rgb(94, 117, 117); text-align: center; margin-bottom: 4%; font-weight: 640;}
+
+input {background-color:rgb(236, 234, 234);}
+
+hr {
+    width: 75%;
+}
+
+#adatok {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+            #adatok div {
+                        margin: 10px;
+                        display: flex;
+                        flex-direction: row;  
+                        }
+                        #adatok input{width: 50%;}
+                        #adatok label{width: 50%;text-align: end;margin-right: 30px;}
+#radio {
+margin: 10px;
+width: 50%;
+grid-area: radio;
+margin-left: 25%;
+margin-right:25%;
+display: grid;
+grid-template-columns: repeat(2,50%); 
+    grid-template-areas:
+    "p cont";
+}
+
+    #radiocont {
+        grid-area: cont;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #raidop{
+        grid-area:p;
+        text-align: end;
+        margin-right: 20px;
+    }
+
+#confirms {
+    width: 53%;
+    grid-area: confrim;
+    text-align: right;
+}
+    #confirms label {margin-right: 3%;}
+    #confirms input {margin-right: 3%;}
+
+#gombok{
+grid-area: gombok;
+text-align: center;
+}
+
+#gombok input {
+    border: none;
+    width: 15%;
+    height: 35px;
+    font-weight: bold;
+    margin: 0.5%;
+    color: rgb(78, 78, 78);
+}

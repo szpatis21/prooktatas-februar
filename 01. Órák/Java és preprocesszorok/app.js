@@ -1,4 +1,4 @@
-
+/*  
 //for ciklus
 for (let i=0; i<11; i++){ //kezdőérték, feltétel(meddig fusson), lépték (++ = i+1)
     document.write(i+1,".sor<br>") // ciklusmag
@@ -9,7 +9,7 @@ let j = 1
 while (j<11){ //feltétel
     document.write(j,".sor<br>")
     j++
-}
+}*/
 
 //elágazások , ha teljesül egy feltétel akkor legalább 2 irányba elágazik
 /*  
@@ -25,7 +25,7 @@ if(szam1 > szam2 && megerosit==true) {
 } else {
     alert("<br> A két szám egyenlő <br>) ") // ha hamis
 }
-*/
+*//*  
 megerosit2 = confirm("Adja meg pontosan Pí értékét")
 kerdes = prompt ("Kérem Pí értékét")
 const z = 3.14
@@ -54,7 +54,7 @@ if(eletkoruser > 18) {
 for (let k=100; k<150; k++){ 
     if (k % 3 == 0){
     document.write("<br>",k)}
-} 
+} */
 
 /*  felugró ablakok 
 szam1 = prompt ("kérek egy számot")
@@ -80,7 +80,25 @@ if (kiv1>kiv2){
 }
 */
 
+let elso = document.getElementById("elsosor") //id változóvá alakítása
+elso.innerHTML = "javascriptből írtam!"   //adott id átalakítása (teljesen üres elemen is működik)
+
+elso.style.backgroundColor="yellow"
+elso.style.color="red"
+elso.style.fontSize = "3rem"
 
 
 
-//Házi Kérjük be a háromszög oldalait, 
+
+function szaz (){
+
+    let a = Number (document.getElementsByName("ertek")[0].value)
+
+    let szoveg = document.getElementById("eredmeny")
+
+    if (a = 100) 
+    {szoveg.innerHTML =  ("Ez a szám a 100!")}      
+            else{
+                szoveg.innerHTML = ("Ez a szám nem száz!")}       
+            }
+

@@ -1,19 +1,18 @@
 "use strict";
 
+/*  
 //for ciklus
-for (var i = 0; i < 11; i++) {
-  //kezdőérték, feltétel(meddig fusson), lépték (++ = i+1)
-  document.write(i + 1, ".sor<br>"); // ciklusmag
-} //while ciklus
+for (let i=0; i<11; i++){ //kezdőérték, feltétel(meddig fusson), lépték (++ = i+1)
+    document.write(i+1,".sor<br>") // ciklusmag
+}
 
-
-var j = 1;
-
-while (j < 11) {
-  //feltétel
-  document.write(j, ".sor<br>");
-  j++;
-} //elágazások , ha teljesül egy feltétel akkor legalább 2 irányba elágazik
+ //while ciklus
+let j = 1 
+while (j<11){ //feltétel
+    document.write(j,".sor<br>")
+    j++
+}*/
+//elágazások , ha teljesül egy feltétel akkor legalább 2 irányba elágazik
 
 /*  
 szam1 = prompt ("kérek egy számot")
@@ -30,36 +29,32 @@ if(szam1 > szam2 && megerosit==true) {
 }
 */
 
-
-megerosit2 = confirm("Adja meg pontosan Pí értékét");
-kerdes = prompt("Kérem Pí értékét");
-var z = 3.14;
-
-if (kerdes == z && megerosit2 == true) {
-  alert("Ez a szám valóban 3.14"); //ha igaz
-} else if (kerdes > z) {
-  alert("Ez a szám nagyobb mint Pí");
+/*  
+megerosit2 = confirm("Adja meg pontosan Pí értékét")
+kerdes = prompt ("Kérem Pí értékét")
+const z = 3.14
+if(kerdes==z && megerosit2==true) {
+  alert("Ez a szám valóban 3.14") //ha igaz
+} else if(kerdes>z){
+   alert("Ez a szám nagyobb mint Pí")
 } else {
-  alert("Ez a szám kisebb mint Pí) "); // ha hamis
-} //Beléptető felnőtt tartalmakhoz
-
-
-eletkoruser = 70;
-
-if (eletkoruser > 18) {
-  document.write("<br>Megtekintheti az oldalt<br>");
-} else if (eletkoruser < 18) {
-  document.write("<br>Az oldalt csak nagykorúak látogathatják");
-} else {
-  document.write("<br>Gratulálunk, hogy most épp 18 éves");
-} // 3 mal osztható számok kiírása 100 és 150 közt
-
-
-for (var k = 100; k < 150; k++) {
-  if (k % 3 == 0) {
-    document.write("<br>", k);
-  }
+  alert("Ez a szám kisebb mint Pí) ") // ha hamis
 }
+//Beléptető felnőtt tartalmakhoz
+eletkoruser = 70
+if(eletkoruser > 18) {
+  document.write("<br>Megtekintheti az oldalt<br>") 
+} else if(eletkoruser < 18){
+  document.write("<br>Az oldalt csak nagykorúak látogathatják")
+} else {
+  document.write("<br>Gratulálunk, hogy most épp 18 éves")
+}
+// 3 mal osztható számok kiírása 100 és 150 közt
+for (let k=100; k<150; k++){ 
+  if (k % 3 == 0){
+  document.write("<br>",k)}
+} */
+
 /*  felugró ablakok 
 szam1 = prompt ("kérek egy számot")
 szam2 = prompt ("kérek egy másik számot")
@@ -83,4 +78,21 @@ if (kiv1>kiv2){
     alert("Eredmény: " + (kiv2-kiv1))
 }
 */
-//Házi Kérjük be a háromszög oldalait,
+var elso = document.getElementById("elsosor"); //id változóvá alakítása
+
+elso.innerHTML = "javascriptből írtam!"; //adott id átalakítása (teljesen üres elemen is működik)
+
+elso.style.backgroundColor = "yellow";
+elso.style.color = "red";
+elso.style.fontSize = "3rem";
+
+function szaz() {
+  var a = Number(document.getElementsByName("ertek")[0].value);
+  var szoveg = document.getElementById("eredmeny");
+
+  if (a = 100) {
+    szoveg.innerHTML = "Ez a szám a 100!";
+  } else {
+    szoveg.innerHTML = "Ez a szám nem száz!";
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürlap</title>
+    <link rel="stylesheet" href="./urlap.css">
+</head>
+
+<body>
+
+<form name="reg" id="reg">
+    
+<h2>Azonosító adatiad</h2> <hr>
+    
+<div id="adatok">   
+    <div>
+        <label for="mail">e-mail címed:</label>
+        <input type="email" name="mail" id="mail" required title="Írd be az email címed">
+    </div><div>
+        <label for="pass">leendő jelszavad:</label>
+        <input type="password" name="pass" id="pass">
+    </div><div>
+        <label for="pass2">jelszavad mégegyszer:</label>
+        <input type="password" name="pass2" id="pass2">
+    </div><div>
+        <label for="ev">születési éved:</label>
+        <input type="number" name="ev" id="ev" required placeholder="19..">
+    </div><div>
+        <label for="irs">lakóhelyed irányítószáma:</label>
+        <input type="text" name="irs" id="irs" required placeholder="7632">
+    </div>
+</div>
+
+
+<div id="radio">
+        <div id="raidop"> Iskolai végzettséged:</div>
+
+        <div id="radiocont"> 
+            <div>
+            <input type="radio" name="isk" id="alt" > 
+            <label for="alt">általános iskola</label>
+            </div><div>   
+            <input type="radio" name="isk" id="kozep">
+            <label for="kozep">középiskola</label>
+            </div><div> 
+            <input type="radio" name="isk" id="fois">
+            <label for="fois">főiskola, egyetem</label>   
+            </div>
+        </div>     
+</div>          <hr>
+
+<div id="confirms">
+        <label for="reg2">a regisztrációs feltételeket elfogadom:</label>
+        <input type="checkbox" name="confirm" id="confirm">
+</div>             <hr> <br>
+
+<div id="gombok">
+    <input  type="button" value="Regisztráció"  onclick="check()">
+    <input type="reset" value="Mezők törlése">
+</div>
+
+</form>
+<script src="./urlap.js"></script>
+</body>
+</html>
