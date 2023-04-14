@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/_variables.scss">
+    
+    <title>Bootstrap oldal</title>
+</head>
+<body class="bg-warning m-4 p-5">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Főoldal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Bemutatkozás</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rólunk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kapcsolat</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Hajók minden mennyiségben!
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-50 " src="./Media/pngegg (2).png" style="height: 13rem; width: 3rem;"style="width: 3rem;" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./Media/pngegg (3).png" style="height: 13rem; width: 3rem;" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="./Media/pngegg (4).png" style="height: 13rem; width: 3rem;" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Hajó</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Hanemjó</span>
+        </a>
+      </div>
+
+<div class="container-fluid row col-xs-0 col-sm-3 col-md-4 col-lg-6 col-xl-12 col-xxl-12">
+  <!-- row row colls auto -->
+    <div class="card" style="width: 18rem;">
+        <img src="./Media/boat.png" class="rounded mx-0" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Csónak</h5>
+          <p class="card-text">Tökéletes állapotban lévő, vizi utazási alkalmatosság</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Barna színű</li>
+          <li class="list-group-item">Bónusz evező</li>
+          <li class="list-group-item">Panoráma kilátás!</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./Media/pngegg (2).png" class="rounded mx-4 d-block" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bárka</h5>
+          <p class="card-text">Fosztogatna, zsákmányolna? Ne keressen tovább!</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Eredeti tölgy</li>
+          <li class="list-group-item">3 választható műláb</li>
+          <li class="list-group-item"> Bónusz random színű papagáj</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>    <div class="card" style="width: 18rem;">
+        <img src="./Media/pngegg (3).png" class="card-img-top" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Óceánjáró</h5>
+          <p class="card-text">Hotel a tengeren!</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Aranyozott kormány</li>
+          <li class="list-group-item">Medence</li>
+          <li class="list-group-item">Helikopter leszálló</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>    <div class="card" style="width: 18rem;">
+        <img src="./Media/pngegg (4).png" class="card-img-top" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Konténerhajó</h5>
+          <p class="card-text">Fuvarozná több tonnás konténereit? Vegyen egy konténerhajót!</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Elbír egy gyárat</li>
+          <li class="list-group-item">3 konténer ajándék bal pár tornacipő!</li>
+          <li class="list-group-item">Bónusz üzemanyag és gázolaj!</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>  
+      <div class="card" style="width: 18rem;">
+        <img src="./Media/boat.png" class="rounded mx-0" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Csónak</h5>
+          <p class="card-text">Tökéletes állapotban lévő, vizi utazási alkalmatosság</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Barna színű</li>
+          <li class="list-group-item">Bónusz evező</li>
+          <li class="list-group-item">Panoráma kilátás!</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./Media/pngegg (2).png" class="rounded mx-4 d-block" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bárka</h5>
+          <p class="card-text">Fosztogatna, zsákmányolna? Ne keressen tovább!</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Eredeti tölgy</li>
+          <li class="list-group-item">3 választható műláb</li>
+          <li class="list-group-item"> Bónusz random színű papagáj</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>    <div class="card" style="width: 18rem;">
+        <img src="./Media/pngegg (3).png" class="card-img-top" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Óceánjáró</h5>
+          <p class="card-text">Hotel a tengeren!</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Aranyozott kormány</li>
+          <li class="list-group-item">Medence</li>
+          <li class="list-group-item">Helikopter leszálló</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>    <div class="card" style="width: 18rem;">
+        <img src="./Media/pngegg (4).png" class="card-img-top" style="height: 15rem;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Konténerhajó</h5>
+          <p class="card-text">Fuvarozná több tonnás konténereit? Vegyen egy konténerhajót!</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Elbír egy gyárat</li>
+          <li class="list-group-item">3 konténer ajándék bal pár tornacipő!</li>
+          <li class="list-group-item">Bónusz üzemanyag és gázolaj!</li>
+        </ul>
+        <div class="card-body">
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Megrendelem!</button>
+        </div>
+      </div>  
+</div>
+
+<main>
+    Tartalom
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./bs.js"></script>    
+</body>
+</html>

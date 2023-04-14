@@ -1,176 +1,426 @@
 body {
-    margin: 0% 5% 5% 5%;
+    margin: 0%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4,25%);
     grid-template-areas: 
-    "header header header header"
     "nav nav nav nav"
+    "header header header header"
     "content content content content"
     "footer footer footer footer";
-    background-color: rgb(255, 255, 255);}
+    background-image: url(./media/alap2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 300px;
+}
+
+/* FEJLÉC */
 
 header {
     grid-area: header;
-    background-color: rgb(255, 255, 255);
+    height: 100%;
+    margin-top: 1.9%;
+    background-image: linear-gradient(180deg,white 20%, rgba(255, 255, 255, 0));
     display: grid;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: repeat(5,20%);
     grid-template-areas: 
-    "logo motto motto motto";}
+    " motto motto motto sup logo";}
 
+    .supporters { 
+        grid-area: sup;
+        width: 55%;
+        margin-right: -62%;
+        justify-self: end;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-areas: "supcont";}
+         .circs1 {grid-area: supcont;}
+            .circs1 circle {transform-origin: 100px 100px;
+                            fill: none;
+                            stroke-width:2;
+                            stroke-dasharray: 66;}
+        .circs2 {grid-area: supcont;}
+            .circs2 circle {transform-origin: 100px 100px;
+                            fill: none;
+                            stroke-width:1.7;
+                            stroke-dasharray: 20;}
+        .logo1_image { grid-area: supcont;
+            background-size: contain;
+            background-repeat: no-repeat;
+            justify-self: center;
+            margin-left: 19%;
+            margin-top: 13%;
+            width: 30%;
+            height: 30%;
+            background-image: url(./media/logo\ kör.png);}
+        .logo2_image {grid-area: supcont;
+                background-size: contain;
+                background-repeat: no-repeat;
+                justify-self: center;
+                margin-top:13%;
+                margin-left:-60.5%;
+                width: 37%;
+                background-image: url(./media/kvilogo.png);}
+                .currentmenu {font: bold 19px "Montserrat Subrayada" ;fill: rgb(255, 217, 0);filter: drop-shadow(-2px -3px 1px rgba(66, 4, 4, 0.068))}
+                .currentmenu1 {font: bold 13px "Montserrat Subrayada";fill: rgb(0, 0, 0);filter: drop-shadow(-2px -3px 1.6px rgba(255, 217, 0, 0.733))}
     .motto {grid-area: motto;}
-        .heavy1 {font: bold 30px sans-serif;fill: rgb(252, 227, 0);}
-        .heavy {font: bold 30px sans-serif;fill: rgb(0, 0, 0);}
-        .elegant {font: italic 5px serif;fill: black;}
+        .heavy1 {font: bold 12px Montserrat Subrayada ;fill: rgb(252, 227, 0)}
+        .heavy {font: bold 10px Montserrat Subrayada;fill: rgb(0, 0, 0);}
+        .elegant {font: italic 2.2px serif;fill: black;}
     .logo { grid-area:logo;
-            width: 70%;
-            height: auto;
+        width: 50%;
+            margin: 0% 0% 0% 40%; 
             display: grid;
             grid-template-columns: repeat(1,100%);
             grid-template-areas: "logocont";}
             .circ1 {grid-area: logocont;}
-                .circ1 circle {transform-origin: 150px 150px;
+                .circ1 circle {transform-origin: 50px 50px;
                                 fill: none;
-                                stroke-width: 8;
-                                stroke-dasharray: 450;
-                                animation: animateCircle1 8s  linear infinite;}
+                                stroke-width:2;
+                                stroke-dasharray: 40;
+                                animation: animateCircle1 60s  linear infinite;}
             .circ2 {grid-area: logocont;}
-                .circ2 circle {transform-origin: 150px 150px;
+                .circ2 circle {transform-origin: 50px 50px;
                                 fill: none;
-                                stroke-width:6;
-                                stroke-dasharray: 350;           
-                                animation: animateCircle2 4s  linear infinite;}
+                                stroke-width:1;
+                                stroke-dasharray: 50;           
+                                animation: animateCircle2 35s  linear infinite;}
             .third_image { grid-area: logocont;
-                            margin: auto;
-                            background-image: url(./media/Orange_lambda-001.jpg);
-                            width:50%;
-                            height:50%;
+                        width: 40%;
+                            margin: 30% 0% 0% 30%;
                             background-size: contain;
+                            background-image: url(./media/Orange_lambda-001.jpg);
                             background-repeat: no-repeat;}
-
                                 @keyframes animateCircle1 {
                                     0% {transform: rotate(0deg);}
                                     100% {transform: rotate(360deg);}}
                                 @keyframes animateCircle2 {
                                     0% {transform: rotate(360deg);}
                                     100% {transform: rotate(0deg);}}
-nav {
-    grid-area: nav;
+
+/* NACIGÁCIÓ ÉS MOBIL MENÜ */
+
+nav {grid-area: nav;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow:rgba(255, 217, 0, 0.904) 0px 0px 6px 4px;
     overflow: hidden;
     background-color: white;
-    margin: 1% 0% 1% 0%;
-    padding: 2% 2%;
-    font-family:Arial;
-    font-size:larger;
-    font-weight:900;    
-    border-bottom: solid 4px orange;
-    border-top: solid 4px orange;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;}
+    margin-bottom: 0%;
+   }
+
+    .mobildropdown, .mobildropdown-content{width: 100%;display: flex;}
+    .mobilmenu input, .hamburger{display: none;}
 
     #c1 {color: gold;}
-    .current {border: solid 1px gold;}
-    
+    .current {
+        color: rgba(0, 0, 0, 0);
+        animation-name: currentnav;
+        animation-duration: 3.8s;  
+        text-shadow: rgb(255, 238, 0) 0px 0px 12px;
+        animation-fill-mode: forwards;} 
+      
+            @keyframes currentnav {
+                0%   {background-color: gold;color: rgba(0, 0, 0, 0); }
+                100%   {background-color: white; color: black;}}
+
     nav a:visited ,a:link{color: black;}
     
     nav a:hover,.dropdown:hover{
-        box-shadow: inset 250px 0 0 0 orange; 
+        box-shadow: inset 700px 0 0 0 orange; 
         color: rgb(255, 255, 255);}
 
-    .dropdown, nav a {
-        overflow: hidden;
-        width: 170px;
-        padding-left: 1.2%;    
-        text-decoration: none;
-        background-color: white;
-        font-family:Arial;
-        font-weight:800;
-        text-align: left;
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 10px;        
-        box-shadow: inset 0 0 0 0 rgb(255, 213, 74);
-        transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;}
+        .dropdown, nav a {
+            padding: 0.8%;
+            overflow: hidden;
+            cursor: pointer;
+            width: 200px;    
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0);
+            font-family:Montserrat Subrayada;
+            font-weight:800;
+            text-align: center;
+            justify-content: space-around;
+            border-bottom-left-radius: 10px;        
+            box-shadow: inset 0 0 0 0 rgb(255, 213, 74);
+            transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;}
 
-            .dropdown-content  {
-                display: none;
-                position: absolute;
-                margin-left: 1.2%;
-                width: 100px;
-                font-family:Arial;
-                font-size:small;
-                font-weight:100;
-                background-color: #ffffff00;}
-            .dropdown-content a { 
-                background-color: white;
-                margin: 3% 0% 1% 0%; 
+                .dropdown-content  {
+                    display: none;
+                    position: fixed;
+                    margin: 0.3% 0% 0% 1%;
+                    width: 200px;
+                    font-family:Arial;
+                    font-size:smaller;
+                    font-weight:100;
+                    background-color:white;
+                    border: 2px gold solid;}  
+                .dropdown-content a { 
+                    border-bottom-left-radius: 0px;   
+                    background-color: rgba(255, 255, 255, 0);
+                    width: 100%;
+                    text-align: center;}
+                    .dropdown:hover .dropdown-content {display: flex;flex-direction:column; }
+/* TARTALOM */
+
+section { display: flex;
+        margin: -0% 1% 1% 1% ;
+        border-left:solid 2px gold ;
+        border-right:solid 2px gold ;
+        border-bottom-left-radius:15px ;
+        border-top-right-radius: 15px;
+        grid-area: content;
+        padding: 1%;}
+
+.szakaszI { width: 49%; 
+            padding: 0% 3%;
+            margin:-1% 1% 0% 0%;
+            text-align: left; 
+            background-image: linear-gradient(360deg,white 85%, rgba(255, 255, 255, 0));}
+.szakaszII {padding: 0% 3%; 
+            width: 49%;
+            margin:-4% 0% 0% 1%; 
+            text-align: left;
+            background-image: linear-gradient(360deg,rgba(255, 255, 255, 0) 15%, rgb(255, 255, 255));}
+
+    section img {float: left;
+                margin: 0% 4% 2% 0%;
+                padding: 0.5%;
+                width: 65%;
+                border: gold 3px solid;
+                border-radius: 15px;
+                box-shadow: black 1px 1px 4px 1px;}
+        .scshhot{transition: transform 0.5s ;}
+        .scshhot:hover {transform: scale(1.05);}
+        
+    .cimke{ margin: 7% 0% 2% 0%;
+            font-family:Montserrat Subrayada;
+            width: fit-content;
+            padding: 0.6%;
+           /*  box-shadow: rgba(255, 217, 0, 0.849) -2px 2px 3px 1px ; */
+            background-image: white;
+            border-left: 3px solid;
+            border-bottom: 4px solid black;
+            border-bottom-right-radius:10px;
+            border-top-left-radius:10px;}
+            #c2 {color:gold}
+    .cimke2 {background-image: white;
+            font-family:Montserrat Subrayada;
+            width:fit-content;
+            padding: 1%;
+            border-right: 3px solid gold;
+            border-bottom: 4px solid gold;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius:10px ;
+            margin: 5% 0% 3% 35%;
+            /* box-shadow: gold 2px 2px 3px 1px ; */}
+            #c3 {color: orange;}
+
+/* LÁBLÉC */
+    
+footer {grid-area: footer;
+        display: flex;
+        padding:0.5%;
+        width: 99%;
+        margin: auto;
+        box-shadow: black 1px 1px 6px 1px;
+        font-family:Arial; 
+        font-size: small;
+        font-weight: 600;
+        color: rgb(0, 0, 0);  
+        background-color:rgb(255, 217, 0);}
+footer a:visited ,a:link{color:rgb(255, 255, 255);}
+footer img {border: white 3px solid; grid-area: footer; border-radius: 100px; margin: auto;}
+#face {width: 2%; height:2%; padding:0.4%;box-shadow:inset black -1px -1px 3px 1px; }
+#tel {width: 2%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
+#mail  {width: 2%; height:2%; padding:0.4%;box-shadow:inset black -1px -1px 3px 1px; display: none; }
+
+/* TÖRÉSPONTOK */
+
+@media screen and (min-width:900px) and (max-width:1350px){
+nav {flex-direction: column;
+    font-size:medium;
+    font-weight:700; }
+
+header {margin-top: 3%;}
+        .supporters { width: 75%;}
+            .heavy1 {font: bold 10px Montserrat Subrayada ;fill: rgb(252, 227, 0);}/* font-family: 'Montserrat Subrayada', sans-serif; */
+            .heavy {font: bold 8px Montserrat Subrayada;fill: rgb(0, 0, 0);}
+            .elegant {font: italic 2.95px serif;fill: black;}
+        .logo {width: 60%;height: 60%;}
+                .third_image { margin: 28% 0% 0% 28%; width:50%;height:50%;}
+
+.szakaszI{margin-top: -4%;}                
+
+footer {border-top: solid orange 2px; font-size: small; width: 99%;}
+   
+}
+
+@media screen and (min-width:685px) and (max-width:900px){
+ 
+header {margin-top: 7%;}
+    .motto{width: 140%;}
+    .supporters { width: 95%; margin-right: -71%; }
+        .heavy1 {font: bold 10px Montserrat Subrayada ;fill: rgb(252, 227, 0);}
+        .heavy {font: bold 8px Montserrat Subrayada;fill: rgb(0, 0, 0);}
+        .elegant {font: italic 2.95px serif;fill: black;}
+    .logo {width: 60%; height: 60%;}
+            .third_image { margin: 29% 0% 0% 29%; width:40%;height:40%;}
+  
+    .mobildropdown, .mobildropdown-content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; }
+        .dropdown, nav a {width: 210px; font-size: medium;}
+        .dropdown-content a { 
                 width: 100%;
                 padding: 1%;
-                text-align: center;}
-            
-            .dropdown:hover .dropdown-content {display: flex;flex-direction:column; }
+                background-color: rgb(255, 217, 0);
+                margin: 0%;
+                width: 100%;
+                font-size: small;}
+                .dropdown-content #c1 {color: white;}
 
-section {
-    border-left:solid 4px gold ;
-    border-right:solid 4px gold ;
-    border-bottom-left-radius:15px ;
-    border-top-right-radius: 15px;
-    grid-area: content;
-    padding: 1%;
-    background-color:rgb(255, 255, 255);}
-
-footer {
-    grid-area: footer;
-    padding-top: 2%;
-    margin: 3% 0% 3% 0%;
-    border-top: solid orange 4px;
-    border-top-right-radius:15px ; 
-    font-family:Arial; 
-    font-size: small;
-    font-weight: 900;
-    color: orange;  
-    background-color: rgb(255, 255, 255);}
-
-    footer p {
-        margin-left: auto;
-        margin-right: auto;
-        color: black;
-        font-weight: bolder;
-        text-shadow: rgba(255, 115, 0, 0.856) -4px -3px 4px;
-        border-top: solid orange 4px;
-        border-top-left-radius:15px ;
-        width: 200px;
-        text-align: center;}
-
-
-
-
-@media screen and (min-width:435px) and (max-width:640px){
-
-nav {font-size:small;}
-.dropdown, nav a {padding-left: 1%; padding: 1.3% 1.3%;}
-.dropdown-content  {margin: 1.2%; font-size:smaller; width:90px ;}
-
-footer {font-size: smaller;font-weight: 600; ; }
-footer p { width: 300px; font-weight: 700; text-shadow: rgba(255, 115, 0, 0.856) -3px -1.5px 4px;}
+footer {border-top: solid orange 2px; font-size: small; width: 99%;}
+            footer img {display: none;}
 }
 
-@media screen and (min-width:245px) and (max-width:435px){
-    body{
-    grid-template-columns: repeat(2,50%);
-    grid-template-areas: 
-    "nav header"
-    "content content"
-    "footer footer";}
+@media screen and (min-width:605px) and (max-width:685px){
 
-    nav {font-size:medium; flex-direction: column; padding-bottom: 15%  ;}
-    .dropdown-content  {margin-left: 30%; font-size:smaller; }
-    .dropdown-content a {border: 2px orange solid; padding: 0.1%;} 
+header {grid-template-columns: repeat(2,50%);
+        grid-template-areas: "motto sup"; margin-top: 7%;}
+    .motto {width: 200%;}
+    .supporters { width: 45%; margin-right: 0%; margin-top: 2%;}
+    .logo {width: 60%; height: 60%;}
+        .third_image { margin: 0% 0% 0% 0%; width:100%;height:100%;}
 
-    footer {font-size: x-small;font-weight: 890;}
-    footer p {font-weight: 800;}
+    .mobildropdown, .mobildropdown-content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        background-color: white;}
+        .dropdown, nav a { 
+            background-color: white; 
+                text-align: center;
+                width: 150px;
+                font-size: small;}
+        .dropdown-content { width: 140px;}        
+        .dropdown-content a { 
+                padding: 1%;
+                background-color: rgb(255, 217, 0);
+                margin: 0%;
+                width: 100%;
+                font-size: small;}
+                .dropdown-content #c1 {color: white;}
 
+    footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%;}
+        footer p {display: none;}
+        footer img {border: white 3px solid; grid-area: footer; border-radius: 100px; margin: auto;}
+                #face {width: 7%; height:60%; padding:0.3%;box-shadow:inset black -1px -1px 3px 1px; }
+                #tel {width: 7%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
+                #mail {display: block; width:7.5%;height: 60%;}
 }
 
+@media screen and (min-width:300px) and (max-width:605px){
+    
+body {margin: 0%;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas: "nav header header header"
+                        "content content content content"
+                        "footer footer footer footer";}     
+
+header {position: sticky;
+        background-color: white;
+        top: 0;
+        grid-template-columns: repeat(1,100%);
+        margin: 0% 0% 0% 0%;
+        grid-template-areas: "motto";
+        border-bottom: gold 1px solid;
+        box-shadow: black 1px 1px 5px 1px;                                }
+        .motto {width: 100%; margin: 0% 0% 0% 0%;}
+                .elegant {font: italic 0px serif;fill: black; }
+
+nav {border: none; position: sticky; padding: 4%;border: none; box-shadow: none; background-color: white;}
+    .mobilmenu {width: 100%; margin: 0% auto 0% 50%; position:sticky;}
+    .mobilmenu .checkbox {grid-area: nav;
+                        position: fixed;
+                        display: flex;                
+                        opacity: 0;
+                        cursor: pointer;
+                        width: 100%;
+                        margin-right: auto;
+                        margin-left: -51%;
+                        margin-top:4%;
+                        background-color: white;}
+    .hamburger{
+        background-image: url(./media/Hamburger_icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55%;
+        display:flex;
+        padding: 30%;
+        width: 30%;
+        margin: 20% 0% 0% -60%;
+        border-bottom: solid 1px gold;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;}
+        .mobildropdown{margin-left: -100%;}
+             .mobildropdown-content  {
+                box-shadow:gold 1px 1px 5px 1px; 
+                display:flex; flex-direction: column;
+                position: fixed;
+                margin: 0% 0% 0% -1%;  
+                background-image: linear-gradient(90deg,white 70%, rgba(255, 255, 255, 0.575));     
+                animation-name: start;
+                animation-duration: 0.7s;  
+                opacity: 0;
+                animation-fill-mode: forwards;} 
+                    @keyframes start {
+                        0%   {opacity: 0;}
+                        100%   {opacity: 1;}}       
+
+            .dropdown, nav a{
+                font-size: small;
+                 padding: 4%;
+                  width: 100%;
+                   border-radius: 0px;
+                    text-align: left;}
+            .dropdown{transition: padding 1s;}
+            .dropdown:hover  {padding: 0%;}
+            .dropdown-content {
+                position:static;
+                flex-direction: row;
+                margin-left: -65%;
+                border-color: none;
+                background-color:rgba(240, 248, 255, 0);
+                border: none;
+                align-items: center;
+                width: 200%;}  
+                .dropdown-content a {
+                    text-align:center;
+                    background-image: linear-gradient(45deg,gold, rgba(255, 255, 255, 0));
+                    width: 40%; padding: 0.3%;
+                    font-size: small;}
+                    .dropdown-content #c1 {color: white;} 
+
+    .mobilmenu input[type="checkbox"]:not(:checked) ~ .mobildropdown  {display: none;}       
+    
+section {margin: 5% 0% 0% 0%; display: flex; flex-direction: column;}
+    section p{ margin: 1%;}
+    .szakaszI, .szakaszII {width: 90%;}
+    .cimke, .cimke2{font-size: smaller;width: 60%;}
+
+footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%;}
+    footer p {display: none;}
+    footer img {border: white 3px solid; grid-area: footer; border-radius: 100px; margin: auto;}
+    #face {width: 7%; height:60%; padding:0.3%;box-shadow:inset black -1px -1px 3px 1px; }
+    #tel {width: 7%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
+    #mail {display: block; width:7.5%;height: 60%;}
+}
