@@ -62,8 +62,8 @@ header {
                 margin-left:-60.5%;
                 width: 37%;
                 background-image: url(./media/kvilogo.png);}
-                .currentmenu {font: bold 19px "Montserrat Subrayada" ;fill: rgb(255, 217, 0);filter: drop-shadow(-2px -3px 1px rgba(66, 4, 4, 0.068))}
-                .currentmenu1 {font: bold 13px "Montserrat Subrayada";fill: rgb(0, 0, 0);filter: drop-shadow(-2px -3px 1.6px rgba(255, 217, 0, 0.733))}
+                .currentmenu {font: bold 16px "Montserrat Subrayada" ;fill: rgb(255, 217, 0);filter: drop-shadow(-2px -3px 1px rgba(66, 4, 4, 0.068))}
+                .currentmenu1 {font: bold 12px "Montserrat Subrayada";fill: rgb(0, 0, 0);filter: drop-shadow(-2px -3px 1.6px rgba(255, 217, 0, 0.733))}
     .motto {grid-area: motto;}
         .heavy1 {font: bold 12px Montserrat Subrayada ;fill: rgb(252, 227, 0)}
         .heavy {font: bold 10px Montserrat Subrayada;fill: rgb(0, 0, 0);}
@@ -110,9 +110,9 @@ nav {grid-area: nav;
     width: 100%;
     box-shadow:rgba(255, 217, 0, 0.904) 0px 0px 6px 4px;
     overflow: hidden;
+    color: black;
     background-color: white;
-    margin-bottom: 0%;
-   }
+    margin-bottom: 0%;}
 
     .mobildropdown, .mobildropdown-content{width: 100%;display: flex;}
     .mobilmenu input, .hamburger{display: none;}
