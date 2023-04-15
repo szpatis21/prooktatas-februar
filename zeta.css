@@ -153,8 +153,8 @@ nav {grid-area: nav;
                 .dropdown-content  {
                     display: none;
                     position: fixed;
-                    margin: 0.3% 0% 0% 1%;
-                    width: 200px;
+                    margin: 0.5% 0% 0% 0%;
+                    width: 14%;
                     font-family:Arial;
                     font-size:smaller;
                     font-weight:100;
@@ -346,7 +346,7 @@ header {position: sticky;
             -moz-box-shadow:0px 1px 1px black;
             box-shadow:-10px 1px 9px black;    
         border-bottom: 3px gold solid;                    }
-        .motto {margin: 3% 0% 0% 16%;}
+        .motto {margin: 3% 0% 0% 17%;}
         .heavy1 {font: bold 12px Montserrat Subrayada ;fill: rgb(252, 227, 0);}/* font-family: 'Montserrat Subrayada', sans-serif; */
         .heavy {font: bold 11.1px Montserrat Subrayada;fill: rgb(0, 0, 0);}
         .elegant {font: italic 0px serif;fill: black; }
@@ -382,14 +382,13 @@ nav {display: flex;
         border-top-right-radius: 50%;
         border-bottom-left-radius: 50%;}
         .mobildropdown{margin-left: -100%;}
-             
-        .mobildropdown-content  {
+             .mobildropdown-content  {
                 box-shadow:gold 1px 1px 5px 1px; 
                 display:flex; flex-direction: column;
                 position: fixed;
                 width: 100%;
-                margin-top:3.4%; 
-                background-image: linear-gradient(90deg,white 70%, rgba(255, 251, 0, 0.575));     
+                margin-top:2.2%; 
+                background-image: linear-gradient(120deg,white 60%, rgba(255, 255, 255, 0.548) 90%,white);     
                 animation-name: start;
                 animation-duration: 1s;  
                 animation-fill-mode: forwards;
@@ -397,29 +396,21 @@ nav {display: flex;
                     @keyframes start {
                         0%   {transform: translatex(-500px);}
                         100%   {transform:translatex(0px);}}       
-                        .current {
-                            color: rgba(0, 0, 0, 0);
-                            animation-name: currentnav;
-                            animation-duration: 3.8s;  
-                            text-shadow: rgb(255, 238, 0) 0px 0px 12px;
-                            animation-fill-mode: forwards;} 
-                          
-                                @keyframes currentnav {
-                                    0%   {background-color: gold;color: rgba(0, 0, 0, 0); }
-                                    100%   {linear-gradient:(90deg,white 70%, rgba(255, 251, 0, 0.575)); color: black;}}
-                    
+
             .dropdown, nav a{
+               
                 font-size: small;
                  padding: 4%;
                   width: 100%;
                    border-radius: 0px;
                     text-align: center;}
-            .dropdown{transition: padding 1s;}
-            .dropdown:hover  {padding: 0%;}
+            .dropdown{transition: color 0.5s, box-shadow 2s;}
+            .dropdown:hover  {color: rgba(165, 42, 42, 0); box-shadow: inset 700px 0 0 0 orange;}
             .dropdown-content {
-                position:static;
+                position:fixed;
                 flex-direction: row;
-                margin-left: -65%;
+                margin-top: -6%;
+                margin-left: -50%;
                 border-color: none;
                 background-color:rgba(240, 248, 255, 0);
                 border: none;
@@ -427,8 +418,8 @@ nav {display: flex;
                 width: 200%;}  
                 .dropdown-content a {
                     text-align:center;
-                    background-image: linear-gradient(45deg,gold, rgba(255, 255, 255, 0));
-                    width: 40%; padding: 0.3%;
+                    background-image: linear-gradient(45deg,rgba(255, 255, 255, 0),gold, rgba(255, 255, 255, 0));
+                    width: 40%; padding: 0.0%;
                     font-size: small;}
                     .dropdown-content #c1 {color: white;} 
 
