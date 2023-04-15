@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./zeta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');</style>
+    <title>Értékek - ertkek.hu</title>
+</head>
+
+<body>
+
+    <header>
+      <div class="motto">
+        <svg viewBox="0 0 140 20">
+            <text x="14" y="17.5" class="elegant">"Adminisztráció segítő  program és fejlődési térkép</text>
+            <text x="36" y="20" class="elegant">a fejlesztő nevelő oktatásban"</text>
+            <text x="13" y="15" class="heavy1">É</text>
+            <text x="20" y="15" class="heavy">rtékek</text></svg> 
+      </div>
+      <div class="logo">
+        <svg class="circ1" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="30" stroke="black"/></svg>
+          <div class="third_image"></div>  
+        <svg class="circ2" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="28" stroke="gold"/></svg>
+      </div>
+      <div class="supporters">
+      <svg class="circs2" viewBox="0 0 100 100">
+        <circle cx="60" cy="28" r="17" stroke="black"/></svg>
+        <div class="logo1_image"></div>
+        <div class="logo2_image"></div>
+        <svg class="circs1" viewBox="0 0 140 100">
+          <text x="1" y="89" class="currentmenu">K</text>
+          <text x="13" y="89" class="currentmenu1">APCSOLAT</text>
+        <circle cx="28" cy="45" r="28" stroke="black"/></svg>
+      </div>
+    </header>
+  
+    <nav>   
+      <div class="mobilmenu"><input class="checkbox" type="checkbox" name="toogle" id="toogle" />
+      <div class="hamburger"></div>
+      <div class="mobildropdown">
+        <div class="mobildropdown-content">
+            <a href="./index.html"> <span id="c1">B</span>EMUTATKOZÁS</a> 
+            <a href="#kapcsolat"><span id="c1">R</span>ÓLUNK</a>
+           
+                        <div class="dropdown"><span id="c1">A</span> PROGRAMRÓL
+                  <div class="dropdown-content">
+                        <a href="#"><span id="c1">V</span>ERZIÓK</a>
+                        <a href="#"><span id="c1">S</span>PECIFIKÁCIÓK</a>
+                        <a href="#"><span id="c1">L</span>ETÖLTÉS</a> 
+                  </div>
+                        </div>
+            <a class="current" href="#"><span id="c1">K</span>APCSOLAT</a>
+            <a href="#kapcsolat"><span id="c1">T</span>ÁMOGATÓNK</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<section class="kapcsolat">
+  
+  <div class="intro">
+    <p>Érdeklődik az Értékek program iránt? Kérdése van? Díjmentes árajánlatot szeretne kérni?
+      Töltse ki fél perc alatt kapcsolatfelvételi űrapunkat! Ha magánszemélyként érdeklődik a program iránt, csak tegye fel a kérdését az oldalon található szövegdoboban. Ajda meg e-mail címét és kattintson a "E-mail küldése" gombra, mi pedig hamarosan felvesszük önnel a kapcsolatot.
+    </p>
+  </div>
+<div class="kapcsolat_forms">
+<form name="reg" id="reg">
+  <div class="kapcs1">
+    <div class="cimke"><span id="c2">Á</span><span>rajánlat</span> </div><br>
+                
+        <div id="adatok">
+                <label for="text">Intézmény neve:</label>
+                <input type="text" name="text" id="text" required title="Írd be az email címed">
+            
+                <label for="mail">Kapcsolattartó neve:</label>
+                <input type="email" name="text" id="text" required title="Írd be az email címed">
+            
+                <label for="mail">Kapcsolattartási e-mail címe:</label>
+                <input type="text" name="text" id="text" required title="Írd be az email címed">
+            
+                <label for="irs">Intézmény adószáma:</label>
+                <input type="text" name="irs" id="irs" required placeholder="7632">
+       
+                <label for="irs">Intézmény típusa:</label>
+        </div> <div id="adatok2">     
+                    <label for="alt">Fejlesztő Iskola</label>
+                    <input type="radio" name="isk" id="alt" > 
+                    
+                    <label for="kozep">Szociális intézmény</label> 
+                    <input type="radio" name="isk" id="kozep">
+                    
+                    <label for="fois">Alapítvány</label>
+                    <input type="radio" name="isk" id="fois">     
+        </div> <div class="gombok">
+                    <input type="submit" class="button" value="Árajánlatot kérek"  onclick="check()">
+                    <input type="reset" class="button2" value="Mégsem">
+              </div> 
+        </div>
+
+        
+
+    </form>
+
+    <form name="reg" id="reg">
+      <div class="kapcs2">  
+        <div class="cimke2"><span id="c3">T</span><span>ÁJÉKOZTATÁS</span></div><br>
+        <label for="mail2">Kérjük írja le észrevételeit/kérdéseit:</label>
+        <textarea name="megjegyzes2" id="megjegyzes2" cols="40" rows="11"></textarea>
+        <label for="mail2">Majd adja meg e-mail címét:</label>
+        <input type="email" name="text" id="mail2" required title="Írja be az e-mail címét!">
+        <input class="gombok" type="submit" value="Kérdés elküldése" for="megjegyzes2">
+      </div>  
+      <div class="intro" id="confirm">
+      <label for="reg2" for="reg">Elolvastam és elfogam az adatkezelési feltételeket:</label><br>
+      <input type="checkbox" name="confirm" id="confirm">
+  </div>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+     <img src="./media/2.png" alt="" id="face" >
+     <p> Ha felkeltettük érdeklődését, vagy csak kérdése van írjon nekünek az <a href="mailto:info@ertekek.hu">info@ertekek.hu</a>-ra vagy hívjon a minket <a href="tel:+06301784272"> +36 30 1784272 </a> -es telefonszámon.</p>
+     <img src="./media/1.png" alt="" id="tel">
+    <img src="./media/3.png" alt="" id="mail">
+</footer>
+
+
+
+
+
+    
+    <script src="./zeta.js"></script>
+</body>
+</html>
