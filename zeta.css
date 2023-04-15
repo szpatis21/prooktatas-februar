@@ -398,19 +398,23 @@ nav {display: flex;
                         100%   {transform:translatex(0px);}}       
 
             .dropdown, nav a{
-               
                 font-size: small;
                  padding: 4%;
-                  width: 100%;
+                  width: 90%;
                    border-radius: 0px;
                     text-align: center;}
             .dropdown{transition: color 0.5s, box-shadow 2s;}
             .dropdown:hover  {color: rgba(165, 42, 42, 0); box-shadow: inset 700px 0 0 0 orange;}
             .dropdown-content {
-                position:fixed;
+                width: fit-content;
+                height: fit-content;
+                margin: none;
+                padding: none;
+                position:relative;
                 flex-direction: row;
-                margin-top: -6%;
+                margin-top: -8%;
                 margin-left: -50%;
+                margin-bottom: -4%;
                 border-color: none;
                 background-color:rgba(240, 248, 255, 0);
                 border: none;
@@ -419,7 +423,7 @@ nav {display: flex;
                 .dropdown-content a {
                     text-align:center;
                     background-image: linear-gradient(45deg,rgba(255, 255, 255, 0),gold, rgba(255, 255, 255, 0));
-                    width: 40%; padding: 0.0%;
+                    width: 40%; padding: 0%;
                     font-size: small;}
                     .dropdown-content #c1 {color: white;} 
 
