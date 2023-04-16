@@ -566,7 +566,7 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
         padding: 0%;}
          #adatok {display: block} 
                 .kapcs1 .cimke{display:block; margin:0%;width:100px;}
-                .kapcs1 label {display:flex;padding: 0% ;font-size:medium;
+                .kapcs1 label {display:flex;padding: 0% ;font-size:small;
                             justify-content: center;margin: 0% 0% 0% 0%;}
                 .kapcs1 input {display: flex;
                                 margin: 0% 0% 0% 0%;
@@ -594,10 +594,10 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
                 width: 100%;
                 padding: 0%;
                 margin: 6%;}
-            textarea{display: block; width:280px;
-                 margin: 0% 0% 0% 0%;}
+            textarea{display: block; width:90%; 
+                 margin: auto;}
             .kapcs2 label {display:block;margin: auto;}
-            .kapcs2 input {display: flex; margin: 5% 10% 0% 10%; padding: 0%;
+            .kapcs2 input {display: block; margin: auto; padding: 0%; margin-top: 5%;
             width: 212px;} 
                 .kapcs2 #mail2 {display: inline;width: 200px; height: 20px;}
     
