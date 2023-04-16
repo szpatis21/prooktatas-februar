@@ -282,9 +282,7 @@ section { display: flex;
                 margin-left: 0%;
                 box-shadow: none;}
                 .gombok {display: flex;width: 50px;margin-top: 1%;}
-                    .gombok input{font-family:Montserrat Subrayada;
-                        align-self:safe;
-                        width: fit-content; 
+                    .gombok input{font-family:Montserrat Subrayada; 
                         height: 30px;
                         border-radius: 1px;border: gold 2px solid;
                         background-color: white;
@@ -547,26 +545,74 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
     #tel {width: 7%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
     #mail {display: block; width:7.5%;height: 60%;}
 
-    /* kapcsolat */    
-.kapcsolat { margin: 4%;}
-    .kapcs1 input { height:40px;width: 140px;flex-direction: column;}
-        #adatok, #adatok2 {display: grid; grid-template-columns:repeat(1,100%); margin-bottom: 0%;}
-                .kapcs1 input { height:20px;
-                                width: 200px;
-                                flex-direction: row;}
-                textarea {width: 290px;}
-                #adatok2 label{height: 25px;width: 200px;}
-                #adatok2 {padding: 3% 3%;}
-                #adatok2 input {
-                margin-top: -15%;
-                height: 20px;
-                width: 130px;
-                accent-color: black;
-                margin-left: 0%;
-                box-shadow: none;}  
-    .gombok {display: flex;width: 50px;margin-top: 1%;}
-    .gombok input{height: 20px;margin: 0% 0% 0% -5%;}
-    .kapcs2{width:250px;padding: 0%;margin: 3% 10% 0% 4%;}
-#confirm {font-size: x-small;margin: 4% 0% 0% -10%; border:none;} 
-
+/* kapcsolat */    
+.kapcsolat{ 
+    grid-area: content;
+    width:fit-content;
+    display:block;
+    margin:0%;
+    padding:0%;}        
+.intro{ text-align: center;
+        width: fit-content;
+        margin-top: 5%;
+        padding: 0.5%;}        
+.kapcs1{width: fit-content;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0% 0%;
+        padding: 0%;}
+         #adatok {display: block} 
+                .kapcs1 .cimke{display:block; margin:0%;width:100px;}
+                .kapcs1 label {display:flex;padding: 0% ;font-size:medium;
+                            justify-content: center;margin: 0% 0% 0% 0%;}
+                .kapcs1 input {display: flex;
+                                margin: 0% 0% 0% 0%;
+                                height:20px;
+                                width: 200px;}                    
+            #adatok2 label{width: fit-content;}
+            .gombok {width: fit-content;display:flex;justify-content: center;}
+            .gombok input{width: fit-content; margin: 0% 7%;}
+    .kapcsolat_forms{width: 100%;
+                    display:block;
+                    flex-direction:column;
+                    flex-wrap: wrap;
+                    padding: 0%;margin:0%;
+                    justify-content: center;}
+        #reg{display: block; margin: 1% 0% 3% 0%; padding: 0%;width: 100%;}
+        
+        
+        #reg2{display:block;
+            width:85%;
+            margin: 0% 0% 0% 0%; padding: 0%;}
+        .kapcs2{display:block;
+                justify-content:center;
+                justify-items:center;
+                align-items: center;
+                width: 100%;
+                padding: 0%;
+                margin: 6%;}
+            textarea{display: block; width:280px;
+                 margin: 0% 0% 0% 0%;}
+            .kapcs2 label {display:block;margin: auto;}
+            .kapcs2 input {display: flex; margin: 5% 10% 0% 10%; padding: 0%;} 
+                .kapcs2 #mail2 {display: inline;width: 200px; height: 20px;}
+    
+    #confirm{
+        display:none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:250px;
+        font-family:Montserrat Subrayada;
+        font-size: x-small;
+        margin:0% 0% 0% 7%;
+        padding: 0%;
+        border:none}  
+        #confirm input{  margin-top: 0%; 
+                    margin-left:0%;
+                    accent-color: black;}
 }
