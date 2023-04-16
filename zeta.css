@@ -128,9 +128,8 @@ nav {grid-area: nav;
             @keyframes currentnav {
                 0%   {background-color: gold;color: rgba(0, 0, 0, 0); }
                 100%   {background-color: white; color: black;}}
-
+a{color: black;}
     nav a:visited ,a:link{color: black;}
-    
     nav a:hover,.dropdown:hover{
         box-shadow: inset 700px 0 0 0 orange; 
         color: rgb(255, 255, 255);}
@@ -308,16 +307,20 @@ section { display: flex;
                     margin: 1% 0%;}
                 .kapcs2 #mail2 {width: 300px; height: 20px;}
     
+                
     #confirm {font-family:Montserrat Subrayada;
-        font-size: small;
-        margin: 4% 0% 0% -70%;
-        display:flex ;
-        flex-direction: c;
-        border-bottom: gold 2px solid;
-        border-bottom-left-radius: 40px;}  
-        #confirm input{margin-top: 0.3%; 
-                    margin-left:0%;
-                    accent-color: black;}
+        font-size: smaller;
+        text-align: right;
+        margin: 5% 0% 10% 0%;
+        display:flex;
+        width: 80%;
+        font-weight: 600;
+        border-bottom: orangered 4px solid;
+        border-bottom-left-radius: 10px;}  
+        #confirm input{width: 19px;
+            margin-top: 0.3%; 
+                    margin-left:5%;
+                    accent-color: red;}
 
 /* LÁBLÉC */
     
@@ -394,7 +397,7 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%;}
 #confirm {margin-left: 0%;}  
     
 
-@media screen and (min-width:501px) and (max-width:685px){
+@media screen and (min-width:490px) and (max-width:685px){
 
 header {grid-template-columns: repeat(2,50%);
         grid-template-areas: "motto sup"; margin-top: 7%;}
@@ -431,7 +434,7 @@ header {grid-template-columns: repeat(2,50%);
                 #mail {display: block; width:7.5%;height: 60%;}
 }
 
-@media screen and (min-width:300px) and (max-width:500px){
+@media screen and (min-width:300px) and (max-width:490px){
     
 body {margin: 0%;
     grid-template-columns: repeat(4,25%);

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+ 
     <header>
       <div class="motto">
         <svg viewBox="0 0 140 20">
@@ -48,8 +48,7 @@
       <div class="mobildropdown">
         <div class="mobildropdown-content">
             <a href="./index.html"> <span id="c1">B</span>EMUTATKOZÁS</a> 
-            <a href="#kapcsolat"><span id="c1">R</span>ÓLUNK</a>
-           
+            <a href="#home"><span id="c1">R</span>ÓLUNK</a>
                         <div class="dropdown"><span id="c1">A</span> PROGRAMRÓL
                   <div class="dropdown-content">
                         <a href="#"><span id="c1">V</span>ERZIÓK</a>
@@ -58,7 +57,7 @@
                   </div>
                         </div>
             <a class="current" href="#"><span id="c1">K</span>APCSOLAT</a>
-            <a href="#kapcsolat"><span id="c1">T</span>ÁMOGATÓNK</a>
+            <a href="#home"><span id="c1">T</span>ÁMOGATÓNK</a>
           </div>
         </div>
       </div>
@@ -78,49 +77,46 @@
                 
         <div id="adatok">
                 <label for="text">Intézmény neve:</label>
-                <input type="text" name="text" id="text" required title="Írd be az email címed">
+                <input type="text" name="intnev" id="intnev" required title="Írja be az intézmény, vagy az intézményegység nevét.">
             
                 <label for="mail">Kapcsolattartó neve:</label>
-                <input type="email" name="text" id="text" required title="Írd be az email címed">
+                <input type="text" name="text" id="text" required title="Írja be az intézményi kapcsolattartó nevét.">
             
                 <label for="mail">Kapcsolattartási e-mail címe:</label>
-                <input type="text" name="text" id="text" required title="Írd be az email címed">
+                <input type="text" name="text" id="text" required title="Írja be az e-mail elérhetőségét">
             
                 <label for="irs">Intézmény adószáma:</label>
-                <input type="text" name="irs" id="irs" required placeholder="7632">
+                <input type="text" name="irs" id="irs" required placeholder="******-*-** (formátum)">
        
                 <label for="irs">Intézmény típusa:</label>
         </div> <div id="adatok2">     
-                    <label for="alt">Fejlesztő Iskola</label>
-                    <input type="radio" name="isk" id="alt" > 
+                    <label for="fejl">Fejlesztő Iskola</label>
+                    <input type="radio" name="tipus" id="fejl" > 
                     
-                    <label for="kozep">Szociális intézmény</label> 
-                    <input type="radio" name="isk" id="kozep">
+                    <label for="szoc">Szociális intézmény</label> 
+                    <input type="radio" name="tipus" id="szoc">
                     
-                    <label for="fois">Alapítvány</label>
-                    <input type="radio" name="isk" id="fois">     
+                    <label for="al">Alapítvány</label>
+                    <input type="radio" name="tipus" id="al">     
         </div> <div class="gombok">
-                    <input type="submit" class="button" value="Árajánlatot kérek"  onclick="check()">
+                    <input type="submit" type="button" class="button" value="Árajánlatot kérek" onclick="check()" required title="Ki kell töltenie a Kapcsolattartási adatokat és el kell fogadni az adatkezelési tájékoztatóban foglaltakat mielőtt ezt megteszi.">
                     <input type="reset" class="button2" value="Mégsem">
               </div> 
         </div>
-
-        
-
     </form>
 
     <form name="reg2" id="reg2">
       <div class="kapcs2">  
         <div class="cimke2"><span id="c3">T</span><span>ÁJÉKOZTATÁS</span></div><br>
         <label for="mail2">Kérjük írja le észrevételeit/kérdéseit:</label>
-        <textarea name="megjegyzes2" id="megjegyzes2" cols="40" rows="11"></textarea>
+        <textarea name="megjegyzes2" id="megjegyzes2" cols="40" rows="11" required placeholder="Írja ide véleményét, észrevételeit, kérdéseit."></textarea></textarea>
         <label for="mail2">Majd adja meg e-mail címét:</label>
         <input type="email" name="text" id="mail2" required title="Írja be az e-mail címét!">
-        <input class="gombok" type="submit" value="Kérdés elküldése" for="megjegyzes2">
+        <input class="gombok"  type="submit" type="button" value="Kérdés elküldése" for="reg2" onclick="check()"required title="El kell fogadni az adatkezelési tájékoztatóban foglaltakat mielőtt ezt megteszi.">
       </div>  
-  <div class="intro" id="confirm">
-      <label for="reg2" for="reg">Elolvastam és elfogam az adatkezelési feltételeket:</label><br>
-      <input type="checkbox" name="confirm" id="confirm2">
+   <div class="intro" id="confirm">
+      <label for="reg2">Elolvastam és elfogam az adatkezelési feltételeket:  </label><br>
+      <input type="checkbox" name="confirmi" id="confirmi">
   </div>
     </form>
   </div>                                                                                                                                                                                                                                                                                         
@@ -131,13 +127,11 @@
      <p> Ha felkeltettük érdeklődését, vagy csak kérdése van írjon nekünek az <a href="mailto:info@ertekek.hu">info@ertekek.hu</a>-ra vagy hívjon a minket <a href="tel:+06301784272"> +36 30 1784272 </a> -es telefonszámon.</p>
      <img src="./media/1.png" alt="" id="tel">
     <img src="./media/3.png" alt="" id="mail">
-</footer>
-
-
+</footer> 
 
 
 
     
-    <script src="./zeta.js"></script>
+<script src="./zeta.js"></script>
 </body>
 </html>
