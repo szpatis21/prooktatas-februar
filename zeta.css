@@ -565,7 +565,7 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
         margin: 0% 0%;
         padding: 0%;}
          #adatok {display: block} 
-                .kapcs1 .cimke{display:block; margin:0%;width:100px;}
+                .kapcs1 .cimke{margin:4% 30% 5% 0%;width:200px;}
                 .kapcs1 label {display:flex;padding: 0% ;font-size:small;
                             justify-content: center;margin: 0% 0% 0% 0%;}
                 .kapcs1 input {display: flex;
