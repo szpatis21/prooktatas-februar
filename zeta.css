@@ -133,7 +133,7 @@ a{color: black;}
     nav a:visited ,a:link{color: black;}
     nav a:hover,.dropdown:hover{
         box-shadow: inset 700px 0 0 0 orange; 
-        color: rgb(255, 255, 255);}
+        color: black;}
 
         .dropdown, nav a {
             padding: 0.8%;
