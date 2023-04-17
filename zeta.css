@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     min-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* FEJLÉC */
@@ -69,10 +70,10 @@ header {
         .heavy {font: bold 10px Montserrat Subrayada;fill: rgb(0, 0, 0);}
         .elegant {font: italic 2.2px serif;fill: black;}
     .logo { grid-area:logo;
-        width: 50%;
+        
+          width: 50%;
             margin: 0% 0% 0% 40%; 
-            display: grid;
-            grid-template-columns: repeat(1,100%);
+            display: grid;  grid-template-columns: repeat(1,100%);
             grid-template-areas: "logocont";}
             .circ1 {grid-area: logocont;}
                 .circ1 circle {transform-origin: 50px 50px;
@@ -306,8 +307,7 @@ section { display: flex;
                     background-color: white;
                     margin: 1% 0%;}
                 .kapcs2 #mail2 {width: 300px; height: 20px;}
-    
-                
+                    
     #confirm {font-family:Montserrat Subrayada;
         font-size: smaller;
         text-align: right;
@@ -321,6 +321,123 @@ section { display: flex;
             margin-top: 0.3%; 
                     margin-left:5%;
                     accent-color: red;}
+
+/* RÓLUNK */
+.rolunk{display:flex;
+    flex-wrap: wrap;
+    width:fit-content;}
+
+.alcim{width: 100%; font-family:Montserrat Subrayada;text-align: right;}
+
+.szemely_contentI{
+    margin-top: 1%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas:
+    "rolunklogo cimke cimke cimke" 
+    "rolunklogo bemutatkoz bemutatkoz bemutatkoz";}
+
+            .szemely_contentI .cimke {width: 150px; height: fit-content;}
+
+            .szemely_contentI .logo{ 
+                background-image: url(./media/BM.png);
+                background-size: 53%;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: grid;
+                grid-area: rolunklogo;
+                align-items: center;
+                width: 100%;
+                margin: 0%;}
+                .circ2b {grid-area: logocont;}
+                .circ2b circle {transform-origin: 50px 50px;
+                                fill: none;
+                                stroke-width:1;
+                                stroke-dasharray: 50;           
+                                animation: animateCircle2 35s  linear infinite;}
+                .circ1b {grid-area: logocont;}
+                .circ1b circle {transform-origin: 50px 50px;
+                                fill: none;
+                                stroke-width:2;
+                                stroke-dasharray: 40;
+                                animation: animateCircle1 60s  linear infinite;}          
+
+            .szemelyI_szoveg{padding-right: 5%;
+                margin:0% 0% 0% -3%;
+                height: 100%;
+                grid-area: bemutatkoz;
+                width: fit-content;
+                text-align: right;
+                background-image: linear-gradient(360deg,white 85%, rgba(255, 255, 255, 0));}
+
+    .szemely_contentII{margin-top: 1%;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4,25%);
+                    grid-template-areas:
+                    " cimke2 cimke2 cimke2 rolunklogo2" 
+                    " bemutatkoz2 bemutatkoz2 bemutatkoz2 rolunklogo2";}
+                    
+        .szemely_contentII .cimke2 { width: 250px; margin-left: 200%;  height: fit-content;}
+        
+        .szemely_contentII .logo{ background-image: url(./media/SM.png);
+                        background-size: 53%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        display: grid;
+                        grid-area: rolunklogo2;
+                        align-items: center;
+                        width: 100%;
+                        margin: 0%;}
+        
+        .szemelyII_szoveg{padding-left: 5%;
+                        margin: 0% -3% 0% 0%;
+                        height: 100%;
+                        grid-area: bemutatkoz2;
+                        width: fit-content;
+                        text-align: left;
+                        background-image: linear-gradient(360deg,white 85%, rgba(255, 255, 255, 0));}
+
+    .szemely_contentIII{margin-top: 1%;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4,25%);
+                    grid-template-areas:
+                    "rolunklogo3 cimke cimke cimke " 
+                    "rolunklogo3 bemutatkoz3 bemutatkoz3 bemutatkoz3 ";}
+            .szemely_contentIII .cimke {width: 150px; height: fit-content; margin: auto;}
+
+            .szemely_contentIII .logo{ 
+                background-image: url(./media/SZP.jpg);
+                background-size: 53%;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: grid;
+                grid-area: rolunklogo3;
+                align-items: center;
+                width: 100%;
+                margin: 0%;}
+                .circ2c {grid-area: logocont;}
+                .circ2c circle {transform-origin: 50px 50px;
+                                fill: none;
+                                stroke-width:1;
+                                stroke-dasharray: 50;           
+                                animation: animateCircle2 35s  linear infinite;}
+                .circ1c {grid-area: logocont;}
+                .circ1c circle {transform-origin: 50px 50px;
+                                fill: none;
+                                stroke-width:2;
+                                stroke-dasharray: 40;
+                                animation: animateCircle1 60s  linear infinite;}          
+
+            .szemelyIII_szoveg{padding-right: 5%;
+                margin:0% 0% 0% -3%;
+                height: 100%;
+                grid-area: bemutatkoz3;
+                width: fit-content;
+                text-align: right;
+                background-image: linear-gradient(360deg,white 85%, rgba(255, 255, 255, 0));}
 
 /* LÁBLÉC */
     
@@ -395,7 +512,8 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%;}
 
 /* kapcsolat */
 #confirm {margin-left: 0%;}  
-    
+/* RÓLUNK */
+.szemely_contentII .cimke2{margin: 0% 0% 0% 150%;}    
 
 @media screen and (min-width:490px) and (max-width:685px){
 
@@ -548,7 +666,21 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
     #tel {width: 7%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
     #mail {display: block; width:7.5%;height: 60%;}
 
-/* kapcsolat */    
+/* RÓLUNK */
+.alcim{font-size: small; margin-left: -2%;}
+.szemely_contentI .logo,.szemely_contentII .logo, .szemely_contentIII .logo{display: none;}
+.szemely_contentIII{margin: 5% 1%;grid-template-columns: repeat(1,100%); grid-template-areas:
+    "cimke" 
+    "bemutatkoz3";}
+.szemely_contentI{margin: 5% 1%;grid-template-columns: repeat(1,100%); grid-template-areas:
+        "cimke" 
+        "bemutatkoz";}
+.szemely_contentII{margin: 5% 0%;grid-template-columns: repeat(1,95%); grid-template-areas:
+        "cimke2" 
+        "bemutatkoz2";}
+.szemely_contentII .cimke2{margin: 0% 0% 0% 1%;}
+
+/* KAPCSOLAT */    
 .kapcsolat{ 
     grid-area: content;
     width:fit-content;
