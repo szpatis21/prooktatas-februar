@@ -18,7 +18,7 @@ body {
 }
 
 /* FEJLÉC */
-
+#indexhead {display: none;}
 header {
     grid-area: header;
     height: 100%;
@@ -279,7 +279,7 @@ article{
         border-radius: 20px 0px;
         box-shadow: inset 5px 5px 50px 1px rgba(252, 246, 191, 0.356);}
 
-    .logolanding .logo{width: 100%; margin: 15% 0%;}
+    .logolanding .logo{width: 100%; margin: -15% 0% 0% 0%;}
     .circlanding{ 
         background-image: url(./media/demo1kör.png);
         background-size:78%;
@@ -548,7 +548,7 @@ footer img {border: white 3px solid; grid-area: footer; border-radius: 100px; ma
 nav {flex-direction: column;
     font-size:medium;
     font-weight:700; }
-
+    #indexhead {display: none;}
 header {margin-top: 3%;}
         .supporters { width: 75%;}
             .heavy1 {font: bold 10px Montserrat Subrayada ;fill: rgb(252, 227, 0);}/* font-family: 'Montserrat Subrayada', sans-serif; */
@@ -565,7 +565,7 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%;}
 }
 
 @media screen and (min-width:685px) and (max-width:900px){
- 
+    #indexhead {display: none;} 
 header {margin-top: 7%;}
     .motto{width: 140%;}
     .supporters { width: 95%; margin-right: -71%; }
@@ -594,7 +594,7 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%;}
             footer img {display: none;}
 
 /* Landing Page */                
-
+.logolanding .logo{width: 100%; margin: -25% 0% 0% 0%;}
 .card1, .card2 {
     width: 90%;
     margin-left: -10%;
@@ -607,6 +607,7 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%;}
 /* RÓLUNK */
 .szemely_contentII .cimke2{margin: 0% 0% 0% 150%;}    
 }
+
 @media screen and (min-width:490px) and (max-width:685px){
 
 /* HEADER */
@@ -617,6 +618,8 @@ header {grid-template-columns: repeat(2,50%);
     .supporters { width: 45%; margin-right: 0%; margin-top: 2%;}
     .logo {width: 60%; height: 60%;}
         .third_image { margin: 0% 0% 0% 0%; width:100%;height:100%;}
+
+#indexhead {display: none;}
 
 /* NAV */
 
@@ -651,13 +654,15 @@ header {grid-template-columns: repeat(2,50%);
 
 /* LANDING PAGE */
 .logolanding{width: fit-content;
-    margin: 20% 0%;
+    margin: -25% 0% 0% 0%;
     display: flex;
     justify-content:center;}
     .card1 p, .card2 p {display: none;}
-    .card1, .card2 {width: fit-content; text-align: center; font-size: small;}
+    .card1, .card2 {width: fit-content; text-align: center; font-size: smaller;}
+    card1
     .promo {margin-top: 5%;}
     .mobilszakasz {
+        margin-top: 40%;
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -807,7 +812,7 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
     .szakaszII .card2, .szakaszII .card1 {display:none;}
 .mobilszakasz{display: none;}
 .logolanding{width: 100%;
-    margin: 10% auto;
+    margin: 20% auto 10% auto;
     display: flex;
     justify-content:center;}
     .card1 p, .card2 p {display: none;}
