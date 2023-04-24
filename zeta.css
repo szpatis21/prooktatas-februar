@@ -1,4 +1,5 @@
 body {
+    min-width: 300px;
     margin: 0%;
     text-align: center;
     display: grid;
@@ -13,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-width: 300px;
+    min-width: 315px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -219,7 +220,7 @@ section { display: flex;
             border-top-right-radius:10px ;
             margin: 5% 0% 3% 15%;
             /* box-shadow: gold 2px 2px 3px 1px ; */}
-            #c3 {color: orangered; font-style: oblique;}
+            #c3 {color: rgb(255, 136, 0); font-style: oblique;}
 
 /* LANDINGPAGE */
 .mobilszakasz{display: none;}
@@ -287,7 +288,7 @@ article{
         background-position:center;
         background-repeat: no-repeat;
         border-radius: 100%;
-        box-shadow:  rgba(0, 0, 0, 0.205) -20px -10px 18px 1px;
+        box-shadow:rgba(0, 0, 0, 0.205) -20px -10px 18px 1px;
         display: grid;
         grid-area: logocont;
         align-items: center;
@@ -658,8 +659,7 @@ header {grid-template-columns: repeat(2,50%);
     display: flex;
     justify-content:center;}
     .card1 p, .card2 p {display: none;}
-    .card1, .card2 {width: fit-content; text-align: center; font-size: smaller;}
-    card1
+    .card1, .card2 {width: fit-content; text-align: center; font-size: smaller;}W
     .promo {margin-top: 5%;}
     .mobilszakasz {
         margin-top: 40%;
@@ -679,13 +679,13 @@ header {grid-template-columns: repeat(2,50%);
     height:fit-content;}
     article{padding: 1%;display: block};
     .cardback{margin: 0%;}
-    .promo{font-size: small; margin-top: 10%;}
+    .promo{font-size: small; margin-top: 0%;}
    .cardback{display: flex;
 justify-content: center;} 
    }
 /* MOBILNÉZET */
 
-@media screen and (min-width:300px) and (max-width:490px){
+@media screen and (min-width:0px) and (max-width:490px){
     
 body {margin: 0%;
     grid-template-columns: repeat(4,25%);
@@ -694,7 +694,7 @@ body {margin: 0%;
                         "article article article article"
                         "footer footer footer footer";}     
 /* HEADER */
-
+#indexhead {display: block;}
 header {position: sticky;
         background-color: white;
         top: 0;
