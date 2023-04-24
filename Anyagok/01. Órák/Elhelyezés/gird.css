@@ -1,53 +1,17 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 20%); /* % vagy px  és egyben a felosztás is. Ha 2 érték két oszlop, ha négy négy. Repeattel: auto fill - annyiszor ismétli ahányszor kifér a sorba*/
+    grid-template-columns: repeat(4, 25%); 
     grid-template-areas: 
     "header header header header"
     "left main main main"
-    "left right right right"
-    "footer footer footer footer"
-    ;
-
-    column-gap: 15px ; /* oszlop hézag */
-    row-gap: 15px; /* sor hézag */
-    height: 400px;
-    margin: 5px;
-    background-color: rgb(255, 255, 0);
-    justify-content: center; /* Igazítás vízszintesen */ 
-    align-content:center ; /* Igazítás függőlegesen  */
-
-}
-
-.container div {padding: 15px;
-/*align-self: center;
-justify-self: center;  Méretre szabás, minimásilra törekszik */
-}
-    
-.Első{
-    background-color: aqua;
-    grid-area: header;
-    /* grid-column-start: 2;   /* x oszloptól */
-      /*grid-column-end: 4;    A x oszlopig */
-    /* grid-row-start: 1;      X sortól 
-    grid-row-end: 3;        x sorig */
-
-}
-.Második {
-    grid-area: left;
-    background-color: brown;
-}
-.Harmadik {
-    grid-area: right;
-    background-color: chartreuse;
-}
-.Negyedik {
-    grid-area: main;
-    background-color: crimson;
-}
-.Ötödik {
-    grid-area: footer;
-    background-color: blue;
-}
+    "left main main main"
+    "footer footer footer footer";
+    height: 500px;
+    text-align: center;}    
+.Első{ background-color: gray; grid-area: header; height: 100px;}
+.Második { grid-area: left; background-color:yellow; height: 400px;}
+.Harmadik {grid-area: main; background-color: beige; height: 400px;}
+.Negyedik {grid-area: footer; background-color: blue; height: 100px;}
 
 .sample {
 display: grid;

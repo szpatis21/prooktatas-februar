@@ -49,33 +49,27 @@ if(eletkoruser > 18) {
 } else {
   document.write("<br>Gratulálunk, hogy most épp 18 éves")
 }
-// 3 mal osztható számok kiírása 100 és 150 közt
-for (let k=100; k<150; k++){ 
+ 3 mal osztható számok kiírása 100 és 150 közt
+for (let k=0; k<100000; k++){ 
   if (k % 3 == 0){
   document.write("<br>",k)}
-} */
-
+} 
 /*  felugró ablakok 
 szam1 = prompt ("kérek egy számot")
 szam2 = prompt ("kérek egy másik számot")
-
 alert("Vigyázat")
-
 //Terület számoló számbekrésésel
 szam  =Number(prompt("Kérem A oldal hosszát")) 
 szam1 =Number (prompt("Kérem B oldal hosszát")) 
 alert("A téglalap területe:" + (szam + szam1)*2)
 
-
-
 //Különbség megadása két szám bekéréséből
 kiv1 =Number(prompt("Kérem az első számot")) 
 kiv2 =Number(prompt("Kérem a második számot")) 
-
 if (kiv1>kiv2){
-    alert("Eredmény: " + (kiv1-kiv2))
+  alert("Eredmény: " + (kiv1-kiv2))
 }if (kiv1<kiv2){
-    alert("Eredmény: " + (kiv2-kiv1))
+  alert("Eredmény: " + (kiv2-kiv1))
 }
 */
 var elso = document.getElementById("elsosor"); //id változóvá alakítása

@@ -1,0 +1,48 @@
+.peldaosztaly p {
+    color: darkblue;
+    font-size: 16px;
+    text-align: justify;
+}
+
+img{ width: 400px; height: 200px;}
+
+.majom{background-color: green; text-align: center; margin: 20px 10px;}
+
+
+ .kapcsolat  {width:60%; margin:auto}
+
+ul, ol, li, dt {list-style-type: none;}
+
+.szerszamok .csavarhuzo {
+background-image: url(hatter.ong);
+border: 2px solid blue;    
+}
+
+input text{
+    width: 1200px;
+}
+
+input{
+    width: 200px;
+    padding: 10px;
+}
+
+input[type=text] {width: 200px; padding: 10px;}
+input[type=radio] {margin: 10px;}
+input[type=checkbox] {margin: 10px;}
+input[type=button] {padding: 15px; font-size: 102%; background-color: orange;}
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas: 
+    "header header header header"
+    "nav section section section"
+    "nav section section section"
+    "footer footer footer footer";
+    text-align: center;
+}
+header { grid-area: header; background-color: aqua;height: 100px;}
+nav { grid-area: nav; background-color:yellow; height: 300px;}
+section { grid-area: section; background-color: bisque;height: 300px;}
+footer { grid-area: footer; background-color:blue; height: 100px;}

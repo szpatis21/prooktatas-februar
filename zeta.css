@@ -7,13 +7,14 @@ body {
     "nav nav nav nav"
     "header header header header"
     "content content content content"
+    "article article article article"
     "footer footer footer footer";
     background-image: url(./media/alap2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-width: 300px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 /* FEJLÉC */
@@ -63,17 +64,17 @@ header {
                 margin-left:-60.5%;
                 width: 37%;
                 background-image: url(./media/kvilogo.png);}
-                .currentmenu {font: bold 16px "Montserrat Subrayada" ;fill: rgb(255, 217, 0);filter: drop-shadow(-2px -3px 1px rgba(66, 4, 4, 0.068))}
-                .currentmenu1 {font: bold 12px "Montserrat Subrayada";fill: rgb(0, 0, 0);filter: drop-shadow(-2px -3px 1.6px rgba(255, 217, 0, 0.733))}
+                .currentmenu {font: bold 16px "Montserrat Subrayada" ;fill: rgb(255, 217, 0);filter: drop-shadow(-2px -3px 1px rgba(66, 4, 4, 0.068));}
+                .currentmenu1 {font: bold 12px "Montserrat Subrayada";fill: rgb(0, 0, 0);filter: drop-shadow(-2px -3px 1.6px rgba(255, 217, 0, 0.733));}
     .motto {grid-area: motto;}
-        .heavy1 {font: bold 12px Montserrat Subrayada ;fill: rgb(252, 227, 0)}
+        .heavy1 {font: bold 12px Montserrat Subrayada ;fill: rgb(252, 227, 0);}
         .heavy {font: bold 10px Montserrat Subrayada;fill: rgb(0, 0, 0);}
         .elegant {font: italic 2.2px serif;fill: black;}
     .logo { grid-area:logo;
-        
           width: 50%;
             margin: 0% 0% 0% 40%; 
-            display: grid;  grid-template-columns: repeat(1,100%);
+            display: grid;
+            grid-template-columns: repeat(1,100%);
             grid-template-areas: "logocont";}
             .circ1 {grid-area: logocont;}
                 .circ1 circle {transform-origin: 50px 50px;
@@ -120,7 +121,7 @@ nav {grid-area: nav;
 
     #c1 {color: gold;}
     .current {
-        color: rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 0);
         animation-name: currentnav;
         animation-duration: 3.8s;  
         text-shadow: rgb(255, 238, 0) 0px 0px 12px;
@@ -207,7 +208,7 @@ section { display: flex;
             border-bottom: 4px solid black;
             border-bottom-right-radius:10px;
             border-top-left-radius:10px;}
-            #c2 {color:gold}
+            #c2 {color:orange}
     .cimke2 {background-image: white;
             font-family:Montserrat Subrayada;
             width:fit-content;
@@ -216,9 +217,92 @@ section { display: flex;
             border-bottom: 4px solid gold;
             border-bottom-left-radius: 10px;
             border-top-right-radius:10px ;
-            margin: 5% 0% 3% 35%;
+            margin: 5% 0% 3% 15%;
             /* box-shadow: gold 2px 2px 3px 1px ; */}
-            #c3 {color: orange;}
+            #c3 {color: orangered; font-style: oblique;}
+
+/* LANDINGPAGE */
+.mobilszakasz{display: none;}
+.promo{grid-area: article; padding: 1%;}
+article{ 
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas: "cikk demokep demokep demokep";}
+.cikk{grid-area: cikk; display: flex; flex-direction: column; justify-content: center;}
+.cardback{grid-area: demokep;display: flex;justify-content: right;}
+            .cardback img{
+                margin: 0% 0% 0% 0% ;
+                padding: 0%;
+                border-top: 5px solid gold;
+                border-bottom: 5px solid gold;
+                border-right: 10px solid rgb(0, 0, 0);
+                border-left: none;
+                box-shadow: none;
+                width: 80%;
+                border-bottom-right-radius: 15%;
+                border-bottom-left-radius: 15%;}
+                #cardback2 img{ 
+                    border-top: 5px solid black;
+                    border-bottom: 5px solid black;
+                    border-right:none ;
+                    border-left:10px solid gold;}
+                
+    .card1{
+        display: block;
+        margin: 25% 0% 0% 30%;
+        padding: 0.1% 2%;
+        width: 70%;
+        border-top: 3px solid gold;
+        border-bottom: 1px solid gold;
+        border-left: none;
+        border-right:3px solid rgb(0, 0, 0) ;
+        text-align: justify;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 20px 0px;
+        box-shadow: inset 5px 5px 50px 1px rgba(252, 246, 191, 0.356);
+        font-size: 15px;
+        font-style: italic;}
+    .card2{
+        display: block;
+        margin: 1% 0% 0% 25%;
+        padding: 1% 4%;
+        width: 50%;
+        font-size: 15px;
+        font-style: italic;
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 1px solid black;
+        border-left: none;
+        border-right:3px solid gold ;
+        text-align: justify;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 20px 0px;
+        box-shadow: inset 5px 5px 50px 1px rgba(252, 246, 191, 0.356);}
+
+    .logolanding .logo{width: 100%; margin: 15% 0%;}
+    .circlanding{ 
+        background-image: url(./media/demo1kör.png);
+        background-size:78%;
+
+        background-position:center;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        box-shadow:  rgba(0, 0, 0, 0.205) -20px -10px 18px 1px;
+        display: grid;
+        grid-area: logocont;
+        align-items: center;
+        width: 100%;}
+        .circlanding circle {transform-origin: 150px 150px;
+                       fill: none;
+                        stroke-width:7;
+                        stroke-dasharray: 190;           
+                        animation: animateCircle2 35s  linear infinite;}
+        .circlanding2 {grid-area: logocont;}
+        .circlanding2 circle {transform-origin: 150px 150px;
+                        fill: none;
+                        stroke-width:3;
+                        stroke-dasharray: 140;
+                        animation: animateCircle1 60s  linear infinite;}       
 
 /* KAPCSOLAT */
 
@@ -474,10 +558,10 @@ header {margin-top: 3%;}
                 .third_image { margin: 28% 0% 0% 28%; width:50%;height:50%;}
 
 .szakaszI{margin-top: -4%;}                
-
 footer {border-top: solid orange 2px; font-size: small; width: 99%;}
-    /* kapcsolat */
-    #confirm {margin-left: -70%;}     
+/* kapcsolat */
+    
+#confirm {margin-left: -70%;}     
 }
 
 @media screen and (min-width:685px) and (max-width:900px){
@@ -508,14 +592,24 @@ header {margin-top: 7%;}
 
 footer {border-top: solid orange 2px; font-size: small; width: 99%;}
             footer img {display: none;}
+
+/* Landing Page */                
+
+.card1, .card2 {
+    width: 90%;
+    margin-left: -10%;
 }
+
+.promo{font-size: small;}
 
 /* kapcsolat */
 #confirm {margin-left: 0%;}  
 /* RÓLUNK */
 .szemely_contentII .cimke2{margin: 0% 0% 0% 150%;}    
-
+}
 @media screen and (min-width:490px) and (max-width:685px){
+
+/* HEADER */
 
 header {grid-template-columns: repeat(2,50%);
         grid-template-areas: "motto sup"; margin-top: 7%;}
@@ -523,6 +617,8 @@ header {grid-template-columns: repeat(2,50%);
     .supporters { width: 45%; margin-right: 0%; margin-top: 2%;}
     .logo {width: 60%; height: 60%;}
         .third_image { margin: 0% 0% 0% 0%; width:100%;height:100%;}
+
+/* NAV */
 
     .mobildropdown, .mobildropdown-content{
         width: 100%;
@@ -544,13 +640,45 @@ header {grid-template-columns: repeat(2,50%);
                 font-size: small;}
                 .dropdown-content #c1 {color: white;}
 
+/* FOOTER */
+
     footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%;}
         footer p {display: none;}
         footer img {border: white 3px solid; grid-area: footer; border-radius: 100px; margin: auto;}
                 #face {width: 7%; height:60%; padding:0.3%;box-shadow:inset black -1px -1px 3px 1px; }
                 #tel {width: 7%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
                 #mail {display: block; width:7.5%;height: 60%;}
-}
+
+/* LANDING PAGE */
+.logolanding{width: fit-content;
+    margin: 20% 0%;
+    display: flex;
+    justify-content:center;}
+    .card1 p, .card2 p {display: none;}
+    .card1, .card2 {width: fit-content; text-align: center; font-size: small;}
+    .promo {margin-top: 5%;}
+    .mobilszakasz {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: small;
+    width:200%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    border-top: none;
+    border-bottom: 1px solid gold;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left:1px solid rgb(0, 0, 0); ;
+    border-radius: 15px;
+    height:fit-content;}
+    article{padding: 1%;display: block};
+    .cardback{margin: 0%;}
+    .promo{font-size: small; margin-top: 10%;}
+   .cardback{display: flex;
+justify-content: center;} 
+   }
+/* MOBILNÉZET */
 
 @media screen and (min-width:300px) and (max-width:490px){
     
@@ -558,7 +686,9 @@ body {margin: 0%;
     grid-template-columns: repeat(4,25%);
     grid-template-areas: "nav header header header"
                         "content content content content"
+                        "article article article article"
                         "footer footer footer footer";}     
+/* HEADER */
 
 header {position: sticky;
         background-color: white;
@@ -574,6 +704,8 @@ header {position: sticky;
         .heavy1 {font: bold 12px Montserrat Subrayada ;fill: rgb(252, 227, 0);}/* font-family: 'Montserrat Subrayada', sans-serif; */
         .heavy {font: bold 11.1px Montserrat Subrayada;fill: rgb(0, 0, 0);}
         .elegant {font: italic 0px serif;fill: black; }
+
+/* NAVIGÁCIÓ */
 
 nav {display: flex;
     height: 100%;
@@ -653,11 +785,15 @@ nav {display: flex;
     .mobilmenu input[type="checkbox"]:not(:checked) ~ .mobildropdown  {display: none;}       
     .mobilmenu input[type="checkbox"]:checked ~ .mobildropdown  {height: 50%;}
 
+/* SECTION */
+
 section {margin: 5% 0.5% 3% 0.5%; display: flex; flex-direction: column;border: none;}
     section p{ margin: 1%;}
     .szakaszI, .szakaszII {width: 90%;}
     .cimke, .cimke2{font-size: medium;width: 68%;background-color: gold; border-color: black;}
     #c2, #c3 { color: white;}
+
+/* FOOTER */
 
 footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%;}
     footer p {display: none;}
@@ -666,7 +802,40 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
     #tel {width: 7%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
     #mail {display: block; width:7.5%;height: 60%;}
 
+/* LANDINDPAGE */
+
+    .szakaszII .card2, .szakaszII .card1 {display:none;}
+.mobilszakasz{display: none;}
+.logolanding{width: 100%;
+    margin: 10% auto;
+    display: flex;
+    justify-content:center;}
+    .card1 p, .card2 p {display: none;}
+    .card1, .card2 {width: fit-content; text-align: center; font-size: small;}
+    .promo {margin-top: 5%;}
+    .mobilszakasz {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: small;
+    width:fit-content;;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    border-top: none;
+    border-bottom: 1px solid gold;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left:1px solid rgb(0, 0, 0); ;
+    border-radius: 15px;
+    height:fit-content;}
+    article{padding: 1%;display: block};
+    .cardback{margin: 0%;}
+    .promo{font-size: small; margin-top: 10%;}
+   .cardback{display: flex;
+justify-content: center;} 
+
 /* RÓLUNK */
+
 .alcim{font-size: small; margin-left: -2%;}
 .szemely_contentI .logo,.szemely_contentII .logo, .szemely_contentIII .logo{display: none;}
 .szemely_contentIII{margin: 5% 1%;grid-template-columns: repeat(1,100%); grid-template-areas:
@@ -680,7 +849,8 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
         "bemutatkoz2";}
 .szemely_contentII .cimke2{margin: 0% 0% 0% 1%;}
 
-/* KAPCSOLAT */    
+/* KAPCSOLAT */
+
 .kapcsolat{ 
     grid-area: content;
     width:fit-content;
@@ -717,11 +887,10 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
                     padding: 0%;margin:0%;
                     justify-content: center;}
         #reg{display: block; margin: 1% 0% 3% 0%; padding: 0%;width: 100%;}
-        
-        
         #reg2{display:block;
             width:85%;
-            margin: 0% 0% 0% 0%; padding: 0%;}
+            margin: 0% 0% 0% 0%;
+            padding: 0%;}
         .kapcs2{display:block;
                 justify-content:center;
                 justify-items:center;
@@ -729,9 +898,8 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
                 width: 100%;
                 padding: 0%;
                 margin: 6%;}
-            textarea{display: block; width:90%; 
-                 margin: auto;}
-            .kapcs2 label {display:block;margin: auto;}
+            textarea{display: block; width:90%; margin: auto;}
+            .kapcs2 label {display:block; margin: auto;}
             .kapcs2 input {display: block; margin: auto; padding: 0%; margin-top: 5%;
             width: 212px;} 
                 .kapcs2 #mail2 {display: inline;width: 200px; height: 20px;}
@@ -748,6 +916,6 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
         margin: 0% 10%;
         padding: 5%;
         border:none}  
-        #confirm input{  margin-top: -10%; 
-                    accent-color: black;}
-}
+        #confirm input{  margin-top: -10%; accent-color: black;}
+    
+    }

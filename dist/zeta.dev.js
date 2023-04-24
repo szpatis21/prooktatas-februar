@@ -8,6 +8,27 @@ function check() {
   }
 }
 
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  myIndex++;
+
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 7000);
+}
+
 function haromszog() {
   var a = Number(document.getElementsByName("1.oldal")[0].value);
   var b = Number(document.getElementsByName("2.oldal")[0].value);

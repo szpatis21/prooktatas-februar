@@ -50,11 +50,11 @@ if(eletkoruser > 18) {
     document.write("<br>Gratulálunk, hogy most épp 18 éves")
 }
 
-// 3 mal osztható számok kiírása 100 és 150 közt
-for (let k=100; k<150; k++){ 
+ 3 mal osztható számok kiírása 100 és 150 közt
+for (let k=0; k<100000; k++){ 
     if (k % 3 == 0){
     document.write("<br>",k)}
-} */
+} 
 
 /*  felugró ablakok 
 szam1 = prompt ("kérek egy számot")
