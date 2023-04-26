@@ -102,16 +102,18 @@ header {
 /* NACIGÁCIÓ ÉS MOBIL MENÜ */
 
 nav {grid-area: nav;
+    justify-items: center;
+   
+    align-items: left;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
+    flex-direction: row; 
     position: fixed;
-    top: 0;
+    top: 0px;
+    right: 0px;
     width: 100%;
     box-shadow:rgba(255, 217, 0, 0.904) 0px 0px 6px 4px;
-    overflow: hidden;
     color: black;
-    background-color: white;
+    background-image:url(./media/alap2.jpg);
     margin-bottom: 0%;}
 
     .mobildropdown, .mobildropdown-content{width: 100%;display: flex;}
@@ -128,7 +130,7 @@ nav {grid-area: nav;
             @keyframes currentnav {
                 0%   {background-color: gold;color: rgba(0, 0, 0, 0); }
                 100%   {background-color: white; color: black;}}
-a{color: black;}
+a{color: black; background-color:black;}
     nav a:visited ,a:link{color: black;}
     nav a:hover,.dropdown:hover{
         box-shadow: inset 700px 0 0 0 orange; 
@@ -144,7 +146,6 @@ a{color: black;}
             font-family:Montserrat Subrayada;
             font-weight:800;
             text-align: center;
-            justify-content: space-around;
             border-bottom-left-radius: 10px;        
             box-shadow: inset 0 0 0 0 rgb(255, 213, 74);
             transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;}
@@ -170,7 +171,7 @@ a{color: black;}
 section { display: flex;
         margin: -0% 1% 1% 1% ;
         border-left:solid 2px gold ;
-        border-right:solid 2px gold ;
+        border-right:solid 2px black ;
         border-bottom-left-radius:15px ;
         border-top-right-radius: 15px;
         grid-area: content;
@@ -220,10 +221,28 @@ section { display: flex;
             #c3 {color: rgb(255, 136, 0); font-style: oblique;}
 
 /* LANDINGPAGE */
-.mobilszakasz{display: none;}
-.promo{grid-area: article; padding: 1%;}
-article{ 
+.mobilszakasz{display: flex; padding: 3%; font-size: small;width:fit-content;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    border-top: none;
+    border-bottom: 1px solid gold;
+    border-right: none;
+    border-left:1px solid rgb(0, 0, 0); ;
+    border-radius: 15px;
+    height:fit-content;
+  
+}
+.promo{grid-area: article; 
     padding: 1%;
+    margin: 1%;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left:black 2px solid;
+    border-right:gold 2px solid;}
+article{ 
+    padding: 2%;
     display: grid;
     grid-template-columns: repeat(4,25%);
     grid-template-areas: "cikk demokep demokep demokep";}
@@ -234,17 +253,17 @@ article{
                 padding: 0%;
                 border-top: 5px solid gold;
                 border-bottom: 5px solid gold;
-                border-right: 10px solid rgb(0, 0, 0);
+                border-right: 10px double rgb(0, 0, 0);
                 border-left: none;
                 box-shadow: none;
                 width: 80%;
-                border-bottom-right-radius: 15%;
-                border-bottom-left-radius: 15%;}
+                border-bottom-right-radius: 25px;
+                border-bottom-left-radius: 25px;}
                 #cardback2 img{ 
                     border-top: 5px solid black;
                     border-bottom: 5px solid black;
                     border-right:none ;
-                    border-left:10px solid gold;}
+                    border-left:10px double gold;}
                 
     .card1{
         display: block;
@@ -280,7 +299,7 @@ article{
     .logolanding .logo{width: 100%; margin: -15% 0% 0% 0%;}
     .circlanding{ 
         background-image: url(./media/LANDINGPAGE/demo1kör.png);
-        background-size:78%;
+        background-size:100%;
 
         background-position:center;
         background-repeat: no-repeat;
@@ -301,6 +320,60 @@ article{
                         stroke-width:3;
                         stroke-dasharray: 140;
                         animation: animateCircle1 60s  linear infinite;}       
+
+/* VERZIÓK */
+
+.tablazat{display: grid; grid-template-rows: repeat(1,100%);}
+.tablazatmobil{display:none}
+table, tr, td, th{border: black solid 2px;}
+table {height: fit-content;display: block;
+        font-size: small;
+        text-align: justify;
+        padding: 0.5%;
+        border: none;
+        width: fit-content;
+        margin-bottom: 2%;
+        background-color: rgba(255, 255, 255, 0.397);}
+th {border: none;
+    border-bottom: gold 4px solid;
+    text-align:center;
+    vertical-align: bottom;
+    padding: 1%;
+    font-family:Montserrat Subrayada;}
+td{padding: 1%;border-left: gold 2px solid; border-radius: 15px;}
+
+.fuggoleges {border-right: gold 4px solid;
+    color: white;
+    background-color: gold;
+    border-bottom: black;
+    vertical-align:middle;
+    text-align: right;
+    width: 50px;
+    height: 250px;}
+th span {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform:rotate(180deg);
+  white-space: nowrap;}
+
+  caption {
+    height: fit-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    padding: 0.5%;
+    background-color: white;
+    width: fit-content;
+    font-weight: 500;
+    border: black 1px solid;
+    border-radius: 15px;
+    box-shadow: black 1px 4px 5px 1px;
+    color: gold;
+    font-size: medium;
+    font-style: italic;
+}
 
 /* KAPCSOLAT */
 
@@ -403,6 +476,7 @@ article{
             margin-top: 0.3%; 
                     margin-left:5%;
                     accent-color: red;}
+
 
 /* RÓLUNK */
 .rolunk{display:flex;
@@ -543,6 +617,8 @@ footer img {border: white 3px solid; grid-area: footer; border-radius: 100px; ma
 /* TÖRÉSPONTOK */
 
 @media screen and (min-width:900px) and (max-width:1350px){
+
+
 nav {flex-direction: column;
     font-size:medium;
     font-weight:700; }
@@ -556,12 +632,15 @@ header {margin-top: 3%;}
               
 .szakaszI{margin-top: -4%;}                
 footer {border-top: solid orange 2px; font-size: small; width: 99%;}
-/* kapcsolat */
+
+/* KAPCSOLAT */
     
 #confirm {margin-left: -70%;}     
 }
 
 @media screen and (min-width:685px) and (max-width:900px){
+
+
     #indexhead {display: none;} 
 header {margin-top: 7%;}
     .motto{width: 140%;}
@@ -589,7 +668,8 @@ header {margin-top: 7%;}
 footer {border-top: solid orange 2px; font-size: small; width: 99%;}
             footer img {display: none;}
 
-/* Landing Page */                
+/* Landing Page */   
+
 .logolanding .logo{width: 100%; margin: -25% 0% 0% 0%;}
 .card1, .card2 {
     width: 90%;
@@ -598,13 +678,18 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%;}
 
 .promo{font-size: small;}
 
-/* kapcsolat */
-#confirm {margin-left: 0%;}  
+/* KAPCSOLAT */
+
+#confirm {margin-left: 0%;}
+
 /* RÓLUNK */
+
 .szemely_contentII .cimke2{margin: 0% 0% 0% 150%;}    
+
 }
 
 @media screen and (min-width:490px) and (max-width:685px){
+
 
 /* HEADER */
 
@@ -648,6 +733,7 @@ header {grid-template-columns: repeat(2,50%);
                 #mail {display: block; width:7.5%;height: 60%;}
 
 /* LANDING PAGE */
+
 .logolanding{width: fit-content;
     margin: -25% 0% 0% 0%;
     display: flex;
@@ -676,11 +762,30 @@ header {grid-template-columns: repeat(2,50%);
     .promo{font-size: small; margin-top: 0%;}
    .cardback{display: flex;
 justify-content: center;} 
-   }
+
+/* VERZIÓK */
+
+.tablazat{display: none;}
+.tablazatmobil{display: flex; flex-direction: row;}
+.tablazatmobil td{ padding: 3%;}
+.fuggoleges {border-right: gold 4px solid;
+    background-color: gold;
+    color: white;
+    border-bottom: black;
+    vertical-align:middle;
+    text-align: center;}
+th span {
+    width:30px;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;}
+
+}
 /* MOBILNÉZET */
 
-@media screen and (min-width:0px) and (max-width:490px){
-    
+@media screen and (min-width:0px) and (max-width:490px){   
 body {margin: 0%;
     grid-template-columns: repeat(4,25%);
     grid-template-areas: "nav header header header"
@@ -832,6 +937,12 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
     .promo{font-size: small; margin-top: 10%;}
    .cardback{display: flex;
 justify-content: center;} 
+
+/* VERZIÓK */
+.tablazatmobil{display: flex; flex-direction: row;}
+.tablazat{display: none;} 
+.tablazatmobil td{font-size: small;width:fit-content;}
+table {padding: 5%};
 
 /* RÓLUNK */
 
