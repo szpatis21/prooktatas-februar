@@ -775,12 +775,13 @@ justify-content: center;}
     vertical-align:middle;
     text-align: center;}
 th span {
-    width:30px;
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  writing-mode:horizontal-tb;
+  vertical-align:middle;
+  transform: rotate(0deg);
   white-space: nowrap;}
+  
+th {vertical-align: middle; font-size: smaller; width: 120px;}
+
 
 }
 /* MOBILNÉZET */
@@ -939,11 +940,23 @@ footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%
 justify-content: center;} 
 
 /* VERZIÓK */
+caption{font-size: small; padding: 2%; }
+.tablazat{display: none;}
 .tablazatmobil{display: flex; flex-direction: row;}
-.tablazat{display: none;} 
-.tablazatmobil td{font-size: small;width:fit-content;}
-table {padding: 5%};
-
+.tablazatmobil td{ padding: 3%;}
+.fuggoleges {border-right: gold 4px solid;
+    background-color: gold;
+    color: white;
+    border-bottom: black;
+    vertical-align:middle;
+    text-align: center;}
+th span {
+  writing-mode:horizontal-tb;
+  vertical-align:middle;
+  transform: rotate(0deg);
+  white-space: nowrap;}
+  
+th {vertical-align: middle; font-size: smaller; width: 120px;}
 /* RÓLUNK */
 
 .alcim{font-size: small; margin-left: -2%;}
