@@ -342,18 +342,21 @@ th {border: none;
     border-bottom: gold 4px solid;
     text-align:center;
     vertical-align: bottom;
+    border-radius: 20px;
     padding: 1%;
     font-family:Arial, Helvetica, sans-serif;}
 td{padding: 1%;border-left: gold 2px solid; border-radius: 15px;}
 
 .fuggoleges {border-right: gold 4px solid;
     color: white;
+    box-shadow: inset rgb(0, 0, 0) 5px 0px 8px 1px;
     background-color: gold;
     border-bottom: black;
     vertical-align:middle;
-    text-align: right;
+    text-align: center;
     width: 50px;
-    height: 250px;}
+    height: 250px;
+border-radius: 26px;}
 th span {
     writing-mode: vertical-rl;
     text-orientation: upright;}
@@ -367,9 +370,9 @@ th span {
     background-color: white;
     width: fit-content;
     font-weight: 500;
-    border: black 1px solid;
+    border-bottom: black 1px solid;
     border-radius: 15px;
-    box-shadow: black 1px 4px 5px 1px;
+    box-shadow: black 1px 6px 5px 1px;
     color: gold;
     font-size: medium;
     font-style: italic;
