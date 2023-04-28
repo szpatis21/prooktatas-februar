@@ -1,5 +1,4 @@
-body {
-    min-width: 300px;
+body {min-width: 300px;
     margin: 0%;
     text-align: center;
     display: grid;
@@ -223,6 +222,49 @@ section { display: flex;
             margin: 5% 0% 3% 15%;
             /* box-shadow: gold 2px 2px 3px 1px ; */}
             #c3 {color: rgb(255, 136, 0); font-style: oblique;}
+
+/* LETÖLTÉS */
+.letoltes .szakaszI {display: none;}
+.letoltes {min-height: 370px;}
+.letoltes .szakaszII { display: flex; justify-content: center; align-items: center; margin-left: 10%;}
+.downloadlanding .logo{width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;}
+.circlandingdownl{ 
+    border-radius: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-area: logocont;
+    align-items: center;
+    width: 100%;}
+    .circlandingdownl circle {transform-origin: 150px 150px;
+        fill: none;
+         stroke-width:7;
+         stroke-dasharray: 190;           
+         animation: animateCircle2 35s  linear infinite;}
+
+.btn {background-color: rgba(255, 255, 255, 0);
+    font-family: Montserrat Subrayada; 
+    font-size: x-large; 
+    border: none; 
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+position: absolute;
+border-radius: 50px;
+
+transition: transform 1s, color 1s, box-shadow 1s;}
+.btn:hover {transform: scale(2); color: white; box-shadow: inset gold 0px 0px 40px 10px;}
 
 /* LANDINGPAGE */
 .mobilszakasz{display: flex; padding: 3%; font-size: small;width:fit-content;
@@ -759,12 +801,15 @@ header {grid-template-columns: repeat(2,50%);
 
 /* FOOTER */
 
-    footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%;}
-        footer p {display: none;}
-        footer img {border: white 3px solid; grid-area: footer; border-radius: 100px; margin: auto;}
-                #face {width: 7%; height:60%; padding:0.3%;box-shadow:inset black -1px -1px 3px 1px; }
-                #tel {width: 7%; padding: 0.6%;box-shadow:inset black 1px 1px 3px 1px;}
-                #mail {display: block; width:7.5%;height: 60%;}
+    footer {border-top: solid orange 2px; font-size: small; width: 99%; height: 100%; grid-template-columns: repeat(5,20%); grid-template-areas: "left center center center right";}
+    footer p {display: none;}
+    #mail {display: flex; justify-content: center; justify-items: center; align-items: center;align-content: center;}
+
+/* LETÖLTÉS */
+
+.downloadlanding .logo{width: 100%;}
+.btn {font-size: xx-large;}
+.letoltes .mobilszakasz { margin: 0%;}
 
 /* LANDING PAGE */
 
@@ -1067,5 +1112,14 @@ th span { font-family: Arial;
         padding: 5%;
         border:none}  
         #confirm input{  margin-top: -10%; accent-color: black;}
-    
+ 
+        /* LETÖLTÉS */
+
+.downloadlanding .logo{width: 70%;}
+.btn {font-size: xx-large; position: absolute;}
+.letoltes .szakaszII .mobilszakasz { display: none;}
+.letoltes .szakaszI{display: block;}
+.downmobcont {display: block;}
+.letoltes .szakaszII {margin-top: 10%;} 
+
 }
