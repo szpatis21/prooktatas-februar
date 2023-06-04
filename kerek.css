@@ -621,6 +621,8 @@ footer{height: 50px;
 
 @media(max-width:991px){
        
+
+
 /* INTÉZMÉNY VÁLASZTÓ */
 
 .intezmenyvalaszto {margin: 1% auto 0% auto ;}
@@ -645,12 +647,23 @@ footer{height: 50px;
 transform: translateY(40px);}
 
 /* NAV */
- 
+body {grid-template-areas: 
+  "nav"
+  "header"
+  "content"
+  "slide"
+  "tamop"
+  "footer";}
+
+  header{ margin-top:-15%;}
+  header h1{display: none;}
   .navcont{padding: 20px;
-          box-shadow: cyan 1px 1px 10px 1px;
-          display: flex;
-          grid-template-columns: repeat(1,100%);
-          grid-template-areas: "logo";}
+          box-shadow: rgb(38, 126, 126) 1px 1px 10px 1px;
+          display:flex;
+          }    
+         /*  display: grid;
+          grid-template-columns: repeat(5,20%);
+          grid-template-areas: "logo menu menu menu menu"; */
       .navcont label {display: initial;}
       .navcont .navbar{transform: translateX(-1000px);
               position:absolute;
@@ -673,16 +686,14 @@ transform: translateY(40px);}
               border: 1px solid rgba(255, 255, 255, 0.33);}
            .navcont .navbar ul li ul li ul{width: 100%;left: 0;}
           #menu-bar:checked ~ .navbar{transform: translateX(0px);}
-            .navcont .logo{width: 90%;}
-          .logo img {width: 30px; margin: 0px 15px;transition: all 1s;}
-          #menu-bar2{background-color: aqua;
-        position: relative;
-        top: 50px;
-        width: 50%;
-
-      }
+            .navcont .logo{width: 100%;}
+            .logobar i  {display: none;}
+            .logobar { position: absolute;}
+            .logo img {width: 30px;transform: translateX(150px);transition: all 1s;}
+            .logo img:hover{transform: translateX(150px);}
+            #menu-bar2{position: relative;top: 40px;width: 40%;}
           #menu-bar2 svg{
-          margin-top: -49px;
+          margin-top: -35px;
           border-radius: 100px;
           width: 85%;
           height: 85%;
