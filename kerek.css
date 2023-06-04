@@ -679,7 +679,7 @@ body {grid-template-areas:
               position:absolute;
               top: 100%;left: 0;right: 0;
               background: rgb(58,153,180);
-              background: linear-gradient(140deg, rgba(16, 113, 139, 0.815) 69%, rgba(42,136,247,0.5214460784313726) 84%, rgba(252,176,69,0) 100%);
+              background: linear-gradient(140deg, rgba(16, 113, 139, 0.815) 40%, rgba(42,136,247,0.5214460784313726) 54%, rgba(252,176,69,0) 70%);
               box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
               backdrop-filter: blur(1.9px);
               -webkit-backdrop-filter: blur(3.9px);
@@ -687,7 +687,7 @@ body {grid-template-areas:
               border-top: 1px solid rgb(46, 31, 31);
               transition: all 1s;}
         .almenu img{display: none;}
-        .navcont .navbar ul li {width: 100%; box-shadow: rgba(221, 224, 31, 0.555) 0px 0px 10px 1px;}
+        .navcont .navbar ul li {width: 100%; box-shadow: rgb(255, 255, 255) 0px 0px 2.1px 0.1px;}
           .navcont .navbar ul li ul{position: relative;width: 100%;}
            .navcont .navbar ul li ul li{background: rgba(52, 208, 255, 0.486);
               box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
