@@ -700,6 +700,7 @@ body {
               border: 1px solid rgba(255, 255, 255, 0.33);}
            .navcont .navbar ul li ul li ul{width: 100%;left: 0;}
           #menu-bar:checked ~ .navbar{transform: translateX(0px);}
+          
             .navcont .logo{width: 100%;}
             .logobar i  {display: none;}
             .logobar { position: absolute;}
@@ -775,8 +776,21 @@ body {
       .sor3:hover{ margin-left: -300px;z-index: 1000;
         width: 200px;height: 200px;}
    .tamo_mob{display: flex; justify-self: center;}
-   .tamop_mob{display: block; color: azure; text-align: center; font-style: italic; margin-top: 2%;}     
-  .tamop{box-shadow: gold 0px 5px 8px 1px;}
+   .tamop_mob{display: block;
+      color: azure;
+      margin: 5% 0%;
+      text-align: center;
+      font-style: italic;
+      margin-top: 2%;background: rgba(52, 208, 255, 0.486);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(1.9px);
+      -webkit-backdrop-filter: blur(3.9px);
+      border: 1px solid rgba(255, 255, 255, 0.33);}
+    #tamopcimke { position: relative; margin-top: -5%; display: flex;
+      justify-self: right;  color: #ffffff; margin-left: 15%; }     
+  .tamop{box-shadow: gold 0px 5px 8px 1px; 
+  
+  }
 
 
    footer{display: none;}         
