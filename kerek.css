@@ -629,7 +629,9 @@ footer{height: 50px;
     backdrop-filter: blur(1.9px);
     -webkit-backdrop-filter: blur(3.9px);
     color:rgb(255, 41, 41);
-    font-size: 24px;
+    font-size: 21px;
+    margin-left: -0.5%;
+    margin-right: 5%;
     text-align: center;
   text-shadow: white -2px 0px 10px;}
 /* INTÉZMÉNY VÁLASZTÓ */
@@ -722,7 +724,7 @@ body {
 
 /* TAMOGATÁS */
 
-  .tamop p{color:crimson; text-shadow:yellow -1px -1px 3px;
+  .tamop p{color:crimson; text-shadow:rgb(255, 255, 255) -1px -1px 3px;
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
