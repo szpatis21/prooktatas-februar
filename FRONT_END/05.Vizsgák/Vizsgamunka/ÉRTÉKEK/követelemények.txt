@@ -1,0 +1,12 @@
+Pár mondatban jelezném felétek,hogy mik az elvárások a beadandó front-end vizsga munkánál: 
+1) Fontos, hogy a weboldal, amit készítesz esztétikus és jól áttekinthető legyen. Érdemes odafigyelni, hogy a szöveges részek jól olvashatóak legyenek.  
+
+2) Fontos, hogy a weboldal teljesen reszponzív legyen.
+
+3) Technikai elemek, amikből min. 4-nek szerepelnie kell az oldaladon: Menü, táblázat, űrlap (form), kép/videó beágyazás, bármilyen JavaScript.
+
+4) Nem használhatsz kész template-et(nix kifestős könyv). Viszont máshonnan származó kód részletet a saját kódodba természetesen beágyazhatsz. pl.: egy caurosel, vagy egy galéria.
+
+5) Bootstrap-et használhatsz. Ha azonban Bootstrap nélkül készíted el a weboldalad, akkor egy jeggyel jobbat kapsz!
+
+6) Lehetőleg több oldalból álló weboldalad legyen. Ha mégis a one-page design mellett döntesz, akkor maximum 4-est kaphatsz.
