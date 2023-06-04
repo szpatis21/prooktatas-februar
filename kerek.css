@@ -712,11 +712,11 @@ body {grid-template-areas:
             transition: all 1s;}
             .logobar p{ background: #FFEDF1;
               background: linear-gradient(to right, #FFEDF1 , #E8CA07 70%);
-              padding-left: 25px;
+              padding-left: 15px;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              display: flex; font-size: 20px;}
-              .logobar span{display: flex; font-size: 12px; width: 55%; margin-left: 2%;}
+              display: flex; font-size: 17px;}
+              .logobar span{display: flex; font-size: 10px; width: 55%; margin-left: 2%;}
 
 /* TAMOGATÁS */
 
