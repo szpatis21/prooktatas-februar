@@ -658,7 +658,9 @@ transform: translateY(40px);}
 
 /* BODY */
 
-body {grid-template-areas: 
+body {
+  font-family: 'Times New Roman', Times, serif;
+  grid-template-areas: 
   "nav"
   "content"
   "header"
@@ -722,6 +724,8 @@ body {grid-template-areas:
 
   .tamop p{color:crimson; text-shadow:yellow -1px -1px 3px;
     font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
     text-indent:-10px;}
     .sor1{background-color: aliceblue;
       transform: translate(30px,10px);
