@@ -626,33 +626,31 @@ section {grid-area: slide;
         .sor3:hover img{visibility: visible;}
         .sor3:hover p{color: gold}
 
-footer{
-  height: 50px; 
-  grid-area: footer;
-  margin: 2% 0% 0% 0%;  
-  background: rgba(126, 225, 255, 0.178);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 2% 2%;
-  backdrop-filter: blur(1.9px);
-  -webkit-backdrop-filter: blur(3.9px);
-  border: 1px solid rgba(255, 255, 255, 0.33);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;}
+ /* FOOTER */
 
-  footer a {padding:0% 3% 0% 3%;
-    display:inline-flex;
-    color: gold;
-    text-shadow: black 5px 5px 7px;
-    font-size: large;
-    font-style: oblique;
-  text-align: center;}
-    footer p{ color: white;
-      text-shadow: black 5px 5px 7px;
-      font-size: large;
-      font-style: oblique;
-      text-align: center;}
+  footer{display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-area: footer;
+    margin: 1% 0% 0% 0%;
+    background: rgba(126, 225, 255, 0.178);
+    box-shadow: whitesmoke 0px 4px 10px 8px;  
+    padding: 1% 0%;
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    width: 100%;
+    justify-content: center;
+    align-items: center;}
+     .footerikon{display: flex; flex-direction: row; } 
+      .footerp {font-size: 15px;
+        text-shadow: black 3px 3px 5px;
+         color: gold;
+         margin: 5px auto;
+        font-weight: 500;
+        font-style: italic;}         
+      footer img{width: 40px; height: 40px; border-radius: 100px; border: 2px whitesmoke solid; padding: 3px; box-shadow: cyan 0px 0px 10px 4px; margin: 5px 10px;}
+      .footerikonp a{color: gold; text-shadow: #000000 1px 1px 5px; }
+      .footerikonp p{padding: 1px 0px;  color: white; text-shadow: #000000 1px 1px 5px; font-style: italic; }
 
 @media(max-width:991px){
 
@@ -729,7 +727,7 @@ body {font-family: 'Times New Roman', Times, serif;
   .navcont{padding: 20px;
           box-shadow: rgb(38, 126, 126) 1px 1px 10px 1px;
           display:flex;
-        position:fixed;}    
+        position:fixed; top: 2px}    
       .navcont label {display: initial;}
       .navcont .navbar{transform: translateX(-1000px);
               position:absolute;
@@ -840,12 +838,13 @@ body {font-family: 'Times New Roman', Times, serif;
       border: 1px solid rgba(255, 255, 255, 0.33);}
     #tamopcimke { position: relative; margin-top: -5%; display: flex;
       justify-self: right;  color: #ffffff; margin-left: 15%; }     
-  .tamop{box-shadow: gold 0px 5px 8px 1px; 
+  .tamop{box-shadow: gold 0px 5px 8px 1px;}
   
-  }
+  /*FOOTER  */
 
+  footer{grid-area:auto;text-align: center; margin: 0px 0px 10px 0px}
+    .footerp {font-size: 12px; color: whitesmoke;margin: 10px auto;}         
+    footer img{width: 30px; height: 30px;}
+    .footerikonp{display: none;}}
+          
 
-   footer{display: none;}         
-            
-
-          }
