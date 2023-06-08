@@ -571,7 +571,7 @@ section {grid-area: slide;
     transition: color 1s;}
     .sor1{display: grid;
       transform: translate(90px,10px);
-      font-size: large;
+      font-size: 15px;
       font-weight: 900;
       grid-template-columns: repeat(2, 50%);
       justify-items: center;
@@ -593,7 +593,7 @@ section {grid-area: slide;
       background: rgb(255,255,255);
       background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 94%);
       transform: translate(0px,30px);
-      font-size: large;
+      font-size: 16px;
       font-weight: 900;
       grid-template-columns: repeat(2, 50%);
       justify-items: center;
@@ -608,7 +608,7 @@ section {grid-area: slide;
         .sor2:hover img{visibility: visible;}
         .sor2:hover p{color: gold;}
 .sor3{display: grid;
-      font-size: large;
+      font-size: 14px;
       font-weight: 900;
       transform: translate(-130px,-50px);
       grid-template-columns: repeat(2, 50%);
@@ -701,6 +701,8 @@ transform: translateY(40px);}
       border-radius:  70px;
       padding: 5px;
       margin: 5px;
+      padding-top: 15px;
+      padding-bottom: 0px;
       border: whitesmoke solid 2px;
       box-shadow: wheat 0px 0px 10px 1px;}
 .kisikon {grid-area: kisikon;
@@ -726,7 +728,8 @@ body {font-family: 'Times New Roman', Times, serif;
 
   .navcont{padding: 20px;
           box-shadow: rgb(38, 126, 126) 1px 1px 10px 1px;
-          display:flex;}    
+          display:flex;
+        position:fixed;}    
       .navcont label {display: initial;}
       .navcont .navbar{transform: translateX(-1000px);
               position:absolute;
