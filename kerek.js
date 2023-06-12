@@ -1,22 +1,26 @@
 function myFunction() {
-  var x = document.getElementById("kotelezo_lentimg");
+  var x = document.getElementById("kotelezo_lent");
   
   if (x.style.transform === "translateY(80%)") 
-  {
+  {x.style.opacity = "1";
     x.style.transform = "translateY(0%)";
     x.style.transition = "all 1s"
   } else {
     x.style.transform = "translateY(80%)";
     x.style.transition = "all 1s"
+    x.style.opacity = "0";
   }
 }
 function myFunctionII() {
-  var x = document.getElementById("kotelezo_fentimg");
+  var x = document.getElementById("kotelezo_fent");
 
   if (x.style.transform === "translateY(-80%)") {
     x.style.transform = "translateY(0%)";
+    x.style.opacity = "1";
     x.style.transition = "all 1s"
   } else {
+    x.style.opacity = "0";
+
     x.style.transform = "translateY(-80%)";
     x.style.transition = "all 1s"
   }
@@ -177,4 +181,4 @@ kep2.addEventListener('mouseout', () => {
   pp2.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';
   info2.style.color = '';
   info2.style.textShadow = 'black 5px 5px 5px';
-  pp2.style.transform = "scale(1)";});
+  pp2.style.transform = "scale(1)";});rgb(255, 87, 87)

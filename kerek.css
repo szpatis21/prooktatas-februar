@@ -656,7 +656,7 @@ section {grid-area: slide;
 /* KÖTELEZŐ */
 #kotelezo_lent{
   z-index: 1000;
-  width:20%;
+  width:17.5%;
   position: fixed;
   display: flex;
   justify-self: right;
@@ -668,11 +668,6 @@ section {grid-area: slide;
   background-color: transparent;
   border: 2px solid gold;
   border-radius: 100px;
-  width: 10%;
-  height: 15%;
-  color: gold;
-  font-weight: 900;
-  font-style: italic;
   display: flex;
   position: absolute;
   justify-self: right;
@@ -681,36 +676,42 @@ section {grid-area: slide;
   padding: 1.5%;
   align-items: center;
   cursor: pointer;
-  box-shadow: cyan 0px 0px 10px 1px;}
+  box-shadow: cyan 0px 0px 10px 1px;
+  width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-style: normal;
+    justify-content: center;}
 
   #kotelezo_fent{
     z-index: 1000;
-    width:20%;
+    width:17.5%;
     position: fixed;
     display: flex;
     justify-self: right;
     top: 0%;}
   
     #kotelezo_fent button{
-    z-index: 2500;
+    z-index: 100;
     text-align: center; 
     background-color: transparent;
     border: 2px solid gold;
     border-radius: 100px;
-    width: 10%;
-    height: 15%;
-    color: gold;
-    font-weight: 900;
-    font-style: italic;
     display: flex;
     position: absolute;
-    justify-self: right;
-    left: -5%;
-    top: 0%; 
     padding: 1.5%;
     align-items: center;
     cursor: pointer;
-    box-shadow: cyan 0px 0px 10px 1px;   
+    box-shadow: cyan 0px 0px 10px 1px;
+    width: 30px;
+    height: 30px;
+    color: rgb(238, 255, 0);
+    font-weight: 900;
+    font-style: normal;
+    justify-content: center;
+    top: 0%; 
+    left: -5%;   
   }
 
 
@@ -912,6 +913,34 @@ body {font-family: 'Times New Roman', Times, serif;
   footer{grid-area:auto;text-align: center; margin: 0px 0px 10px 0px}
     .footerp {font-size: 12px; color: whitesmoke;margin: 10px auto;}         
     footer img{width: 30px; height: 30px;}
-    .footerikonp{display: none;}}
+    .footerikonp{display: none;}
+  
+/* KÖTELEZŐ */
+#kotelezo_lent{
+  width:50%;}
+
+  #kotelezo_lent button{
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-style: normal;
+    justify-content: center;}
+
+  #kotelezo_fent{width:50%;top: 8.5%;}
+    #kotelezo_fent button{
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-style: normal;
+    justify-content: center;
+    top: 90%; 
+    left: 84%;}
+
+  
+  
+  
+  }
           
 
