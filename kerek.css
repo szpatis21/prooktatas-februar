@@ -652,6 +652,71 @@ section {grid-area: slide;
       .footerikonp a{color: gold; text-shadow: #000000 1px 1px 5px; }
       .footerikonp p{padding: 1px 0px;  color: white; text-shadow: #000000 1px 1px 5px; font-style: italic; }
 
+
+/* KÖTELEZŐ */
+#kotelezo_lent{
+  z-index: 1000;
+  width:20%;
+  position: fixed;
+  display: flex;
+  justify-self: right;
+  bottom: 0%;}
+
+  #kotelezo_lent button{
+    z-index: 1000;
+  text-align: center; 
+  background-color: transparent;
+  border: 2px solid gold;
+  border-radius: 100px;
+  width: 10%;
+  height: 15%;
+  color: gold;
+  font-weight: 900;
+  font-style: italic;
+  display: flex;
+  position: absolute;
+  justify-self: right;
+  right: 1%;
+  top: -10%; 
+  padding: 1.5%;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: cyan 0px 0px 10px 1px;}
+
+  #kotelezo_fent{
+    z-index: 1000;
+    width:20%;
+    position: fixed;
+    display: flex;
+    justify-self: right;
+    top: 0%;}
+  
+    #kotelezo_fent button{
+    z-index: 2500;
+    text-align: center; 
+    background-color: transparent;
+    border: 2px solid gold;
+    border-radius: 100px;
+    width: 10%;
+    height: 15%;
+    color: gold;
+    font-weight: 900;
+    font-style: italic;
+    display: flex;
+    position: absolute;
+    justify-self: right;
+    left: -5%;
+    top: 0%; 
+    padding: 1.5%;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: cyan 0px 0px 10px 1px;   
+  }
+
+
+
+
+
 @media(max-width:991px){
 
   /* HEADER */
@@ -840,6 +905,8 @@ body {font-family: 'Times New Roman', Times, serif;
       justify-self: right;  color: #ffffff; margin-left: 15%; }     
   .tamop{box-shadow: gold 0px 5px 8px 1px;}
   
+
+
   /*FOOTER  */
 
   footer{grid-area:auto;text-align: center; margin: 0px 0px 10px 0px}

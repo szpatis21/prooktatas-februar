@@ -1,3 +1,28 @@
+function myFunction() {
+  var x = document.getElementById("kotelezo_lentimg");
+  
+  if (x.style.transform === "translateY(80%)") 
+  {
+    x.style.transform = "translateY(0%)";
+    x.style.transition = "all 1s"
+  } else {
+    x.style.transform = "translateY(80%)";
+    x.style.transition = "all 1s"
+  }
+}
+function myFunctionII() {
+  var x = document.getElementById("kotelezo_fentimg");
+
+  if (x.style.transform === "translateY(-80%)") {
+    x.style.transform = "translateY(0%)";
+    x.style.transition = "all 1s"
+  } else {
+    x.style.transform = "translateY(-80%)";
+    x.style.transition = "all 1s"
+  }
+}
+
+
 /* MOBILMENU */
 
 function checkUncheck()
