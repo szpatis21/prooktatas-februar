@@ -738,7 +738,7 @@ section {grid-area: slide;
             .info_mob0{ text-shadow: rgb(0, 0, 0) 5px 5px 5px;
               color:gold;
               font-style: italic; font-weight: normal;
-              text-align: center; font-size: small;}
+              text-align: left; font-size: 12px;}
             
 /* SLIDER */
 
@@ -923,7 +923,7 @@ body {font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     justify-content: center;}
 
-  #kotelezo_fent{width:50%;top: 9%;
+  #kotelezo_fent{width:50%;top: 8.3%;
     left: 50%;}
     #kotelezo_fent button{
     width: 30px;
