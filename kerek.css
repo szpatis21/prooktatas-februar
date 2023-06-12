@@ -660,12 +660,20 @@ section {grid-area: slide;
   position: fixed;
   display: flex;
   justify-self: right;
-  bottom: 0%;}
+  bottom: 0%;
+  animation-duration: 3.8s;  
+  animation-fill-mode:none;
+  animation-name: kotelezo;}
+      @keyframes kotelezo {
+          0% {transform: translateX(500px);}
+          100% {transform: translateX(0px);}}
+
+
       #kotelezo_lent button{
       z-index: 1000;
       text-align: center; 
       background-color: transparent;
-      border: 2px solid gold;
+      border: 2px solid rgb(255, 255, 255);
       border-radius: 100px;
       display: flex;
       position: absolute;
@@ -688,7 +696,13 @@ section {grid-area: slide;
     position: fixed;
     display: flex;
     top: 32.5%;
-    left: 82.5%;}
+    left: 82.5%;
+    animation-duration: 5.8s;  
+    animation-fill-mode:none;
+    animation-name: kotelezo2;}
+        @keyframes kotelezo2 {
+            0% {transform: translateX(500px);}
+            100% {transform: translateX(0px);}}
         #kotelezo_fent button{
         z-index: 100;
         text-align: center; 
@@ -902,8 +916,6 @@ body {font-family: 'Times New Roman', Times, serif;
       justify-self: right;  color: #ffffff; margin-left: 15%; }     
   .tamop{box-shadow: gold 0px 5px 8px 1px;}
   
-
-
   /*FOOTER  */
 
   footer{grid-area:auto;text-align: center; margin: 0px 0px 10px 0px}
@@ -914,7 +926,6 @@ body {font-family: 'Times New Roman', Times, serif;
 /* KÖTELEZŐ */
 #kotelezo_lent{
   width:50%;}
-
   #kotelezo_lent button{
     width: 30px;
     height: 30px;
@@ -922,7 +933,6 @@ body {font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-style: normal;
     justify-content: center;}
-
   #kotelezo_fent{width:50%;top: 8.3%;
     left: 50%;}
     #kotelezo_fent button{

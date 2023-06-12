@@ -1,30 +1,33 @@
-function myFunction() {
+/* KÖTELEZŐ */
+
+function kikapcs() {
   var x = document.getElementById("kotelezo_lent");
+  var y = document.getElementById("kotelezo_fent");
   
-  if (x.style.transform === "translateY(80%)") 
-  {x.style.opacity = "1";
-    x.style.transform = "translateY(0%)";
+  if (x.style.transform === "translatex(80%)" || y.style.transform === "translateY(80%)") 
+  {y.style.opacity = "1";
+  y.style.transform = "translatex(0%)";
+  y.style.transition = "all 2s"
+    x.style.opacity = "1";
+    x.style.transform = "translatex(0%)";
     x.style.transition = "all 1s"
   } else {
-    x.style.transform = "translateY(80%)";
+    y.style.transform = "translatex(80%)";
+    y.style.transition = "all 2s"
+    y.style.opacity = "0";
+    x.style.transform = "translatex(80%)";
     x.style.transition = "all 1s"
-    x.style.opacity = "0";
-  }
-}
-function myFunctionII() {
+    x.style.opacity = "0";}}
+/* function myFunctionII() {
   var x = document.getElementById("kotelezo_fent");
-
   if (x.style.transform === "translateY(-80%)") {
     x.style.transform = "translateY(0%)";
     x.style.opacity = "1";
     x.style.transition = "all 1s"
   } else {
     x.style.opacity = "0";
-
     x.style.transform = "translateY(-80%)";
-    x.style.transition = "all 1s"
-  }
-}
+    x.style.transition = "all 1s"}} */
 
 
 /* MOBILMENU */
