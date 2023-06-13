@@ -224,7 +224,7 @@ article{
     margin: 2% auto;
     display: grid;
     grid-template-columns: repeat(1,50%);
-    grid-template-areas: 
+    grid-template-areas:
     "1 2"
     "3 4";
     margin-left: auto;
@@ -656,11 +656,14 @@ section {grid-area: slide;
 
 #kotelezo_lent{
   z-index: 1000;
-  width:17.5%;
+ 
   position: fixed;
   display: flex;
-  justify-self: right;
-  bottom: 0%;
+  width:250px;
+justify-content: center;
+justify-self: right;
+  bottom: 0;
+  
   animation-duration: 3.8s;  
   animation-fill-mode:none;
   animation-name: kotelezo;}
@@ -692,11 +695,13 @@ section {grid-area: slide;
       justify-content: center;}
 #kotelezo_fent{
     z-index: 1000;
-    width:17.5%;
     position: fixed;
     display: flex;
-    top: 32.5%;
-    left: 82.5%;
+    width:250px;
+  justify-content: center;
+  justify-self: right;
+  right: 0;
+  top: 33%;
     animation-duration: 5.8s;  
     animation-fill-mode:none;
     animation-name: kotelezo2;}
@@ -723,12 +728,81 @@ section {grid-area: slide;
         justify-content: center;
         top: 0%; 
         left: -5%;}
-
         #kotelezo_fent img{z-index: 000;}
 
+@media screen and (min-width:501px) and (max-width:1037px){
+/* KÖTELEZŐ */
+#kotelezo_fent { top:41%;}
+
+/* HEADER */
+.cim{font-size: 28px;}
+
+/* BODY */
+
+body {grid-template-areas: 
+  "header"
+  "nav"
+  "content"
+  "tevekenysegek"
+  "slide"
+  "tamop"
+  "footer";}
+
+  /* NAV */
+.navcont{display: grid;
+height: fit-content;
+margin-top: 0px;}
+.logobar i {display: none;}
+
+footer{display: flex;}
+footer img{display: none;}
+/* CONTENT -INTÉZMÉNYVÁLASZTÓ */
 
 
-@media(max-width:991px){
+.intezmenyvalaszto {margin: 60px 0px 0px 0px; width: 100%;}
+.info,.info4 {margin-left: 15px;}
+.pp, .pp3{margin-left: 20px;}
+.pp2, .pp4{margin-right: 20px;}
+
+.tevekenysegvalaszto {display: grid;grid-template-columns: repeat(2,50%);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:  70px;
+  padding: 5px;
+  margin: 5px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  border: whitesmoke solid 2px;
+  box-shadow: wheat 0px 0px 10px 1px;}
+
+  .kisikon {grid-area: kisikon;
+  width: 0px; height: 0px;
+  overflow: hidden;
+  transform: scale(0);
+   font-weight:lighter;
+   font-size: 10px;}
+
+
+   /* SLIDER */
+   .cimke, .cimke2{font-size: small; padding: 20px;width: 85%;}
+   .cimke2 {margin-top: -1%;}
+   
+   #c1 {display: none;}
+   #c3 {display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; height: 70%;
+  transform: translateY(40px);}   
+   #c2 {display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%; height: 70%;
+   transform: translateY(40px);}
+   
+
+} 
+@media only screen and (max-width: 610px) {
 
   /* HEADER */
 
@@ -920,7 +994,7 @@ body {font-family: 'Times New Roman', Times, serif;
 
   footer{grid-area:auto;text-align: center; margin: 0px 0px 10px 0px}
     .footerp {font-size: 12px; color: whitesmoke;margin: 10px auto;}         
-    footer img{width: 30px; height: 30px;}
+    footer img{display: flex; width: 30px; height: 30px;}
     .footerikonp{display: none;}
   
 /* KÖTELEZŐ */
@@ -933,7 +1007,7 @@ body {font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-style: normal;
     justify-content: center;}
-  #kotelezo_fent{width:50%;top: 8.3%;
+  #kotelezo_fent{width:50%;top: 7%;
     left: 50%;}
     #kotelezo_fent button{
     width: 30px;
