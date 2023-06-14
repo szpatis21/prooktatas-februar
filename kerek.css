@@ -656,12 +656,11 @@ section {grid-area: slide;
 
 #kotelezo_lent{
   z-index: 1000;
- 
   position: fixed;
   display: flex;
   width:250px;
-justify-content: center;
-justify-self: right;
+  justify-content: center;
+  justify-self: right;
   bottom: 0;
   
   animation-duration: 3.8s;  
@@ -694,14 +693,14 @@ justify-self: right;
       font-style: normal;
       justify-content: center;}
 #kotelezo_fent{
-    z-index: 1000;
-    position: fixed;
+    z-index: 500;
+    position: absolute;
     display: flex;
     width:250px;
   justify-content: center;
   justify-self: right;
   right: 0;
-  top: 33%;
+  top: 50px;
     animation-duration: 5.8s;  
     animation-fill-mode:none;
     animation-name: kotelezo2;}
@@ -730,10 +729,14 @@ justify-self: right;
         left: -5%;}
         #kotelezo_fent img{z-index: 000;}
 
-@media screen and (min-width:501px) and (max-width:1037px){
-/* KÖTELEZŐ */
-#kotelezo_fent { top:41%;}
+/* TABLET NÉZET */
 
+@media screen and (min-width:701px) and (max-width:1037px){
+/* KÖTELEZŐ */
+#kotelezo_fent { top:100px; right: -30px;}
+#kotelezo_lent {right: -30px;}
+
+#kotelezo_fent img, #kotelezo_lent img {width:200px}
 /* HEADER */
 .cim{font-size: 28px;}
 
@@ -750,14 +753,16 @@ body {grid-template-areas:
 
   /* NAV */
 .navcont{display: grid;
-height: fit-content;
+height: 100px;
 margin-top: 0px;}
+.navbar ul li a {font-size: 1px; 
+  background-color:balck ;}
 .logobar i {display: none;}
 
 footer{display: flex;}
 footer img{display: none;}
-/* CONTENT -INTÉZMÉNYVÁLASZTÓ */
 
+/* CONTENT -INTÉZMÉNYVÁLASZTÓ */
 
 .intezmenyvalaszto {margin: 60px 0px 0px 0px; width: 100%;}
 .info,.info4 {margin-left: 15px;}
@@ -783,7 +788,6 @@ footer img{display: none;}
    font-weight:lighter;
    font-size: 10px;}
 
-
    /* SLIDER */
    .cimke, .cimke2{font-size: small; padding: 20px;width: 85%;}
    .cimke2 {margin-top: -1%;}
@@ -802,7 +806,7 @@ footer img{display: none;}
    
 
 } 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 700px) {
 
   /* HEADER */
 
@@ -1007,7 +1011,7 @@ body {font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-style: normal;
     justify-content: center;}
-  #kotelezo_fent{width:50%;top: 7%;
+  #kotelezo_fent{width:50%;top:51px;
     left: 50%;}
     #kotelezo_fent button{
     width: 30px;
@@ -1018,10 +1022,6 @@ body {font-family: 'Times New Roman', Times, serif;
     justify-content: center;
     top: 90%; 
     left: 84%;}
-
-  
-  
-  
-  }
+}
           
 
