@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-areas: 
-    "header "
     "nav"
+    "header"
     "content"
     "tevekenysegek"
     "slide"
@@ -16,9 +16,10 @@
 
 /* HEADER */
 
-header{grid-area: header;
-padding-top: 1%;
+header{grid-area: nav;
+margin-top: 50px;
 height: 180px;
+
 background-image: url(./media/cropped-topkep1-1.png);
 background-repeat: no-repeat;
 background-size:cover;
@@ -45,13 +46,12 @@ header p {
 /* NAV */
 
   nav{grid-area: nav;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 50px;
     display: flex;
-    z-index: 1100;
-  margin-top: -2%;}
+    z-index: 1100;}
 
         .navcont{ 
           width: 100%;
@@ -96,7 +96,7 @@ header p {
            margin: 0px 10px;
            transition: all 1s;
            border-radius: 100px;
-           box-shadow: rgb(0, 162, 255) 0px 0px 10px 2px;}
+           box-shadow: rgb(255, 230, 0) 0px 0px 10px 2px;}
            .logo img:hover {transform: rotate(360deg);}
 
         .navcont .navbar ul{ list-style: none; width: 100%;}
@@ -220,7 +220,8 @@ article{
 
 /* CONTENT -INTÉZMÉNYEK */
         
-.intezmenyvalaszto {
+.intezmenyvalaszto { 
+  grid-area: content;
     margin: 2% auto;
     display: grid;
     grid-template-columns: repeat(1,50%);
@@ -628,29 +629,114 @@ section {grid-area: slide;
 
  /* FOOTER */
 
-  footer{display: grid;
-    grid-template-columns: repeat(2,50%);
-    grid-area: footer;
-    margin: 1% 0% 0% 0%;
-    background: rgba(126, 225, 255, 0.178);
-    box-shadow: whitesmoke 0px 4px 10px 8px;  
-    padding: 1% 0%;
-    backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(3.9px);
-    border: 1px solid rgba(255, 255, 255, 0.33);
-    width: 100%;
-    justify-content: center;
-    align-items: center;}
-     .footerikon{display: flex; flex-direction: row; } 
-      .footerp {font-size: 15px;
-        text-shadow: black 3px 3px 5px;
-         color: gold;
-         margin: 5px auto;
-        font-weight: 500;
-        font-style: italic;}         
-      footer img{width: 40px; height: 40px; border-radius: 100px; border: 2px whitesmoke solid; padding: 3px; box-shadow: cyan 0px 0px 10px 4px; margin: 5px 10px;}
-      .footerikonp a{color: gold; text-shadow: #000000 1px 1px 5px; }
-      .footerikonp p{padding: 1px 0px;  color: white; text-shadow: #000000 1px 1px 5px; font-style: italic; }
+ /* FOOTER */
+
+footer {grid-area: footer;}
+.footer-distributed{background: rgb(16, 69, 243);
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            height: 300px;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 55px 50px 0px 55px;}
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{display: inline-block;vertical-align: top;}
+        
+        /* Footer left */
+            .footer-distributed .footer-left{width: 40%;}
+        
+        /*FOOTER-LOGO */
+            .footer-distributed h3{color:  #ffffff;
+            font: normal 36px 'Open Sans', cursive;margin: 0;}
+        .footer-distributed h3 span{color:  gold;}
+        
+        /* Footer links */
+        .footer-distributed .footer-links{
+            color:  #ffffff;margin: 20px 0 12px;padding: 0;}
+        .footer-distributed .footer-links a{
+            display:inline-block;
+            line-height: 1.8;
+            font-weight:400;
+            text-decoration: none;
+            color:  inherit;}
+        .footer-distributed .footer-company-name{
+            color:  #222;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;}
+
+        /* Footer Center */
+
+  
+        .footer-distributed .footer-center{width: 30%;font-size: 12px;}
+        .footer-distributed .footer-center i{
+            background-color:  #ffffff;
+            color: gold;
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 15px 15px;
+            vertical-align: middle;}
+        .footer-distributed .footer-center i.fa-envelope{
+            font-size: 17px;line-height: 38px;}
+        .footer-distributed .footer-center p{
+            display: inline-block;
+            color: #ffffff;
+            font-weight:400;
+            vertical-align: middle;
+            margin:0;}
+        .footer-distributed .footer-center p span{
+            display:block;
+            font-weight: normal;
+            font-size:14px;
+            line-height:2;}
+        .footer-distributed .footer-center p a{
+            color:  rgb(255, 217, 0);text-decoration: none;}
+        .footer-distributed .footer-links a:before {
+          content: "|";
+          font-weight:300;
+          font-size: 20px;
+          left: 0;
+          color: #f0c402;
+          display: inline-block;
+          padding-right: 5px;}
+        .footer-distributed .footer-links .link-1:before {
+          content: none;}
+    
+        /* Footer Right */    
+        .footer-distributed .footer-right{width: 20%;}
+        .footer-distributed .footer-company-about{
+            line-height: 20px;
+            color:  cyan;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;}
+        .footer-distributed .footer-company-about span{
+            display: block;
+            color:  #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;}
+        .footer-distributed .footer-icons{margin-top: 25px;}   
+        .footer-distributed .footer-icons a{
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color:  #ffd900;
+            border-radius: 100px;
+            font-size: 20px;
+            color: #000000;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;}
+
 
 /* KÖTELEZŐ */
 
@@ -662,14 +748,17 @@ section {grid-area: slide;
   justify-content: center;
   justify-self: right;
   bottom: 0;
+  right: 0;
+  left: 0;
+
   
-  animation-duration: 3.8s;  
+  animation-duration: 4s;  
   animation-fill-mode:none;
   animation-name: kotelezo;}
       @keyframes kotelezo {
-          0% {transform: translateX(500px);}
-          100% {transform: translateX(0px);}}
-
+        0% {opacity: 0;}
+        90%{opacity: 0;}
+        100% {opacity: 1;}}
 
       #kotelezo_lent button{
       z-index: 1000;
@@ -680,7 +769,7 @@ section {grid-area: slide;
       display: flex;
       position: absolute;
       justify-self: right;
-      right: 1%;
+      right: 0;
       top: -10%; 
       padding: 1.5%;
       align-items: center;
@@ -694,24 +783,21 @@ section {grid-area: slide;
       justify-content: center;}
 #kotelezo_fent{
     z-index: 500;
-    position: absolute;
-    display: flex;
+    position:fixed;  right: 0;
     width:250px;
-  justify-content: center;
-  justify-self: right;
-  right: 0;
-  top: 50px;
-    animation-duration: 5.8s;  
+    top: 50px;
+    animation-duration: 5s;  
     animation-fill-mode:none;
     animation-name: kotelezo2;}
         @keyframes kotelezo2 {
-            0% {transform: translateX(500px);}
-            100% {transform: translateX(0px);}}
+            0% {opacity: 0;}
+            90%{opacity: 0;}
+            100% {opacity: 1;}}
         #kotelezo_fent button{
         z-index: 100;
         text-align: center; 
         background-color: transparent;
-        border: 2px solid gold;
+        border: 2px solid rgb(253, 253, 253);
         border-radius: 100px;
         display: flex;
         position: absolute;
@@ -721,22 +807,26 @@ section {grid-area: slide;
         box-shadow: cyan 0px 0px 10px 1px;
         width: 30px;
         height: 30px;
-        color: rgb(238, 255, 0);
+        color: rgb(255, 255, 255);
         font-weight: 900;
         font-style: normal;
         justify-content: center;
-        top: 0%; 
-        left: -5%;}
+      bottom: -10px; 
+        right: 0;}
         #kotelezo_fent img{z-index: 000;}
+
+#kotelezo_lent{
+  position:fixed;  left: auto;
+
+
+}
 
 /* TABLET NÉZET */
 
 @media screen and (min-width:701px) and (max-width:1037px){
 /* KÖTELEZŐ */
-#kotelezo_fent { top:100px; right: -30px;}
-#kotelezo_lent {right: -30px;}
+#kotelezo_fent { top:100px;}
 
-#kotelezo_fent img, #kotelezo_lent img {width:200px}
 /* HEADER */
 .cim{font-size: 28px;}
 
@@ -755,7 +845,7 @@ body {grid-template-areas:
 .navcont{display: grid;
 height: 100px;
 margin-top: 0px;}
-.navbar ul li a {font-size: 1px; 
+.navbar ul li a { 
   background-color:balck ;}
 .logobar i {display: none;}
 
@@ -764,7 +854,7 @@ footer img{display: none;}
 
 /* CONTENT -INTÉZMÉNYVÁLASZTÓ */
 
-.intezmenyvalaszto {margin: 60px 0px 0px 0px; width: 100%;}
+.intezmenyvalaszto {margin: 150px 0px 0px 0px; width: 100%;}
 .info,.info4 {margin-left: 15px;}
 .pp, .pp3{margin-left: 20px;}
 .pp2, .pp4{margin-right: 20px;}
@@ -804,10 +894,43 @@ footer img{display: none;}
      width: 80%; height: 70%;
    transform: translateY(40px);}
    
+   /* FOOTER */
+
+/* FOOTER */
+.footer-distributed{font: bold 14px sans-serif;}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;}
+.footer-distributed .footer-center i{margin-left: 0;}
+ /* Footer Center */
+
+  
+
+ .footer-distributed .footer-center p{
+     display: none}
+ 
+
+
+
 
 } 
 @media only screen and (max-width: 700px) {
 
+  .footer-distributed {padding: 5px; display: grid; grid-template-rows: repeat(2, 50%); margin: 0; }
+  .footer-distributed .footer-center p{
+    display: none}
+    .footer-distributed .footer-center{width: 100%; display: flex;
+    justify-content: right; margin-left:-50px;}
+  .footer-right p {display: none;}
+.footer-left p {display: grid}
+
+footer h3{text-align: center; width: 300px;
+  position: absolute; right: 0;
+}
   /* HEADER */
 
  header{display:none;}
@@ -895,14 +1018,15 @@ body {font-family: 'Times New Roman', Times, serif;
               border-top: 1px solid rgb(46, 31, 31);
               transition: all 1s;}
         .almenu img{display: none;}
-        .navcont .navbar ul li {width: 100%; box-shadow: rgb(255, 255, 255) 0px 0px 2.1px 0.1px;}
-          .navcont .navbar ul li ul{position: relative;width: 100%;}
+        .navcont .navbar ul li { width: 100%; box-shadow: rgb(255, 255, 255) 0px 0px 2.1px 0.1px;}
+          .navcont .navbar ul li ul{ position: relative;width: 100%;}
            .navcont .navbar ul li ul li{background: rgba(52, 208, 255, 0.486);
               box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
               backdrop-filter: blur(1.9px);
               -webkit-backdrop-filter: blur(3.9px);
-              border: 1px solid rgba(255, 255, 255, 0.33);}
-           .navcont .navbar ul li ul li ul{width: 100%;left: 0;}
+              border: 1px solid rgba(255, 255, 255, 0.33);
+            }
+           .navcont .navbar ul li ul li ul{  font-size: 1px;width: 100%;left: 0;}
           #menu-bar:checked ~ .navbar{transform: translateX(0px);}
           
             .navcont .logo{width: 100%;}
@@ -1012,7 +1136,7 @@ body {font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     justify-content: center;}
   #kotelezo_fent{width:50%;top:51px;
-    left: 50%;}
+    left: 0;}
     #kotelezo_fent button{
     width: 30px;
     height: 30px;
