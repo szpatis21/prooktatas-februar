@@ -632,7 +632,8 @@ section {grid-area: slide;
  /* FOOTER */
 
 footer {grid-area: footer;}
-.footer-distributed{background: rgb(16, 69, 243);
+.footer-distributed{background: rgb(34,193,195);
+  background: linear-gradient(  0deg, rgb(10,62,87,1) 40%, rgba(6, 179, 182) 84%);
             box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
             box-sizing: border-box;
             width: 100%;
@@ -1136,7 +1137,7 @@ body {font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     justify-content: center;}
   #kotelezo_fent{width:50%;top:51px;
-    left: 0;}
+    right: 0;}
     #kotelezo_fent button{
     width: 30px;
     height: 30px;
