@@ -472,26 +472,18 @@ section {grid-area: slide;
             width: 100%;
             display: flex;
             flex-direction: row;
-            animation: slide 70s infinite;}
+            animation: slide 30s infinite;}
 
 
 .slide2{animation-delay: 2s;}
  img{width: 100%;}
 
 @keyframes slide{
-    0%{transform: translateX(0);}
-    5%{transform: translateX(0);}
-    10%{transform: translateX(-100%);}
-    15%{transform: translateX(-100%);}
-    20%{transform: translateX(-200%);}
+    0%{}
+    20%{transform: translateX(-100%);}
     30%{transform: translateX(-200%);}
-    40%{transform: translateX(-300%);}
     50%{transform: translateX(-300%);}
-    55%{transform: translateX(-200%);}
-    60%{transform: translateX(-200%);}
-    70%{transform: translateX(-100%);}
     80%{transform: translateX(-100%);}
-    90%{transform: translateX(0%);}
     100%{transform: translateX(0%);}}
 
 /* TÁMGOATÁS */
@@ -629,12 +621,13 @@ section {grid-area: slide;
 
  /* FOOTER */
 
- /* FOOTER */
-
 footer {grid-area: footer;}
 .footer-distributed{background: rgb(34,193,195);
-            background: linear-gradient(  0deg, rgb(10,62,87,1) 40%, rgba(6, 179, 182) 84%);
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            background: linear-gradient(  0deg, rgb(10,62,87,1) 0%, rgba(6, 179, 182, 0) 50%);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1.9px);
+            -webkit-backdrop-filter: blur(3.9px);
+            border: 1px solid rgba(255, 255, 255, 0.33);
             box-sizing: border-box;
             width: 100%;
             height: 300px;
@@ -644,7 +637,8 @@ footer {grid-area: footer;}
           font-family: 'Times New Roman', Times, serif;}
         .footer-distributed .footer-left,
         .footer-distributed .footer-center,
-        .footer-distributed .footer-right{display: inline-block;vertical-align: top;}
+        .footer-distributed .footer-right{         
+          display: inline-block;vertical-align: top;}
         
         /* Footer left */
             .footer-distributed .footer-left{width: 40%;}

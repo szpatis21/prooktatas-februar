@@ -7,28 +7,17 @@ function kikapcs() {
   if (x.style.transform === "translatex(80%)" || y.style.transform === "translateY(80%)") 
   {y.style.opacity = "1";
   y.style.transform = "translatex(0%)";
-  y.style.transition = "all 2s"
+  y.style.transition = "all 0.5s"
     x.style.opacity = "1";
     x.style.transform = "translatex(0%)";
-    x.style.transition = "all 1s"
+    x.style.transition = "all 0.5s"
   } else {
     y.style.transform = "translatex(80%)";
-    y.style.transition = "all 2s"
+    y.style.transition = "all 0.5s"
     y.style.opacity = "0";
     x.style.transform = "translatex(80%)";
-    x.style.transition = "all 1s"
+    x.style.transition = "all 0.5s"
     x.style.opacity = "0";}}
-/* function myFunctionII() {
-  var x = document.getElementById("kotelezo_fent");
-  if (x.style.transform === "translateY(-80%)") {
-    x.style.transform = "translateY(0%)";
-    x.style.opacity = "1";
-    x.style.transition = "all 1s"
-  } else {
-    x.style.opacity = "0";
-    x.style.transform = "translateY(-80%)";
-    x.style.transition = "all 1s"}} */
-
 
 /* MOBILMENU */
 
@@ -41,6 +30,8 @@ function checkUncheck()
 
 /* TEVÉKENYSÉGEK */
 
+
+
 const isk = document.querySelector('#isk');            
 const isk2 = document.querySelector('#isk2');
 const szoci = document.querySelector('#szoci');            
@@ -50,7 +41,10 @@ const erz2 = document.querySelector('#erz2');
 const akr = document.querySelector('#akr');            
 const akr2 = document.querySelector('#akr2');
 
-szoci.addEventListener('mouseover', () => {
+function checkForWindowResize() {
+
+if (window.innerWidth < 1037) {     
+ szoci.addEventListener('mouseover', () => {
  szoci2.style.overflow = "visible"; 
   szoci2.style.height = "80px";
   szoci2.style.width = "170px";
@@ -101,7 +95,13 @@ akr.addEventListener('mouseout', () => {
     akr2.style.width = "0px";
     akr2.style.transform = "scale(0)"
     akr2.style.transition = "all 1s";});
+  }
+  else {
+    return 0;
+  }
+}
 
+window.addEventListener('resize', checkForWindowResize);
  /*  INTÉZMÉNYVÁLASZTÓ */
 
 const pp = document.querySelector('.pp');
